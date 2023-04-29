@@ -12,7 +12,8 @@
                 <title>
                     <!-- add the title from the metadata. This is what will be shown
                     on your browsers tab-->
-                    DCHM Template: Diplomatic View
+                    <xsl:value-of select="//tei:titleStmt/tei:title"/>
+                    <xsl:value-of select="//tei:publicationStmt"/>
                 </title>
                 <!-- load bootstrap css (requires internet!) so you can use their pre-defined css classes to style your html -->
                 <link rel="stylesheet"
@@ -41,7 +42,7 @@
                     <!-- define a row layout with bootstrap's css classes (two columns with content, and an empty column in between) -->
                         <div class="row">
                             <div class="col-sm">
-                                <h3>Images</h3>
+                                <h3>Digitisation</h3>
                             </div>
                             <div class="col-sm">
                             </div>
@@ -73,10 +74,10 @@
                                                         we want to disregard the hashtag in the @facs attribute-->
                                             
                                             <xsl:attribute name="src">
-                                                <xsl:value-of select="//tei:surface[@xml:id=substring-after($facs, '#')]/tei:figure/tei:graphic[1]/@url"/>
+                                                <xsl:value-of select="@facs" />
                                             </xsl:attribute>
                                             <xsl:attribute name="title">
-                                                <xsl:value-of select="//tei:surface[@xml:id=substring-after($facs, '#')]/tei:figure/tei:label"/>
+                                                <xsl:value-of select="@n"/>
                                             </xsl:attribute>
                                             <xsl:attribute name="alt">
                                                 <xsl:value-of select="//tei:surface[@xml:id=substring-after($facs, '#')]/tei:figure/tei:figDesc"/>
