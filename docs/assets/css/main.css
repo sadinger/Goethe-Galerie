@@ -24,6 +24,11 @@ h1 {
     font-size: 1.2vw;
 }
 
+h1.header {
+    padding: 1vw;
+    font-size: 1.5vw;
+}
+
 h2 {
     padding: 1vw;
     font-size: 1.1vw;
@@ -111,6 +116,10 @@ p.quote_long {
     margin-left: 5em;
 }
 
+p.without_indent {
+    text-indent: 0em;
+}
+
 span.handwritten {
     color: lightgrey;
     font-style: italic;
@@ -163,7 +172,7 @@ span.quote_short {
 .thumbnail {
     margin: 5px;
     border: 1px solid black;
-    width: 100px;
+    width: 300px;
 }
 
 .img-full {

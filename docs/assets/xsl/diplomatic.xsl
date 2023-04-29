@@ -14,7 +14,6 @@
                     <!-- add the title from the metadata. This is what will be shown
                     on your browsers tab-->
                     <xsl:value-of select="//tei:titleStmt/tei:title"/>
-                    <xsl:value-of select="//tei:publicationStmt"/>
                 </title>
                 <!-- load bootstrap css (requires internet!) so you can use their pre-defined css classes to style your html -->
                 <link rel="stylesheet"
@@ -27,7 +26,7 @@
             </head>
             <body>
                 <header>
-                    <h1>
+                    <h1 class="header">
                         <xsl:apply-templates select="//tei:titleStmt/tei:title"/>
                     </h1>
                 </header>
