@@ -6,7 +6,8 @@
 
     <!-- transform the root element (TEI) into an HTML template -->
     <xsl:template match="tei:TEI">
-        <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text><xsl:text>&#xa;</xsl:text>
+        <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
+        <xsl:text>&#xa;</xsl:text>
         <html lang="en" xml:lang="en">
             <head>
                 <title>
@@ -31,27 +32,24 @@
                     </h1>
                 </header>
                 <nav id="sitenav">
-                    <a href="index.html">Home</a> |
-                    <a href="diplomatic.html">Diplomatic Transcription</a> |
-                    <a href="reading.html">Reading Text</a> |
-                    <a href="toplayer.html">Top Layer</a> |
-                </nav>
-                <main id="manuscript">
+                    <a href="index.html">Home</a> | <a href="diplomatic.html">Diplomatic
+                        Transcription</a> | <a href="reading.html">Reading Text</a> | <a
+                        href="toplayer.html">Top Layer</a> | </nav>
+                <main id="book">
                     <!-- bootstrap "container" class makes the columns look pretty -->
                     <div class="container">
-                    <!-- define a row layout with bootstrap's css classes (two columns with content, and an empty column in between) -->
+                        <!-- define a row layout with bootstrap's css classes (two columns with content, and an empty column in between) -->
                         <div class="row">
                             <div class="col-sm">
                                 <h3>Digitisation</h3>
                             </div>
-                            <div class="col-sm">
-                            </div>
+                            <div class="col-sm"> </div>
                             <div class="col-sm">
                                 <h3>Transcription</h3>
                             </div>
                         </div>
                         <!-- set up an image-text pair for each page in your document, and start a new 'row' for each pair -->
-                        <xsl:for-each select="//tei:div[@type='page']">
+                        <xsl:for-each select="//tei:div[@type = 'page']">
                             <!-- save the value of each page's @facs attribute in a variable, so we can use it later -->
                             <xsl:variable name="facs" select="@facs"/>
                             <div class="row">
@@ -72,46 +70,51 @@
                                             
                                                   we use the substring-after() function because when we match our page's @facs with the <surface>'s @xml:id,
                                                         we want to disregard the hashtag in the @facs attribute-->
-                                            
+
                                             <xsl:attribute name="src">
-                                                <xsl:value-of select="@facs" />
+                                                <xsl:value-of select="@facs"/>
                                             </xsl:attribute>
                                             <xsl:attribute name="title">
                                                 <xsl:value-of select="@n"/>
                                             </xsl:attribute>
                                             <xsl:attribute name="alt">
-                                                <xsl:value-of select="//tei:surface[@xml:id=substring-after($facs, '#')]/tei:figure/tei:figDesc"/>
+                                                <xsl:value-of select="@ana"/>
                                             </xsl:attribute>
                                         </img>
                                     </article>
                                 </div>
                                 <!-- fill the second column with our transcription -->
-                                <div class='col-sm'>
+                                <div class="col-sm">
                                     <article class="transcription">
-                                            <xsl:apply-templates/>                                      
+                                        <!--showing the folio number-->
+                                        <p class="folio">
+                                            folio <xsl:value-of select="@n"/>
+                                        </p>
+                                        <xsl:apply-templates/>
                                     </article>
                                 </div>
                             </div>
                         </xsl:for-each>
-                        </div>
+                    </div>
                 </main>
                 <footer>
-                <div class="row" id="footer">
-                  <div class="col-sm copyright">
-                      <div>
-                        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
-                          <img src="assets/img/logos/cc.svg" class="copyright_logo" alt="Creative Commons License"/><img src="assets/img/logos/by.svg" class="copyright_logo" alt="Attribution 4.0 International"/>
-                        </a>
-                      </div>
-                      <div>
-                         2022 Wout Dillen.
-                      </div>
+                    <div class="row" id="footer">
+                        <div class="col-sm copyright">
+                            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                                <img alt="Creative Commons License" style="border-width:0"
+                                    src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"/>
+                            </a>
+                            <div class="copyright_text"/>
+                            <br/>This work is licensed under a <br/><a rel="license"
+                                href="http://creativecommons.org/licenses/by-nc/4.0/"
+                                target="_blank">Creative Commons Attribution-NonCommercial 4.0
+                                International License</a>. <!--<div class="copyright_logos"><a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="assets/img/logos/cc.svg" class="copyright_logo" alt="Creative Commons License"><img src="assets/img/logos/by.svg" class="copyright_logo" alt="Attribution 4.0 International"></a></div>-->
+                            <br/> 2023 Sabine Weidinger </div>
                     </div>
-                </div>
                 </footer>
-                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"/>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"/>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"/>
             </body>
         </html>
     </xsl:template>
@@ -121,6 +124,15 @@
     stops the text nodes underneath (=nested in) teiHeader from being printed into our
     html-->
     <xsl:template match="tei:teiHeader"/>
+    
+    <!-- to show just the original text - the tei reg is exluded-->
+    <xsl:template match="tei:reg"/>
+    
+    <!-- to show just the original text - the tei corr is exluded-->
+    <xsl:template match="tei:corr"/>
+    
+    <!-- to not show the alternative text of the images always-->
+    <xsl:template match="tei:figDesc"/>
 
     <!-- turn tei linebreaks (lb) into html linebreaks (br) -->
     <xsl:template match="tei:lb">
@@ -132,17 +144,109 @@
 
     <!-- we turn the tei head element (headline) into an html h1 element-->
     <xsl:template match="tei:head">
+        <h1>
+            <xsl:apply-templates/>
+        </h1>
+    </xsl:template>
+    
+    <!-- we turn the tei head element (headline) with the type 'main' into an html h2 element-->
+    <xsl:template match="tei:head[@type = 'main']">
         <h2>
             <xsl:apply-templates/>
         </h2>
     </xsl:template>
+    
+    <!-- we turn the tei head element (headline) with the type 'sub' into an html h3 element-->
+    <xsl:template match="tei:head[@type = 'sub']">
+        <h3>
+            <xsl:apply-templates/>
+        </h3>
+    </xsl:template>
 
+    <!-- we turn the tei head element (headline) with the class 'library_stamp' into an html p element-->
+    <xsl:template match="tei:head[@type = 'library_stamp']">
+        <p class="library_stamp">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+
+    <!-- transform tei paragraphs with the type 'caption' into html paragraphs with class "caption"-->
+    <xsl:template match="tei:p[@rend = 'caption']">
+        <p class="caption">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+    
+    <!-- transform tei paragraphs with the class 'heading' into html h2-->
+    <xsl:template match="tei:p[@rend = 'heading']">
+        <h2 class="chapter_image">
+            <xsl:apply-templates/>
+        </h2>
+    </xsl:template>
+    
+    <!-- transform tei paragraphs with the type 'publishing_info' into html p with class 'publishing_info-->
+    <xsl:template match="tei:p[@rend = 'publishing_info']">
+        <p class="publishing_info">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+    
+    <!-- transform tei paragraphs with the type 'center' into html paragraphs with class "center"-->
+    <xsl:template match="tei:p[@rend = 'center']">
+        <p class="center">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+    
     <!-- transform tei paragraphs into html paragraphs -->
     <xsl:template match="tei:p">
         <p>
             <!-- apply matching templates for anything that was nested in tei:p -->
             <xsl:apply-templates/>
         </p>
+    </xsl:template>
+    
+    <!-- transform tei byline into html p with class 'byline'-->
+    <xsl:template match="tei:byline">
+        <p class="byline">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+    
+    <!-- transform tei p with the rend 'page_header into html p with class 'page_header'-->
+    <xsl:template match="tei:p[@rend = 'page_header']">
+        <p class="page_header">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+    
+    <!-- transform tei note with the type 'library_shelfmark' into html p with class 'library_shelfmark'-->
+    <xsl:template match="tei:note[@type = 'library_shelfmark']">
+        <p class="library_shelfmark">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+    
+    <!-- transform tei p with the rend 'barcode' into html p with class 'barcode'-->
+    <xsl:template match="tei:p[@rend = 'barcode']">
+        <p class="barcode">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+    
+    
+    <!-- transform tei p with rend 'handwritten' handwritten html p with class 'handwritten' -->
+    <xsl:template match="tei:p[@rend = 'handwritten']">
+        <p class="handwritten">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+
+    <!-- transform tei note with the type 'handwritten' into html span with class 'handwritten'-->
+    <xsl:template match="tei:note[@type = 'handwritten']">
+        <span class="handwritten">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
 
     <!-- transform tei del into html del -->
@@ -166,6 +270,91 @@
             <xsl:apply-templates/>
         </u>
     </xsl:template>
+    
+    <!-- transform tei hi (highlighting) with the attribute @rend="initial" into html span elements with class 'initial' -->
+    <xsl:template match="tei:hi[@rend = 'initial']">
+        <span class="initial">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
 
+    <!-- transform tei table into html table-->
+    <xsl:template match="tei:table">
+        <table>
+            <xsl:apply-templates/>
+        </table>
+    </xsl:template>
+    
+    <!-- transform tei row into html tr-->
+    <xsl:template match="tei:row">
+        <tr>
+            <xsl:apply-templates/>
+        </tr>
+    </xsl:template>
+    
+    <!-- transform tei cell with attribute 'first' into html th with class 'first' -->
+    <xsl:template match="tei:cell[@rend = 'first']">
+        <th class="first">
+            <xsl:apply-templates/>
+        </th>
+    </xsl:template>
+    
+    <!-- transform tei cell into html th-->
+    <xsl:template match="tei:cell">
+        <th>
+            <xsl:apply-templates/>
+        </th>
+    </xsl:template>
+    
+    <!-- transform tei quote with type 'long' into html span with class 'quote_long'-->
+    <xsl:template match="tei:quote[@type= 'long']">
+        <p class="quote_long">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+    
+    <!-- transform tei speaker into html p with class 'speaker'-->
+    <xsl:template match="tei:sp">
+        <p class="speaker">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
 
+    <!-- transform tei p with rend 'speech' into html p with class 'speech'-->
+    <xsl:template match="tei:p[@rend= 'speech']">
+        <p class="speech">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+    
+    <!--showing the images on the first pages of the chapters-->
+    <xsl:template match="tei:figure">
+        <img class="img-in-text">
+            <xsl:attribute name="src">
+                <xsl:value-of select="tei:graphic/@url"/>
+            </xsl:attribute>
+            <xsl:attribute name="title">
+                <xsl:value-of select="tei:figDesc"/>
+            </xsl:attribute>
+            <xsl:attribute name="alt">
+                <xsl:value-of select="tei:figDesc"/>
+            </xsl:attribute>
+        </img>
+    </xsl:template>
+    
+    <!--showing smaller images on the pages-->
+    <xsl:template match="tei:figure[@type= 'small']">
+        <img class="img-small">
+            <xsl:attribute name="src">
+                <xsl:value-of select="tei:graphic/@url"/>
+            </xsl:attribute>
+            <xsl:attribute name="title">
+                <xsl:value-of select="tei:figDesc"/>
+            </xsl:attribute>
+            <xsl:attribute name="alt">
+                <xsl:value-of select="tei:figDesc"/>
+            </xsl:attribute>
+        </img>
+    </xsl:template>
 </xsl:stylesheet>
+

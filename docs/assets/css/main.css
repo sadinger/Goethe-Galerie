@@ -3,9 +3,9 @@
 body {
 	padding: 1vw;
 	font-family: 'Palatino','Palatino Linotype','Palatino LT STD','Book Antiqua','Georgia,serif';
-	line-height: 1.25;
-	font-size: 1vw;
-  width: 100%;
+	line-height: 1vw;
+	font-size: 0.85vw;
+    width: 100%;
 	}
 
 h1, h2, h3, nav, footer {
@@ -19,14 +19,25 @@ nav {
     padding: 1vw;
 }
 
+h1 {
+    padding: 1vw;
+    font-size: 1.2vw;
+}
+
 h2 {
     padding: 1vw;
+    font-size: 1.1vw;
+}
+
+h2.chapter_image {
+    font-style: italic;
+    padding: 1vw;
+    font-size: 1.1vw;
 }
 
 h3 {
-    font-weight: bold;
-    padding: 1vw;
-    
+    padding: 0.3vw;
+    font-size: 0.9vw;
 }
 
 #details {
@@ -39,6 +50,88 @@ footer {
     border-top: 1px solid black;
     padding-top: 1vw;
     margin-top: 1vw;
+}
+
+p.library_stamp {
+    height: 1.2em;
+    margin-left: 8em;
+    text-indent: 0em;
+}
+
+p {
+    text-indent: 1em;
+}
+
+p.center {
+    text-align: center;
+}
+
+p.folio {
+    text-align: right;
+    color: grey;
+    font-size: small;
+}
+
+p.caption {
+    height: 0.8em;
+    text-align: center;
+    font-style: italic;
+}
+
+p.publishing_info {
+    text-align: center;
+    font-style: italic;
+}
+
+p.byline {
+    text-align: center;
+}
+
+p.library_shelfmark {
+    color: lightgrey;
+    text-indent: 0em;
+}
+
+p.handwritten {
+   text-indent: 25em;
+   color: lightgrey;
+   font-style: italic;
+}
+
+p.barcode {
+    text-indent: 0em;
+}
+
+p.page_header {
+    text-align: center;
+}
+
+p.quote_long {
+    font-size: small;
+    margin-left: 5em;
+}
+
+span.handwritten {
+    color: lightgrey;
+    font-style: italic;
+}
+
+span.initial {
+    font-size: 1.5vw;
+}
+
+p.speaker {
+    text-align: center;
+    text-indent: 0em;
+}
+
+p.speech {
+    margin-left: 7em;
+    text-indent: 0em;
+}
+
+span.quote_short {
+    font-style: italic;
 }
 
 .copyright {
@@ -59,6 +152,9 @@ footer {
     padding: 1vw;
 }
 
+.row_image {
+    padding: 1vw;
+}
 
 #collection {
     display: flex;
@@ -71,7 +167,36 @@ footer {
 }
 
 .img-full {
-    margin: 5px;
+    margin: 3px;
     border: 1px solid black;
-    width: 500px;
+    width: 500px; 
 }
+
+.img-in-text {
+    border: 1px solid black;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-small {
+    border: 1px solid black;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+   width: 100%;
+}
+
+tr, th {
+    border: 1px;
+}
+
+th.first {
+    width: 60%;
+}
+

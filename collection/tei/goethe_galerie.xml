@@ -192,19 +192,19 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
          </div>
          <div type="book_cover">
            <div type="page" n="bc_f_i" facs="../img/GG_bc_f_i.jpg" ana="The inside of the front cover with the library stamp of the University Library Graz.">
-            <head type="library_stamp"> FACHBIBLIOTHEK F&#220;R GERMANISTIK AN DER
-               <lb/><name ref="https://d-nb.info/gnd/36157-4 " type="org">KARL-FRANZENS-UNIVERSIT&#196;T GRAZ</name></head>
+            <head type="library_stamp"> FACHBIBLIOTHEK F&#220;R GERMANISTIK AN 
+               <lb/>DER <name ref="https://d-nb.info/gnd/36157-4 " type="org">KARL-FRANZENS-UNIVERSIT&#196;T GRAZ</name></head>
            </div>
          </div>
          <div type="chapter_image">
            <div type="page" n="000r" facs="../img/GG_000_r.jpg" ana="Page with steel engraving of Johann Wolfgang von Goethe.">
             <figure>
-               <graphic url="./img_inside-text/GG_000_r.jpg"/>
+               <graphic url="../img_inside-text/GG_000_r.jpg"/>
                <figDesc>Drawing of Johann Wolfgang von Goethe</figDesc>
             </figure>
-            <p style="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
-            <p style="heading"><name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name>.</p>
-            <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+            <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+            <p rend="heading"><name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name>.</p>
+            <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
            </div>
           </div>
          <div type="page" n="001r" facs="../img/GG_001_r.jpg" ana="Title page of Goethe-Galerie.">
@@ -219,13 +219,13 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                 <lb/>von
                 <lb/><docAuthor><persName ref="https://lobid.org/gnd/118592343"><forename>Friedrich</forename> <surname>Pecht</surname></persName></docAuthor>.
              </byline>
-             <p>Octav=Ausgabe</p>
-             <p>Zweite Auflage.</p>
-             <figure>
-                <graphic url="./img_inside-text/GG_001_r.jpg"/>
+             <p rend="center">Octav=Ausgabe</p>
+             <p rend="center">Zweite Auflage.</p>
+            <figure type="small">
+                <graphic url="../img_inside-text/GG_001_r.jpg"/>
                 <figDesc>Logo of the publisher.</figDesc>
              </figure>
-             <p>
+             <p rend="center">
                 <name type="place"><placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName></name>: 
                 <lb/><name ref="https://lobid.org/gnd/1132516293 " type="publisher">F. A. Brockhaus</name>. 
                 <date when="1877">1877</date>. 
@@ -243,226 +243,262 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                <lb/>Fachbibliothek f&#252;r Germanistik
                <lb/>Inv.-Nr. <note type="handwritten">29827</note>
             </head>
-            <note type="handwritten"><date when="1989-12-02">2.12.89</date></note>
-            <p>Druck von <name ref="https://lobid.org/gnd/1132516293 " type="publisher">F. A. Brockhaus</name> in <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName></p>
+            <p rend="handwritten"><date when="1989-12-02">2.12.89</date></p>
+            <p  rend="center">Druck von <name ref="https://lobid.org/gnd/1132516293 " type="publisher">F. A. Brockhaus</name> in <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName></p>
           </div>
          </div>
           <div type="table_of_images">
            <div type="page" n="002r" facs="../img/GG_002_r.jpg" ana="Table of images - 1 of 2.">
-            <head type="h1"><choice><orig>Verzeichni&#223;</orig><reg>Verzeichnis</reg></choice> der Abbildungen.</head>
+            <head type="main"><choice><orig>Verzeichni&#223;</orig><reg>Verzeichnis</reg></choice> der Abbildungen.</head>
             <table rows="2" cols="2">
-               <row role="title">
-                  <cell role="data"><p><ref target="#ch1"><name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name>.</ref></p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> in <placeName ref="https://www.geonames.org/3169070/rome.html">Rom</placeName>.</p></cell>
+               <row>
+                  <cell rend="first"><p><ref target="#ch1"><name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
                <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> in <placeName ref="https://www.geonames.org/3169070/rome.html">Rom</placeName>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="5">
-               <row role="title">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118540246" type="person">Frau Rath Goehte</name>.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/11871791X" type="person">Cornelie Goethe</name>.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118515500" type="person">Friederike</name>.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118795333" type="person">Lili</name>.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118581015" type="person">Johann Heinrich Merck</name>.</p></cell>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118540246" type="person">Frau Rath Goehte</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/11871791X" type="person">Cornelie Goethe</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118515500" type="person">Friederike</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118795333" type="person">Lili</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118581015" type="person">Johann Heinrich Merck</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="5">
-               <head type="h2"><name ref="https://lobid.org/gnd/4099199-4" type="play">G&#246;tz von Berlichingen</name>:</head>
-               <row role="title">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118509659" type="character_inspiration">G&#246;tz von Berlichingen.</name></p></cell>
-                  <cell role="data"><p><name type="character">Elisabeth</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Maria</name>.</p></cell>
-                  <cell role="data"><p><name ref="https://d-nb.info/gnd/118613898" type="character_inspiration">Franz von Sickingen</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Adelheid</name>.</p></cell>
+               <head type="sub"><name ref="https://lobid.org/gnd/4099199-4" type="play">G&#246;tz von Berlichingen</name>:</head>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118509659" type="character_inspiration">G&#246;tz von Berlichingen.</name></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <row>
+                  <cell rend="first"><p><name type="character">Elisabeth</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Maria</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://d-nb.info/gnd/118613898" type="character_inspiration">Franz von Sickingen</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Adelheid</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="2">
-               <head type="h2"><name ref="https://lobid.org/gnd/4099202-0" type="play">Leiden des jungen Werther</name>:</head>
-               <row role="title">
-                  <cell role="data"><p><ref target="#ch13"><name type="character">Lotte</name>.</ref></p></cell>
-                  <cell role="data"><p><ref target="#ch14"><name type="character">Werther</name>.</ref></p></cell>
+               <head type="sub"><name ref="https://lobid.org/gnd/4099202-0" type="play">Leiden des jungen Werther</name>:</head>
+               <row>
+                  <cell rend="first"><p><ref target="#ch13"><name type="character">Lotte</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>.</cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <row>
+                  <cell rend="first"><p><ref target="#ch14"><name type="character">Werther</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="4">
-               <head type="h2"><name ref="https://d-nb.info/gnd/4280631-8" type="play">Clavigo</name></head>
-               <row role="title">
-                  <cell role="data"><p><name type="character">Clavigo</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Marie Beaumarchais</name>.</p></cell>
-                  <cell role="data"><name ref="https://d-nb.info/gnd/118507850" type="character_inspiration">Beaumarchais</name>.</cell>
-                  <cell role="data"><p><name type="character">Carlos</name>.</p></cell>
+               <head type="sub"><name ref="https://d-nb.info/gnd/4280631-8" type="play">Clavigo</name></head>
+               <row>
+                  <cell rend="first"><p><name type="character">Clavigo</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <row>
+                  <cell rend="first"><p><name type="character">Marie Beaumarchais</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><name ref="https://d-nb.info/gnd/118507850" type="character_inspiration">Beaumarchais</name>.</cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Carlos</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="1">
-               <head type="h2"><name ref="https://d-nb.info/gnd/1216054312" type="play">Die Geschwister</name>:</head>
-               <row role="title">
-                  <cell role="data"><p><name type="character">Marianne</name>.</p></cell>
-               </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <head type="sub"><name ref="https://d-nb.info/gnd/1216054312" type="play">Die Geschwister</name>:</head>
+               <row>
+                  <cell rend="first"><p><name type="character">Marianne</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="2">
-               <head type="h2"><name ref="https://d-nb.info/gnd/4099204-4" type="play">Stella</name>:</head>
-               <row role="title">
-                  <cell role="data"><p><name type="character">Stella</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Lucie</name>.</p></cell>
+               <head type="sub"><name ref="https://d-nb.info/gnd/4099204-4" type="play">Stella</name>:</head>
+               <row>
+                  <cell rend="first"><p><name type="character">Stella</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <row>
+                  <cell rend="first"><p><name type="character">Lucie</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
           </div>
          </div>
          <div type="table_of_images">
            <div type="page" n="002v" facs="../img/GG_002_v.jpg" ana="Table of images - 2 of 2.">
-            <head type="h2"><choice><orig>Verzeichni&#223;</orig><reg>Verzeichnis</reg></choice> der Abbildungen.</head>
+            <head type="sub"><choice><orig>Verzeichni&#223;</orig><reg>Verzeichnis</reg></choice> der Abbildungen.</head>
             <table rows="2" cols="5">
-               <head type="h2"><name ref="https://d-nb.info/gnd/4191697-9" type="play">Egmont</name>:</head>
-               <row role="title">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118529153" type="character_inspiration">Graf Egmont</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Cl&#228;rchen</name>.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118738062" type="character_inspiration">Wilhelm von Oranien</name>.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118544225" type="character_inspiration">Margarethe von Parma</name>.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118575775" type="character_inspiration">Machiavell</name>.</p></cell>
+               <head type="sub"><name ref="https://d-nb.info/gnd/4191697-9" type="play">Egmont</name>:</head>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118529153" type="character_inspiration">Graf Egmont</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <row>
+                  <cell rend="first"><p><name type="character">Cl&#228;rchen</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118738062" type="character_inspiration">Wilhelm von Oranien</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118544225" type="character_inspiration">Margarethe von Parma</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118575775" type="character_inspiration">Machiavell</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="2">
-               <head type="h2"><name ref="https://lobid.org/gnd/4099201-9" type="play">Iphigenie auf Tauris</name>:</head>
-               <row role="title">
-                  <cell role="data"><p><name ref="https://en.wikipedia.org/wiki/Orestes" type="character_inspiration">Orest</name>.</p></cell>
-                  <cell role="data"><p><name ref="https://en.wikipedia.org/wiki/Iphigenia" type="character_inspiration">Iphigenie</name>.</p></cell>
+               <head type="sub"><name ref="https://lobid.org/gnd/4099201-9" type="play">Iphigenie auf Tauris</name>:</head>
+               <row>
+                  <cell rend="first"><p><name ref="https://en.wikipedia.org/wiki/Orestes" type="character_inspiration">Orest</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://d-nb.info/gnd/118787799" type="person">A. v. Ramberg</name> gez.</p></cell>
+               <row>
+                  <cell rend="first"><p><name ref="https://en.wikipedia.org/wiki/Iphigenia" type="character_inspiration">Iphigenie</name>.</p></cell>
+                  <cell><p><name ref="https://d-nb.info/gnd/118787799" type="person">A. v. Ramberg</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="4">
-               <head type="h2"><name ref="https://lobid.org/gnd/4122459-0" type="play">Torquato Tass</name>o:</head>
-               <row role="title">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118620916" type="character_inspiration">Torquato Tasso</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Leonore von Este</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Antonio</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Leonore Sanvitale</name>.</p></cell>
+               <head type="sub"><name ref="https://lobid.org/gnd/4122459-0" type="play">Torquato Tass</name>o:</head>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118620916" type="character_inspiration">Torquato Tasso</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <row>
+                  <cell rend="first"><p><name type="character">Leonore von Este</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Antonio</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Leonore Sanvitale</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="5">
-               <head type="h2"><name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name></head>
-               <row role="title">
-                  <cell role="data"><p><ref target="#ch33"><name ref="https://lobid.org/gnd/118683136" type="character_inspiration">Faust</name>.</ref></p></cell>
-                  <cell role="data"><p><ref target="#ch34"><name type="character">Gretchen</name>.</ref></p></cell>
-                  <cell role="data"><p><ref target="#ch35"><name type="character">Mephistopheles</name>.</ref></p></cell>
-                  <cell role="data"><p><ref target="#ch36"><name type="character">Wagner</name>.</ref></p></cell>
-                  <cell role="data"><p><ref target="#ch37"><name ref="https://en.wikipedia.org/wiki/Helen_of_Troy" type="character_inspiration">Helena</name>.</ref></p></cell>
+               <head type="sub"><name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name></head>
+               <row>
+                  <cell rend="first"><p><ref target="#ch33"><name ref="https://lobid.org/gnd/118683136" type="character_inspiration">Faust</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <row>
+                  <cell rend="first"><p><ref target="#ch34"><name type="character">Gretchen</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><ref target="#ch35"><name type="character">Mephistopheles</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><ref target="#ch36"><name type="character">Wagner</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><ref target="#ch37"><name ref="https://en.wikipedia.org/wiki/Helen_of_Troy" type="character_inspiration">Helena</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="6">
-               <head type="h2"><name ref="https://lobid.org/gnd/4123299-9" type="play">Wilhelm Meister</name>.</head>
-               <row role="title">
-                  <cell role="data"><p><name type="character">Wilhelm Meister</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Marianne</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Philine</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Die Gr&#228;fin</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Der Hafner</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Mignon</name>.</p></cell>
+               <head type="sub"><name ref="https://lobid.org/gnd/4123299-9" type="play">Wilhelm Meister</name>.</head>
+               <row>
+                  <cell rend="first"><p><name type="character">Wilhelm Meister</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <row>
+                  <cell rend="first"><p><name type="character">Marianne</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Philine</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Die Gr&#228;fin</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Der Hafner</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Mignon</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="2">
-               <head type="h2"><name ref="https://lobid.org/gnd/4123298-7" type="play">Hermann und Dorothea</name>:</head>
-               <row role="title">
-                  <cell role="data"><p><name type="character">Hermann</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Dorothea</name>.</p></cell>
+               <head type="sub"><name ref="https://lobid.org/gnd/4123298-7" type="play">Hermann und Dorothea</name>:</head>
+               <row>
+                  <cell rend="first"><p><name type="character">Hermann</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <row>
+                  <cell rend="first"><p><name type="character">Dorothea</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="1">
-               <head type="h2"><name ref="https://lobid.org/gnd/4193087-3" type="play">Die nat&#252;rliche Tochter</name>:</head>
-               <row role="title">
-                  <cell role="data"><p><name type="character">Eugenie</name>.</p></cell>
-               </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <head type="sub"><name ref="https://lobid.org/gnd/4193087-3" type="play">Die nat&#252;rliche Tochter</name>:</head>
+               <row>
+                  <cell rend="first"><p><name type="character">Eugenie</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="3">
-               <head type="h2"><name ref="https://lobid.org/gnd/4099205-6" type="play">Die Wahlverwandtschaften</name>:</head>
-               <row role="title">
-                  <cell role="data"><p><name type="character">Ottilie</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Eduard</name>.</p></cell>
-                  <cell role="data"><p><name type="character">Charlotte</name>.</p></cell>
+               <head type="sub"><name ref="https://lobid.org/gnd/4099205-6" type="play">Die Wahlverwandtschaften</name>:</head>
+               <row>
+                  <cell rend="first"><p><name type="character">Ottilie</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <row>
+                  <cell rend="first"><p><name type="character">Eduard</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Charlotte</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="1">
-               <head type="h2"><name ref="https://lobid.org/gnd/1088028942" type="autobiography">Benvenuto Cellini</name>:</head>
-               <row role="title">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118519875" type="person">Benvenuto Cellini</name>.</p></cell>
-               </row>
-               <row role="illustrator">
-                  <cell role="data"><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               <head type="sub"><name ref="https://lobid.org/gnd/1088028942" type="autobiography">Benvenuto Cellini</name>:</head>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118519875" type="person">Benvenuto Cellini</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
            </div>
@@ -511,7 +547,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>woben, die Zeit hat sie gefurcht, aber sie hat ihr an stolzer</p>
                  </div>
                   <div type="page" n="004v" facs="../img/GG_004_v.jpg" ana="Text about Johann Wolfgang von Goethe - page 2 of 4.">
-                  <p style="page_header"> Goethe. </p>
+                  <p rend="page_header"> Goethe. </p>
                   <p>Majest&#228;t zugelegt, was sie ihr an sonnigem <distinct type="archaic">Sch&#246;nheitsglanze</distinct> 
                      <lb/>nahm; aus dem begeisterten, vom <distinct type="archaic">Genius</distinct> trunkenen Dichter 
                      <lb/>ist ein m&#228;chtiger Geisterf&#252;rst geworden; bezauberte uns der eine, 
@@ -553,7 +589,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>welche die verschiedenen F&#228;higkeiten derselben gingen, und die</p>
                  </div>
                   <div type="page" n="005r" facs="../img/GG_005_r.jpg" ana="Text about Johann Wolfgang von Goethe - page 3 of 4.">
-                  <p style="page_header">Goethe.</p>
+                  <p rend="page_header">Goethe.</p>
                   <p><choice><orig>eigenth&#252;mlichen</orig><reg>eigent&#252;mlichen</reg></choice> Mischungen zu betrachten, die sie miteinander 
                      <lb/>eingehen, dem <distinct type="archaic">Gesetze</distinct> folgend, das er selber in den „<name ref="https://lobid.org/gnd/4099205-6" type="play">Wahl<pc force="weak">=</pc>
                      <lb break="no"/>verwandtschaften</name>" mit so un&#252;bertrefflicher Meisterschaft geschildert. 
@@ -595,7 +631,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>nebeneinander; denn wie nahe liegen nicht „<name ref="https://lobid.org/gnd/4123298-7" type="play">Hermann und</name></p>
                  </div>
                   <div type="page" n="005v" facs="../img/GG_005_v.jpg" ana="Text about Johann Wolfgang von Goethe - page 4 of 4.">
-                  <p style="page_header"> Goethe. </p>
+                  <p rend="page_header"> Goethe. </p>
                   <p><name ref="https://lobid.org/gnd/4123298-7" type="play">Dorothea</name>" und „<name ref="https://lobid.org/gnd/4193087-3" type="play">Die nat&#252;rliche Tochter</name>“ der Zeit nach bei 
                      <lb/>ihm zusammen, und wie bald wird nicht diese wieder von den 
                      <lb/>durch das feinste Naturstudium getragenen „<name ref="https://lobid.org/gnd/4099205-6" type="play">Wahlverwandtschaft<pc force="weak">=</pc>
@@ -626,19 +662,19 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                <div type="chapter_image">
                   <div type="page" n="039r" facs="../img/GG_039_r.jpg" ana="Page with steel engraving of Lotte">
                   <figure>
-                     <graphic url="./img_inside-text/GG_039_r.jpg"/>
+                     <graphic url="../img_inside-text/GG_039_r.jpg"/>
                      <figDesc>Drawing of Lotte</figDesc>
                   </figure>
-                  <p style="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
-                  <p style="heading"><name type="charakter">Lotte</name>.</p>
-                  <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                  <p rend="heading"><name type="charakter">Lotte</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                </div>
                </div>
                <div type="page" n="039v" facs="../img/GG_039_v.jpg" ana="Empty page." />
                <div type="chapter_text">
                   <div type="page" n="040r" facs="../img/GG_040_r.jpg" ana="Text about Lotte - page 1 of 4.">
                   <head><name type="charakter">Lotte</name>.</head>
-                  <head type="h2">(<name ref="https://lobid.org/gnd/4099202-0" type="play">Leiden des jungen Werther</name>.) </head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4099202-0" type="play">Leiden des jungen Werther</name>.) </head>
                   <p><hi rend="initial">H</hi>aben wir im Laufe unserer begleitenden Betrachtungen
                      <lb/>bei jeder Gelegenheit unsere unbedingte Bewunderung der 
                      <lb/>k&#252;nstlerischen Meisterschaft auszusprechen, mit der <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> die 
@@ -666,7 +702,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>hatte"</quote>. Wir begreifen es, wenn er sagt:</p>
                  </div>
                   <div type="page" n="040v" facs="../img/GG_040_v.jpg" ana="Text about Lotte - page 2 of 4.">
-                  <p style="page_header"><name type="charakter">Lotte</name>.</p>
+                  <p rend="page_header"><name type="charakter">Lotte</name>.</p>
                   <p><quote type="long">Wie ich mich unter dem <choice><orig>Gespr&#228;che</orig><reg>Gespr&#228;ch</reg></choice> in den schwarzen Augen 
                      <lb/>weidete! Wie die lebendigen Lippen und die frischen, muntern 
                      <lb/>Wangen meine ganze Seele anzogen! Wie ich, in den herrlichen 
@@ -709,7 +745,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>den Dichter lehrte, <choice><orig>da&#223;</orig><reg>dass</reg></choice> er gerade eben den Gegensatz von</p>
                  </div>
                   <div type="page" n="041r" facs="../img/GG_041_r.jpg" ana="Text about Lotte - page 3 of 4.">
-                  <p style="page_header"><name type="charakter">Lotte</name>.</p>
+                  <p rend="page_header"><name type="charakter">Lotte</name>.</p>
                   <p><name type="charakter">Lotte</name>ns <choice><orig>th&#228;tigem</orig><reg>t&#228;tigem</reg></choice>, h&#228;uslichem, nichts weniger als
                      <choice><orig>&#252;berschweng<pc force="weak">=</pc>
                         <lb/>lichem</orig><reg>&#252;berschw&#228;nglichem</reg></choice>, aber durchaus gesundem Wesen brauche, um durch ihn 
@@ -750,7 +786,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>wir sp&#228;ter von ihr h&#246;ren:</p>
                  </div>
                   <div type="page" n="041v" facs="../img/GG_041_v.jpg" ana="Text about Lotte - page 4 of 4.">
-                  <p style="page_header"><name type="charakter">Lotte</name>.</p>
+                  <p rend="page_header"><name type="charakter">Lotte</name>.</p>
                   <p><quote type="long">So viel ist <choice><orig>gewi&#223;</orig><reg>gewiss</reg></choice>, sie war fest bei sich entschlossen, alles zu 
                      <lb/><choice><orig><choice><orig>thun</orig><reg>tun</reg></choice></orig><reg>tun</reg></choice>, um <name type="charakter">Werther</name> zu entfernen.</quote></p>
                   <p>Oder wenn sie ihm gar sagt:</p>
@@ -785,19 +821,19 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                <div type="chapter_image">
                   <div type="page" n="042r" facs="../img/GG_042_r.jpg" ana="Page with steel engraving of Werther.">
                   <figure>
-                     <graphic url="./img_inside-text/GG_042_r.jpg"/>
+                     <graphic url="../img_inside-text/GG_042_r.jpg"/>
                      <figDesc>Drawing of Werther</figDesc>
                   </figure>
-                  <p style="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
-                  <p style="heading"><name type="charakter">Werther</name>.</p>
-                  <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                  <p rend="heading"><name type="charakter">Werther</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                </div>
               </div>
                <div type="page" n="042v" facs="../img/GG_042_v.jpg" ana="Empty page."/>
                <div type="chapter_text">
                   <div type="page" n="043r" facs="../img/GG_043_r.jpg" ana="Text about Werther - page 1 of 4.">
                   <head><name type="charakter">Werther</name>.</head>
-                  <head type="h2">(<name ref="https://lobid.org/gnd/4099202-0" type="play">Leiden des jungen Werther</name>.)</head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4099202-0" type="play">Leiden des jungen Werther</name>.)</head>
                   <p><hi rend="initial">I</hi>st es das echte Kennzeichen des <distinct type="archaic">Genius</distinct>, <choice><orig>da&#223;</orig><reg>dass</reg></choice> er bisweilen 
                      <lb/>in einem einzigen Werk die ganze geistige Verfassung seiner 
                      <lb/>Zeit widerzuspiegeln vermag, so geh&#246;rt der „<name ref="https://lobid.org/gnd/4099202-0" type="play">Werther</name>“, wie 
@@ -827,7 +863,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>ein Beweis weiter f&#252;r die Krankheit.</p>
                  </div>
                   <div type="page" n="043v" facs="../img/GG_043_v.jpg" ana="Text about Werther - page 2 of 4.">
-                  <p style="page_header"><name type="charakter">Werther</name>.</p>
+                  <p rend="page_header"><name type="charakter">Werther</name>.</p>
                   <p>Lange Friedensperioden, wie die war, in welcher der 
                      <lb/>„Werther“ entstand, haben immer einen verweichlichenden 
                      <lb/><choice><orig>Einflu&#223;</orig><reg>Einfluss</reg></choice> auf die Geister; n&#252;tzen sie der Humanit&#228;t, so f&#246;rdern 
@@ -870,7 +906,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>ihm gestattet.</quote></p>
                  </div>
                   <div type="page" n="044r" facs="../img/GG_044_r.jpg" ana="Text about Werther - page 3 of 4.">
-                  <p style="page_header"><name type="charakter">Werther</name>.</p>
+                  <p rend="page_header"><name type="charakter">Werther</name>.</p>
                   <p>In dieser angenehmen Besch&#228;ftigung mit sich <distinct type="archaic">selber</distinct>, in 
                      <lb/>dieser zwecklosen Tr&#228;umerei, die einem jungen M&#228;dchen allen<pc force="weak">=</pc>
                      <lb break="no"/>falls ebenso h&#252;bsch ansteht, als einem Mann schlecht, hat denn 
@@ -915,7 +951,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>den Gefahr abzuwehren wissen.</quote></p>
                  </div>
                   <div type="page" n="044v" facs="../img/GG_044_v.jpg" ana="Text about Werther - page 4 of 4.">
-                  <p style="page_header"><name type="charakter">Werther</name>.</p>
+                  <p rend="page_header"><name type="charakter">Werther</name>.</p>
                   <p>Ihm ist sie nur eine zerst&#246;rende Kraft, er h&#228;lt sie f&#252;r
                      <lb/>Willk&#252;r, w&#228;hrend sie doch gerade das allein Befruchtende, Ge<pc force="weak">=</pc>
                      <lb break="no"/>setzm&#228;&#223;ige, ja das Gesetz <distinct type="archaic">selber</distinct> ist, welches sich in ihr auspr&#228;gt.</p>
@@ -957,19 +993,19 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                <div type="chapter_image">
                   <div type="page" n="099r" facs="../img/GG_099_r.jpg" ana="Page with steel engraving of Faust">
                   <figure>
-                     <graphic url="./img_inside-text/GG_099_r.jpg"/>
+                     <graphic url="../img_inside-text/GG_099_r.jpg"/>
                      <figDesc>Drawing of Faust</figDesc>
                   </figure>
-                  <p style="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
-                  <p style="heading"><name type="character">Faust</name>.</p>
-                  <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                  <p rend="heading"><name type="character">Faust</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                </div>
                </div>
                <div type="page" n="099v" facs="../img/GG_099_v.jpg" ana="Empty page."/>
                <div type="chapter_text">
                   <div type="page" n="100r" facs="../img/GG_100_r.jpg" ana="Text about Faust - page 1 of 4.">
                   <head><name type="character">Faust</name>.</head>
-                  <head type="h2">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.)</head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.)</head>
                   <p><hi rend="initial">E</hi>rscheint uns des Dichters Meisterwerk wie einer unserer 
                      <lb/>herrlichen <choice><orig>gothischen</orig><reg>gotischen</reg></choice> Dome, der bei aller Pracht und Gro&#223;<pc force="weak">=</pc>
                      <lb break="no"/>artigkeit unvollendet geblieben und endlich durch einen moder<pc force="weak">=</pc>
@@ -1002,7 +1038,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/><name type="character">Faust</name> geworden, der uns hier als Repr&#228;sentant der ganzen</p>
                  </div>
                   <div type="page" n="100v" facs="../img/GG_100_v.jpg" ana="Text about Faust - page 2 of 4.">
-                  <p style="page_header"><name type="character">Faust</name>.</p>
+                  <p rend="page_header"><name type="character">Faust</name>.</p>
                   <p>Menschheit, als der Mensch &#252;berhaupt entgegentritt, um den 
                      <lb/>sich ja best&#228;ndig die guten und die b&#246;sen M&#228;chte streiten — die 
                      <lb/>uns im Herrn und <name type="character">Mephistopheles</name> <choice><orig>personificirt</orig><reg>personifiziert</reg></choice> sind —, und so 
@@ -1044,7 +1080,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>Mannesalter steht — </p>
                  </div>
                   <div type="page" n="101r" facs="../img/GG_101_r.jpg" ana="Text about Faust - page 3 of 4.">
-                  <p style="page_header"><name type="character">Faust</name>.</p>
+                  <p rend="page_header"><name type="character">Faust</name>.</p>
                   <p><quote type="long">Ich bin zu alt, um nur zu spielen, 
                      <lb/>Zu jung, um ohne Wunsch zu sein.</quote></p>
                   <p>Als echter Gelehrter ist er arm und hat, wie er selbst klagt, 
@@ -1089,7 +1125,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>greift, aber auch bei dieser der Zweifel nicht ledig wird. In</p>
                  </div>
                   <div type="page" n="101v" facs="../img/GG_101_v.jpg" ana="Text about Faust - page 4 of 4.">
-                  <p style="page_header"><name type="character">Faust</name>.</p>
+                  <p rend="page_header"><name type="character">Faust</name>.</p>
                   <p>dieser <choice><orig>Scene</orig><reg>Suene</reg></choice> finden wir ihn dargestellt, wie er vor dem hei<pc force="weak">=</pc>
                      <lb break="no"/>ligen Buche sitzend durch das Ger&#228;usch des Pudels hinterm 
                      <lb/>Ofen zum Aufblicken <choice><orig>veranla&#223;t</orig><reg>veranlasst</reg></choice> wird.</p>
@@ -1129,19 +1165,19 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                <div type="chapter_image">
                   <div type="page" n="102r" facs="../img/GG_102_r.jpg" ana="Page with steel engraving of Gretchen">
                   <figure>
-                     <graphic url="./img_inside-text/GG_102_r.jpg"/>
+                     <graphic url="../img_inside-text/GG_102_r.jpg"/>
                      <figDesc>Drawing of Gretchen</figDesc>
                   </figure>
-                  <p style="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
-                  <p style="heading"><name type="character">Gretchen</name>.</p>
-                  <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                  <p rend="heading"><name type="character">Gretchen</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                  </div>
                </div>
               <div type="page" n="102v" facs="../img/GG_102_v.jpg" ana="Empty page."/>
                <div type="chapter_text">
                   <div type="page" n="103r" facs="../img/GG_103_r.jpg" ana="Text about Gretchen - page 1 of 4.">
                   <head><name type="character">Gretchen</name>.</head>
-                  <head type="h2">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.) </head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.) </head>
                   <p><hi rend="initial">I</hi>st in <name type="character">Faust</name> das h&#246;chste Streben des Menschengeistes dar<pc force="weak">=</pc>
                      <lb break="no"/>gestellt, so in <name type="character">Gretchen</name> die bescheidene Beschr&#228;nkung in ihrer  
                      <lb/>tiefen Liebensw&#252;rdigkeit. Die Neigung dieser einfachen Natur 
@@ -1172,7 +1208,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>an ihr mit solcher Meisterschaft schildert und was ihr eine so</p>
                  </div>
                   <div type="page" n="103v" facs="../img/GG_103_v.jpg" ana="Text about Gretchen - page 2 of 4.">
-                  <p style="page_header"><name type="character">Gretchen</name>.</p>
+                  <p rend="page_header"><name type="character">Gretchen</name>.</p>
                   <p>unvergleichliche Frische gibt. Sie ist so aus <choice><orig>Einem</orig><reg>einemUe</reg></choice> St&#252;ck, so 
                      <lb/>durch und durch wahr und arglos, <choice><orig>da&#223;</orig><reg>dass</reg></choice> sie sich gar nicht vor<pc force="weak">=</pc>
                      <lb break="no"/>stellen kann, wie jemand anders sei; oder wenn sie sich's 
@@ -1214,7 +1250,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>verst&#228;rkt <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> noch deren Zauber durch die Unschuld, die</p>
                  </div>
                   <div type="page" n="104r" facs="../img/GG_104_r.jpg" ana="Text about Gretchen - page 3 of 4.">
-                  <p style="page_header"><name type="character">Gretchen</name>.</p>
+                  <p rend="page_header"><name type="character">Gretchen</name>.</p>
                   <p>g&#228;nzliche Unerfahrenheit ihres Wesens. <name type="character">Gretchen</name> z&#228;hlt h&#246;chstens
                      <lb/>sechzehn Jahre, &#228;lter ist ein solches Wesen kaum denkbar. Den 
                      <lb/>Mangel an Geist, Witz oder Humor ersetzt sie durch die k&#246;st<pc force="weak">=</pc>
@@ -1255,7 +1291,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>in den Worten ausspricht:</p>
                  </div>
                   <div type="page" n="104v" facs="../img/GG_104_v.jpg" ana="Text about Gretchen - page 4 of 4.">
-                  <p style="page_header"><name type="character">Gretchen</name>.</p>
+                  <p rend="page_header"><name type="character">Gretchen</name>.</p>
                   <p><quote type="long">Seh' ich dich, bester Mann, nur an, 
                      <lb/>Wei&#223; nicht, was mich nach deinem Willen treibt — </quote></p>
                   <p>ihr Blut <choice><orig>l&#228;&#223;t</orig><reg>l&#228;sst</reg></choice> sie in seiner N&#228;he zu gar keiner Besinnung 
@@ -1294,19 +1330,19 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                <div type="chapter_image">
                   <div type="page" n="105r" facs="../img/GG_105_r.jpg" ana="Page with steel engraving of Mephistopheles.">
                   <figure>
-                     <graphic url="./img_inside-text/GG_105_r.jpg"/>
+                     <graphic url="../img_inside-text/GG_105_r.jpg"/>
                      <figDesc>Drawing of Mephistopheles</figDesc>
                   </figure>
-                  <p style="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
-                  <p style="heading"><name type="character">Mephistopheles</name>.</p>
-                  <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                  <p rend="heading"><name type="character">Mephistopheles</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                  </div>
                </div>
               <div type="page" n="105v" facs="../img/GG_105_v.jpg" ana="Empty page."/>
                <div type="chapter_text">
                   <div type="page" n="106r" facs="../img/GG_106_r.jpg" ana="Text about Mephistopheles - page 1 of 4.">
                   <head><name type="character">Mephistopheles</name>.</head>
-                  <head type="h2">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.)</head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.)</head>
                   <p><quote type="short">„<hi rend="initial">Z</hi>wei Seelen wohnen, ach! in meiner Brust"</quote> — ein 
                      <lb/>jeder Mensch hat in sich zwei Stimmen, die sich best&#228;ndig 
                      <lb/>widersprechen: Verstand und Phantasie, Sinnlichkeit und Ver<pc force="weak">=</pc>
@@ -1336,7 +1372,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/><choice><orig>Gerathen</orig><reg>Geraten</reg></choice> ist es ihr freilich nur in dem Falle, wenn aus dem</p>
                  </div>
                   <div type="page" n="106v" facs="../img/GG_106_v.jpg" ana="Text about Mephistopheles - page 2 of 4.">
-                  <p style="page_header"><name type="character">Mephistopheles</name>.</p>
+                  <p rend="page_header"><name type="character">Mephistopheles</name>.</p>
                   <p>blassen Schemen — wie bei <name type="character">Mephistopheles</name> — ein wirklich 
                      <lb/>lebendiges Wesen <distinct type="archaic">ward</distinct>, das ein selbst&#228;ndiges Leben gewann, 
                      <lb/><choice><orig>soda&#223;</orig><reg>sodass</reg></choice> es uns &#252;berall und durchaus als eine Person erscheint 
@@ -1377,7 +1413,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>durchgemacht und sich von dessen Fruchtlosigkeit &#252;berzeugt habe:</p>
                  </div>
                   <div type="page" n="107r" facs="../img/GG_107_r.jpg" ana="Text about Mephistopheles - page 3 of 4.">
-                  <p style="page_header"><name type="character">Mephistopheles</name>.</p>
+                  <p rend="page_header"><name type="character">Mephistopheles</name>.</p>
                   <p><quote type="long">O glaube mir, der manche tausend Jahre 
                      <lb/>An dieser harten Speise kaut, 
                      <lb/><choice><orig>Da&#223;</orig><reg>Dass</reg></choice> von der Wiege bis zur Bahre 
@@ -1419,7 +1455,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>innerlich gemeinen Wesen, das ihm geh&#246;rt, vereinbar ist. Alle</p>
                  </div>
                   <div type="page" n="107v" facs="../img/GG_107_v.jpg" ana="Text about Mephistopheles - page 4 of 4.">
-                  <p style="page_header"><name type="character">Mephistopheles</name>.</p>
+                  <p rend="page_header"><name type="character">Mephistopheles</name>.</p>
                   <p>sieben Tods&#252;nden k&#246;nnen auch auf einem urspr&#252;nglich sch&#246;nen
                      <lb/>Gesichte geschrieben stehen, und ein gefallener <choice><orig>mu&#223;</orig><reg>muss</reg></choice>  doch ein<pc force="weak">=</pc>
                      <lb break="no"/>mal ein wirklicher Engel gewesen sein k&#246;nnen, ein m&#228;chtiges, 
@@ -1454,19 +1490,19 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                <div type="chapter_image">
                   <div type="page" n="108r" facs="../img/GG_108_r.jpg" ana="Page with steel engraving of Wagner.">
                   <figure>
-                     <graphic url="./img_inside-text/GG_108_r.jpg"/>
+                     <graphic url="../img_inside-text/GG_108_r.jpg"/>
                      <figDesc>Drawing of Wagner</figDesc>
                   </figure>
-                  <p style="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
-                  <p style="heading"><name type="character">Wagner</name>.</p>
-                  <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                  <p rend="heading"><name type="character">Wagner</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                  </div>
                </div>
               <div type="page" n="108v" facs="../img/GG_108_v.jpg" ana="Empty page."/>
                <div type="chapter_text">
                   <div type="page" n="109r" facs="../img/GG_109_r.jpg" ana="Text about Wagner - page 1 of 4.">
                   <head><name type="character">Wagner</name>.</head>
-                  <head type="h2">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.) </head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.) </head>
                   <p><hi rend="initial">S</hi>olch schwere Last sind Wissenschaft und Weisheit,
                      <choice><orig>da&#223;</orig><reg>dass</reg></choice> 
                      <lb/>sie sich h&#228;ufig der Esel bedienen m&#252;ssen, um sie zu tragen;
@@ -1498,7 +1534,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>n&#228;hren sie eine wahre <choice><orig>Wuth</orig><reg>Wut</reg></choice>, glauben den Staat wie die</p>
                  </div>
                   <div type="page" n="109v" facs="../img/GG_109_v.jpg" ana="Text about Wagner - page 2 of 4.">
-                  <p style="page_header"><name type="character">Wagner</name>.</p>
+                  <p rend="page_header"><name type="character">Wagner</name>.</p>
                   <p>einzelnen Menschen damit <choice><orig>curiren</orig><reg>kurieren</reg></choice> zu k&#246;nnen, und die Un<pc force="weak">=</pc>
                      <lb break="no"/>tr&#252;glichkeit derselben erf&#252;llt sie mit hohem Selbstgef&#252;hl. Dem 
                      <lb/>Meister gegen&#252;ber ist aber der <distinct type="archaic">Famulus</distinct> noch ganz bescheiden, 
@@ -1541,7 +1577,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>im zweiten zur vollen Entwickelung, wo er, aus des Meisters</p>
                  </div>
                   <div type="page" n="110r" facs="../img/GG_110_r.jpg" ana="Text about Wagner - page 3 of 4.">
-                  <p style="page_header"><name type="character">Wagner</name>.</p>
+                  <p rend="page_header"><name type="character">Wagner</name>.</p>
                   <p>Schatten herausgetreten, in eigenem Lichte strahlt, <choice><orig>soda&#223;</orig><reg></reg></choice> 
                      <lb/><name type="character">Mephistopheles</name> von ihm sagt:</p>
                   <p><quote type="long">Wer kennt ihn nicht, den <choice><sic>edeln</sic><corr>edlen</corr></choice> <choice><orig>Doctor</orig><reg>Doktor</reg></choice> <name type="character">Wagner</name>, 
@@ -1588,7 +1624,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>Die <choice><orig>Ueberzeugung</orig><reg>&#220;berzeugung</reg></choice> wahrer, wahrer!</quote></p>
                  </div>
                   <div type="page" n="110v" facs="../img/GG_110_v.jpg" ana="Text about Wagner - page 4 of 4.">
-                  <p style="page_header"><name type="character">Wagner</name>.</p>
+                  <p rend="page_header"><name type="character">Wagner</name>.</p>
                   <p><quote type="long">Was man an der Natur <choice><orig>Geheimni&#223;volles</orig><reg>Geheimnisvolles</reg></choice> pries, 
                      <lb/>Das wagen wir verst&#228;ndig zu <choice><orig>probiren</orig><reg>probieren</reg></choice>, 
                      <lb/>Und was sie sonst <choice><orig>organisiren</orig><reg>organisieren</reg></choice> lie&#223;, 
@@ -1617,19 +1653,19 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                <div type="chapter_image">
                   <div type="page" n="111r" facs="../img/GG_111_r.jpg" ana="Page with steel engraving of Helena.">
                   <figure>
-                     <graphic url="./img_inside-text/GG_111_r.jpg"/>
+                     <graphic url="../img_inside-text/GG_111_r.jpg"/>
                      <figDesc>Drawing of Helena</figDesc>
                   </figure>
-                  <p style="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
-                  <p style="heading"><name type="character">Helena</name>.</p>
-                  <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                  <p rend="heading"><name type="character">Helena</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                  </div>
                </div>
               <div type="page" n="111v" facs="../img/GG_111_v.jpg" ana="Empty page."/>
                <div type="chapter_text">
                   <div type="page" n="112r" facs="../img/GG_112_r.jpg" ana="Text about Helena - page 1 of 4.">
                   <head><name type="character">Helena</name>.</head>
-                  <head type="h2">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.)</head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.)</head>
                   <p><hi rend="initial">W</hi>ir gelangen nun zu dem 
                      <lb/>Haupt= und Prachtst&#252;ck,
                      dem geschn&#246;rkelten Irrgarten f&#252;r den Scharfsinn aller Glossatoren,
@@ -1662,7 +1698,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>gute Beute schw&#228;bischer und s&#228;chsischer <distinct type="archaic">Schulmeister</distinct> und ihrer</p>
                  </div>
                   <div type="page" n="112v" facs="../img/GG_112_v.jpg" ana="Text about Helena - page 2 of 4.">
-                  <p style="page_header"><name type="character">Helena</name>.</p>
+                  <p rend="page_header"><name type="character">Helena</name>.</p>
                   <p>A=b=c=Sch&#252;tzen, ja sich von so ber&#252;hmten <choice><orig>Aesthetikern</orig><reg>&#196;sthetikern</reg></choice> wie 
                      <lb/><name ref="https://lobid.org/gnd/11862721X" type="person">Vischer</name> &#252;berdies noch im Grabe nachsagen lassen zu m&#252;ssen, 
                      <lb/>man sei nur aus Pappendeckel gewesen.</p>
@@ -1681,45 +1717,45 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>erscheint und der ihr in seiner Art am charakteristischsten 
                      <lb/>huldigt, wenn er bei ihrer Erscheinung &#228;u&#223;ert:</p>
                   <p><quote type="long"><sp><speaker>Aeltere Dame. </speaker>
-                     <lb/><p>Gro&#223;, wohlgestaltet, nur der Kopf zu klein.</p></sp> 
+                     <lb/><p rend="speech">Gro&#223;, wohlgestaltet, nur der Kopf zu klein.</p></sp> 
                      <lb/><sp><speaker>J&#252;ngere.</speaker>
-                     <lb/><p>Seht nur den Fu&#223;! Wie k&#246;nnt' er <distinct type="archaic">plumper</distinct> sein?</p> </sp>
+                     <lb/><p rend="speech">Seht nur den Fu&#223;! Wie k&#246;nnt' er <distinct type="archaic">plumper</distinct> sein?</p> </sp>
                      <lb/><sp><speaker>Diplomat.</speaker>
-                     <lb/><p>F&#252;rstinnen hab' ich dieser Art gesehn, 
+                     <lb/><p rend="speech">F&#252;rstinnen hab' ich dieser Art gesehn, 
                      <lb/>Mich <distinct type="archaic">d&#228;ucht</distinct> sie ist vom Kopf zum Fu&#223;e sch&#246;n.</p></sp>
                      <lb/><sp><speaker>Hofmann.</speaker>
-                     <lb/><p>Sie n&#228;hert sich dem Schl&#228;fer listig mild. ... 
+                     <lb/><p rend="speech">Sie n&#228;hert sich dem Schl&#228;fer listig mild. ... 
                      <lb/>Sie schleicht sich weg, leichtf&#252;&#223;ig; er erwacht.</p></sp>
                      <lb/><sp><speaker>Dame.</speaker>
-                     <lb/><p>Sie sieht sich um! Das hab' ich <choice><orig>wol</orig><reg>wohl</reg></choice> gedacht.</p></sp> 
+                     <lb/><p rend="speech">Sie sieht sich um! Das hab' ich <choice><orig>wol</orig><reg>wohl</reg></choice> gedacht.</p></sp> 
                      <lb/><sp><speaker>Hofmann.</speaker>
-                     <lb/><p>Er staunt! Ein Wunder ist's, was ihm geschieht.</p> </sp>
+                     <lb/><p rend="speech">Er staunt! Ein Wunder ist's, was ihm geschieht.</p> </sp>
                      <lb/><sp><speaker>Dame.</speaker> 
-                     <lb/><p>Ihr ist kein Wunder, was sie vor sich sieht.</p> </sp>
+                     <lb/><p rend="speech">Ihr ist kein Wunder, was sie vor sich sieht.</p> </sp>
                      <lb/><sp><speaker>Hofmann.</speaker>
-                     <lb/><p>Mit Anstand kehrt sie sich zu ihm herum.</p> </sp>
+                     <lb/><p rend="speech">Mit Anstand kehrt sie sich zu ihm herum.</p></sp>
                      <lb/><sp><speaker>Dame.</speaker>
-                     <lb/><p>Ich merke schon, sie nimmt ihn in die Lehre; 
+                     <lb/><p rend="speech">Ich merke schon, sie nimmt ihn in die Lehre; 
                      <lb/>In solchem Fall sind alle M&#228;nner dumm, 
                      <lb/>Er glaubt <choice><orig>wol</orig><reg>wohl</reg></choice> auch, <choice><orig>da&#223;</orig><reg>dass</reg></choice> er der erste w&#228;re.</p> </sp>
                      <lb/><sp><speaker>Ritter.</speaker>
-                        <lb/><p><choice><orig>La&#223;t</orig><reg>Lasst</reg></choice> sie mir gelten! Majest&#228;tisch fein!</p> </sp>
+                     <lb/><p  rend="speech"><choice><orig>La&#223;t</orig><reg>Lasst</reg></choice> sie mir gelten! Majest&#228;tisch fein!</p> </sp>
                      <lb/><sp><speaker>Dame.</speaker>
-                     <lb/><p>Die Buhlerin! Das nenn' ich doch gemein.</p></sp>
+                     <lb/><p rend="speech">Die Buhlerin! Das nenn' ich doch gemein.</p></sp>
                      <lb/><sp><speaker>Page.</speaker>
-                     <lb/><p>Ich m&#246;chte <choice><orig>wol</orig><reg>wohl</reg></choice> an seiner Stelle sein!</p> </sp>
+                     <lb/><p  rend="speech">Ich m&#246;chte <choice><orig>wol</orig><reg>wohl</reg></choice> an seiner Stelle sein!</p> </sp>
                      <lb/><sp><speaker>Hofmann.</speaker>
-                     <lb/><p>Wer w&#252;rde nicht in solchem Netz gefangen?</p></sp></quote></p>
+                     <lb/><p rend="speech">Wer w&#252;rde nicht in solchem Netz gefangen?</p></sp></quote></p>
                  </div>
                   <div type="page" n="113r" facs="../img/GG_113_r.jpg" ana="Text about Helena - page 3 of 4.">
-                  <p style="page_header"><name type="character">Helena</name>.</p>
+                  <p rend="page_header"><name type="character">Helena</name>.</p>
                   <p><quote type="long"><sp><speaker>Dame.</speaker>
-                     <lb/><p>Das Kleinod ist durch manche Hand gegangen, 
+                     <lb/><p rend="speech">Das Kleinod ist durch manche Hand gegangen, 
                      <lb/>Auch die <distinct type="archaic">Verguldung</distinct> ziemlich abgebraucht.</p></sp> 
                      <lb/><sp><speaker>Andere.</speaker> 
-                     <lb/><p>Vom zehnten Jahr an hat sie nichts getaugt.</p></sp> 
+                     <lb/><p rend="speech">Vom zehnten Jahr an hat sie nichts getaugt.</p></sp> 
                      <lb/><sp><speaker>Ritter.</speaker>
-                     <lb/><p>Gelegentlich nimmt jeder sich das Beste; 
+                     <lb/><p rend="speech">Gelegentlich nimmt jeder sich das Beste; 
                      <lb/>Ich hielte mich an diese sch&#246;nen Reste.</p></sp></quote></p>
                   <p>Sie selber nennt sich sp&#228;ter, ins Vaterhaus zur&#252;ckkehrend, 
                      <lb/><quote type="short">„bewundert viel und viel gescholten"</quote> und f&#228;hrt fort:</p>
@@ -1754,7 +1790,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>nicht mehr wei&#223;, wo einem der Kopf steht.</p>
                  </div>
                   <div type="page" n="113v" facs="../img/GG_113_v.jpg" ana="Text about Helena - page 4 of 4.">
-                  <p style="page_header"><name type="character">Helena</name>.</p>
+                  <p rend="page_header"><name type="character">Helena</name>.</p>
                   <p>Es ist eine der <choice><orig>dem&#252;thigendsten</orig><reg>dem&#252;tigendsten</reg></choice> Bemerkungen, die man im 
                      <lb/>Laufe des Lebens zu machen Gelegenheit hat, <choice><orig>da&#223;</orig><reg>dass</reg></choice> man nichts 
                      <lb/>wirklich dauernd besitzt, nicht einmal das Eigenste, was einem 
@@ -1800,7 +1836,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
          <div type="book_cover">
            <div type="page" n="bc_b_i" facs="../img/GG_bc_b_i.jpg" ana="Page with Barcode for the LIbrary University Graz.">
             <div type="barcode">
-               <p> UB GRAZ 
+               <p rend="barcode"> UB GRAZ 
                   <lb/>+BI227391701 </p>
             </div>
            </div>
@@ -1810,7 +1846,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
             <head>Goethe- 
                <lb/>Galerie.</head>
             <div type="library_shelfmark">
-               <p>
+               <p rend="center">
                   <lb/>GG 
                   <lb/>428 
                   <lb/>G 599 
