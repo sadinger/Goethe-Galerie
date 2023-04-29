@@ -159,6 +159,9 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-04-29">
+            <persName>Sabine Weidinger</persName> added the attribute <gi>ana</gi> in <gi>div</gi> to include a description of the images, which can be used in XSL transformations for the alternative text.
+         </change>
          <change when="2023-04-28">
             <persName>Sabine Weidinger</persName> added some encoding in the TEI header - <gi>analytic</gi>.
             <persName>Sabine Weidinger</persName> added <gi>figure</gi> to the first pages of the chapters.
@@ -183,18 +186,18 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
    <text>
       <front>
          <div type="book_cover">
-           <div type="page" n="bc_f_o" facs="../img/GG_bc_f_o.jpg">
+           <div type="page" n="bc_f_o" facs="../img/GG_bc_f_o.jpg" ana="Front cover of the book Goethe-Galerie.">
             <head type="bind">Goethe-Galerie.</head>
            </div>
          </div>
          <div type="book_cover">
-           <div type="page" n="bc_f_i" facs="../img/GG_bc_f_i.jpg">
+           <div type="page" n="bc_f_i" facs="../img/GG_bc_f_i.jpg" ana="The inside of the front cover with the library stamp of the University Library Graz.">
             <head type="library_stamp"> FACHBIBLIOTHEK F&#220;R GERMANISTIK AN DER
                <lb/><name ref="https://d-nb.info/gnd/36157-4 " type="org">KARL-FRANZENS-UNIVERSIT&#196;T GRAZ</name></head>
            </div>
          </div>
          <div type="chapter_image">
-           <div type="page" n="000r" facs="../img/GG_000_r.jpg">
+           <div type="page" n="000r" facs="../img/GG_000_r.jpg" ana="Page with steel engraving of Johann Wolfgang von Goethe.">
             <figure>
                <graphic url="./img_inside-text/GG_000_r.jpg"/>
                <figDesc>Drawing of Johann Wolfgang von Goethe</figDesc>
@@ -204,7 +207,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
             <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
            </div>
           </div>
-         <div type="page" n="001r" facs="../img/GG_001_r.jpg">
+         <div type="page" n="001r" facs="../img/GG_001_r.jpg" ana="Title page of Goethe-Galerie.">
                 <head type="main">Goethe-Galerie.</head>
                 <head type="sub">Charaktere aus <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name>'s Werken.</head>
              <byline>
@@ -234,7 +237,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
              </note>
           </div>
          <div type="titlePage_back">
-           <div type="page" n="001v" facs="../img/GG_001_v.jpg">
+           <div type="page" n="001v" facs="../img/GG_001_v.jpg" ana="Page including the library stamp of the University Library Graz and the Inventory number.">
             <head type="library_stamp">
                <lb/><name ref="https://d-nb.info/gnd/36157-4 " type="org">Karl-Franzens-Universit&#228;t Graz</name>
                <lb/>Fachbibliothek f&#252;r Germanistik
@@ -245,7 +248,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
           </div>
          </div>
           <div type="table_of_images">
-           <div type="page" n="002r" facs="../img/GG_002_r.jpg">
+           <div type="page" n="002r" facs="../img/GG_002_r.jpg" ana="Table of images - 1 of 2.">
             <head type="h1"><choice><orig>Verzeichni&#223;</orig><reg>Verzeichnis</reg></choice> der Abbildungen.</head>
             <table rows="2" cols="2">
                <row role="title">
@@ -339,7 +342,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
           </div>
          </div>
          <div type="table_of_images">
-           <div type="page" n="002v" facs="../img/GG_002_v.jpg">
+           <div type="page" n="002v" facs="../img/GG_002_v.jpg" ana="Table of images - 2 of 2.">
             <head type="h2"><choice><orig>Verzeichni&#223;</orig><reg>Verzeichnis</reg></choice> der Abbildungen.</head>
             <table rows="2" cols="5">
                <head type="h2"><name ref="https://d-nb.info/gnd/4191697-9" type="play">Egmont</name>:</head>
@@ -467,13 +470,13 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
       </front>
       <body>
          <div type="book">
-           <div type="page" n="003r" facs="../img/GG_003_r.jpg">
+           <div type="page" n="003r" facs="../img/GG_003_r.jpg" ana="Page with title of the book.">
             <head>Goethe-Galerie.</head>
            </div>
-           <div type="page" n="003v" facs="../img/GG_003_v.jpg"/>
+           <div type="page" n="003v" facs="../img/GG_003_v.jpg" ana="Empty page."/>
             <div type="chapter" n="1" xml:id="ch1">
                <div type="chapter_text">
-                 <div type="page" n="004r" facs="../img/GG_004_r.jpg">
+                  <div type="page" n="004r" facs="../img/GG_004_r.jpg" ana="Text about Johann Wolfgang von Goethe - page 1 of 4.">
                   <head><name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name>.</head>
                   <p><hi rend="initial">S</hi>ehen wir im jungen <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> den Apoll verk&#246;rpert,
                      wie er 
@@ -507,7 +510,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>glatte Stirn, hinter der sich die goldenen Tr&#228;ume des J&#252;nglings 
                      <lb/>woben, die Zeit hat sie gefurcht, aber sie hat ihr an stolzer</p>
                  </div>
-                 <div type="page" n="004v" facs="../img/GG_004_v.jpg">
+                  <div type="page" n="004v" facs="../img/GG_004_v.jpg" ana="Text about Johann Wolfgang von Goethe - page 2 of 4.">
                   <p style="page_header"> Goethe. </p>
                   <p>Majest&#228;t zugelegt, was sie ihr an sonnigem <distinct type="archaic">Sch&#246;nheitsglanze</distinct> 
                      <lb/>nahm; aus dem begeisterten, vom <distinct type="archaic">Genius</distinct> trunkenen Dichter 
@@ -549,7 +552,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb break="no"/>&#228;hrt ein unersch&#246;pfliches Vergn&#252;gen, den Wegen nachzusp&#252;ren, 
                      <lb/>welche die verschiedenen F&#228;higkeiten derselben gingen, und die</p>
                  </div>
-                 <div type="page" n="005r" facs="../img/GG_005_r.jpg">
+                  <div type="page" n="005r" facs="../img/GG_005_r.jpg" ana="Text about Johann Wolfgang von Goethe - page 3 of 4.">
                   <p style="page_header">Goethe.</p>
                   <p><choice><orig>eigenth&#252;mlichen</orig><reg>eigent&#252;mlichen</reg></choice> Mischungen zu betrachten, die sie miteinander 
                      <lb/>eingehen, dem <distinct type="archaic">Gesetze</distinct> folgend, das er selber in den „<name ref="https://lobid.org/gnd/4099205-6" type="play">Wahl<pc force="weak">=</pc>
@@ -591,7 +594,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>hintereinander her in seinem Leben, sondern lange Zeit auch 
                      <lb/>nebeneinander; denn wie nahe liegen nicht „<name ref="https://lobid.org/gnd/4123298-7" type="play">Hermann und</name></p>
                  </div>
-                 <div type="page" n="005v" facs="../img/GG_005_v.jpg">
+                  <div type="page" n="005v" facs="../img/GG_005_v.jpg" ana="Text about Johann Wolfgang von Goethe - page 4 of 4.">
                   <p style="page_header"> Goethe. </p>
                   <p><name ref="https://lobid.org/gnd/4123298-7" type="play">Dorothea</name>" und „<name ref="https://lobid.org/gnd/4193087-3" type="play">Die nat&#252;rliche Tochter</name>“ der Zeit nach bei 
                      <lb/>ihm zusammen, und wie bald wird nicht diese wieder von den 
@@ -621,7 +624,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
             <gap quantity="66" unit="pages" reason="editorial"/>
             <div type="chapter" n="13" xml:id="ch13">
                <div type="chapter_image">
-                 <div type="page" n="039r" facs="../img/GG_039_r.jpg">
+                  <div type="page" n="039r" facs="../img/GG_039_r.jpg" ana="Page with steel engraving of Lotte">
                   <figure>
                      <graphic url="./img_inside-text/GG_039_r.jpg"/>
                      <figDesc>Drawing of Lotte</figDesc>
@@ -631,9 +634,9 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                </div>
                </div>
-              <div type="page" n="039v" facs="../img/GG_039_v.jpg"/>
+               <div type="page" n="039v" facs="../img/GG_039_v.jpg" ana="Empty page." />
                <div type="chapter_text">
-                 <div type="page" n="040r" facs="../img/GG_040_r.jpg">
+                  <div type="page" n="040r" facs="../img/GG_040_r.jpg" ana="Text about Lotte - page 1 of 4.">
                   <head><name type="charakter">Lotte</name>.</head>
                   <head type="h2">(<name ref="https://lobid.org/gnd/4099202-0" type="play">Leiden des jungen Werther</name>.) </head>
                   <p><hi rend="initial">H</hi>aben wir im Laufe unserer begleitenden Betrachtungen
@@ -662,7 +665,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>wei&#223;es Kleid mit <choice><orig>bla&#223;rothen</orig><reg>blassroten</reg></choice> Schleifen an Arm und Brust 
                      <lb/>hatte"</quote>. Wir begreifen es, wenn er sagt:</p>
                  </div>
-                 <div type="page" n="040v" facs="../img/GG_040_v.jpg">
+                  <div type="page" n="040v" facs="../img/GG_040_v.jpg" ana="Text about Lotte - page 2 of 4.">
                   <p style="page_header"><name type="charakter">Lotte</name>.</p>
                   <p><quote type="long">Wie ich mich unter dem <choice><orig>Gespr&#228;che</orig><reg>Gespr&#228;ch</reg></choice> in den schwarzen Augen 
                      <lb/>weidete! Wie die lebendigen Lippen und die frischen, muntern 
@@ -705,7 +708,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>glaubten sogar jetzt den genialen <choice><orig>Instinct</orig><reg>Instinkt</reg></choice> zu verstehen, welcher 
                      <lb/>den Dichter lehrte, <choice><orig>da&#223;</orig><reg>dass</reg></choice> er gerade eben den Gegensatz von</p>
                  </div>
-                 <div type="page" n="041r" facs="../img/GG_041_r.jpg">
+                  <div type="page" n="041r" facs="../img/GG_041_r.jpg" ana="Text about Lotte - page 3 of 4.">
                   <p style="page_header"><name type="charakter">Lotte</name>.</p>
                   <p><name type="charakter">Lotte</name>ns <choice><orig>th&#228;tigem</orig><reg>t&#228;tigem</reg></choice>, h&#228;uslichem, nichts weniger als
                      <choice><orig>&#252;berschweng<pc force="weak">=</pc>
@@ -746,7 +749,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <p>Das ist der Vorwurf des Kranken; viel wahrer ist, wenn 
                      <lb/>wir sp&#228;ter von ihr h&#246;ren:</p>
                  </div>
-                 <div type="page" n="041v" facs="../img/GG_041_v.jpg">
+                  <div type="page" n="041v" facs="../img/GG_041_v.jpg" ana="Text about Lotte - page 4 of 4.">
                   <p style="page_header"><name type="charakter">Lotte</name>.</p>
                   <p><quote type="long">So viel ist <choice><orig>gewi&#223;</orig><reg>gewiss</reg></choice>, sie war fest bei sich entschlossen, alles zu 
                      <lb/><choice><orig><choice><orig>thun</orig><reg>tun</reg></choice></orig><reg>tun</reg></choice>, um <name type="charakter">Werther</name> zu entfernen.</quote></p>
@@ -780,7 +783,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
             </div>
             <div type="chapter" n="14" xml:id="ch14">
                <div type="chapter_image">
-                 <div type="page" n="042r" facs="../img/GG_042_r.jpg">
+                  <div type="page" n="042r" facs="../img/GG_042_r.jpg" ana="Page with steel engraving of Werther.">
                   <figure>
                      <graphic url="./img_inside-text/GG_042_r.jpg"/>
                      <figDesc>Drawing of Werther</figDesc>
@@ -790,9 +793,9 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                </div>
               </div>
-              <div type="page" n="042v" facs="../img/GG_042_v.jpg"/>
+               <div type="page" n="042v" facs="../img/GG_042_v.jpg" ana="Empty page."/>
                <div type="chapter_text">
-                 <div type="page" n="043r" facs="../img/GG_043_r.jpg">
+                  <div type="page" n="043r" facs="../img/GG_043_r.jpg" ana="Text about Werther - page 1 of 4.">
                   <head><name type="charakter">Werther</name>.</head>
                   <head type="h2">(<name ref="https://lobid.org/gnd/4099202-0" type="play">Leiden des jungen Werther</name>.)</head>
                   <p><hi rend="initial">I</hi>st es das echte Kennzeichen des <distinct type="archaic">Genius</distinct>, <choice><orig>da&#223;</orig><reg>dass</reg></choice> er bisweilen 
@@ -823,7 +826,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>durch krank — und jene gewaltige Wirkung des Buchs ist nur 
                      <lb/>ein Beweis weiter f&#252;r die Krankheit.</p>
                  </div>
-                 <div type="page" n="043v" facs="../img/GG_043_v.jpg">
+                  <div type="page" n="043v" facs="../img/GG_043_v.jpg" ana="Text about Werther - page 2 of 4.">
                   <p style="page_header"><name type="charakter">Werther</name>.</p>
                   <p>Lange Friedensperioden, wie die war, in welcher der 
                      <lb/>„Werther“ entstand, haben immer einen verweichlichenden 
@@ -866,7 +869,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>halte ich mein Herzchen wie ein krankes Kind; jeder Wille wird 
                      <lb/>ihm gestattet.</quote></p>
                  </div>
-                 <div type="page" n="044r" facs="../img/GG_044_r.jpg">
+                  <div type="page" n="044r" facs="../img/GG_044_r.jpg" ana="Text about Werther - page 3 of 4.">
                   <p style="page_header"><name type="charakter">Werther</name>.</p>
                   <p>In dieser angenehmen Besch&#228;ftigung mit sich <distinct type="archaic">selber</distinct>, in 
                      <lb/>dieser zwecklosen Tr&#228;umerei, die einem jungen M&#228;dchen allen<pc force="weak">=</pc>
@@ -911,7 +914,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb break="no"/>die daher in Zeiten mit D&#228;mmen und Ableiten der k&#252;nftig drohen<pc force="weak">=</pc>
                      <lb/>den Gefahr abzuwehren wissen.</quote></p>
                  </div>
-                 <div type="page" n="044v" facs="../img/GG_044_v.jpg">
+                  <div type="page" n="044v" facs="../img/GG_044_v.jpg" ana="Text about Werther - page 4 of 4.">
                   <p style="page_header"><name type="charakter">Werther</name>.</p>
                   <p>Ihm ist sie nur eine zerst&#246;rende Kraft, er h&#228;lt sie f&#252;r
                      <lb/>Willk&#252;r, w&#228;hrend sie doch gerade das allein Befruchtende, Ge<pc force="weak">=</pc>
@@ -952,7 +955,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
             <gap quantity="108" unit="pages" reason="editorial"/>
             <div type="chapter" n="33" xml:id="ch33">
                <div type="chapter_image">
-                 <div type="page" n="099r" facs="../img/GG_099_r.jpg">
+                  <div type="page" n="099r" facs="../img/GG_099_r.jpg" ana="Page with steel engraving of Faust">
                   <figure>
                      <graphic url="./img_inside-text/GG_099_r.jpg"/>
                      <figDesc>Drawing of Faust</figDesc>
@@ -962,9 +965,9 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                </div>
                </div>
-              <div type="page" n="099v" facs="../img/GG_099_v.jpg"/>
+               <div type="page" n="099v" facs="../img/GG_099_v.jpg" ana="Empty page."/>
                <div type="chapter_text">
-                 <div type="page" n="100r" facs="../img/GG_100_r.jpg">
+                  <div type="page" n="100r" facs="../img/GG_100_r.jpg" ana="Text about Faust - page 1 of 4.">
                   <head><name type="character">Faust</name>.</head>
                   <head type="h2">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.)</head>
                   <p><hi rend="initial">E</hi>rscheint uns des Dichters Meisterwerk wie einer unserer 
@@ -998,7 +1001,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>ein Gegenst&#252;ck zu dem Kampfe, dessen Held der Goethe'sche 
                      <lb/><name type="character">Faust</name> geworden, der uns hier als Repr&#228;sentant der ganzen</p>
                  </div>
-                 <div type="page" n="100v" facs="../img/GG_100_v.jpg">
+                  <div type="page" n="100v" facs="../img/GG_100_v.jpg" ana="Text about Faust - page 2 of 4.">
                   <p style="page_header"><name type="character">Faust</name>.</p>
                   <p>Menschheit, als der Mensch &#252;berhaupt entgegentritt, um den 
                      <lb/>sich ja best&#228;ndig die guten und die b&#246;sen M&#228;chte streiten — die 
@@ -1040,7 +1043,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>wir annehmen, <choice><orig>da&#223;</orig><reg>dass</reg></choice> er etwa in den <choice><orig>Drei&#223;igen</orig><reg>Drei&#223;igern</reg></choice>, im kr&#228;ftigsten 
                      <lb/>Mannesalter steht — </p>
                  </div>
-                 <div type="page" n="101r" facs="../img/GG_101_r.jpg">
+                  <div type="page" n="101r" facs="../img/GG_101_r.jpg" ana="Text about Faust - page 3 of 4.">
                   <p style="page_header"><name type="character">Faust</name>.</p>
                   <p><quote type="long">Ich bin zu alt, um nur zu spielen, 
                      <lb/>Zu jung, um ohne Wunsch zu sein.</quote></p>
@@ -1085,7 +1088,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <p>bis er sich endlich nach Offenbarung sehnt, zur Heiligen Schrift 
                      <lb/>greift, aber auch bei dieser der Zweifel nicht ledig wird. In</p>
                  </div>
-                 <div type="page" n="101v" facs="../img/GG_101_v.jpg">
+                  <div type="page" n="101v" facs="../img/GG_101_v.jpg" ana="Text about Faust - page 4 of 4.">
                   <p style="page_header"><name type="character">Faust</name>.</p>
                   <p>dieser <choice><orig>Scene</orig><reg>Suene</reg></choice> finden wir ihn dargestellt, wie er vor dem hei<pc force="weak">=</pc>
                      <lb break="no"/>ligen Buche sitzend durch das Ger&#228;usch des Pudels hinterm 
@@ -1124,7 +1127,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
             </div>
             <div type="chapter" n="34" xml:id="ch34">
                <div type="chapter_image">
-                 <div type="page" n="102r" facs="../img/GG_102_r.jpg">
+                  <div type="page" n="102r" facs="../img/GG_102_r.jpg" ana="Page with steel engraving of Gretchen">
                   <figure>
                      <graphic url="./img_inside-text/GG_102_r.jpg"/>
                      <figDesc>Drawing of Gretchen</figDesc>
@@ -1134,9 +1137,9 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                  </div>
                </div>
-              <div type="page" n="102v" facs="../img/GG_102_v.jpg"/>
+              <div type="page" n="102v" facs="../img/GG_102_v.jpg" ana="Empty page."/>
                <div type="chapter_text">
-                 <div type="page" n="103r" facs="../img/GG_103_r.jpg">
+                  <div type="page" n="103r" facs="../img/GG_103_r.jpg" ana="Text about Gretchen - page 1 of 4.">
                   <head><name type="character">Gretchen</name>.</head>
                   <head type="h2">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.) </head>
                   <p><hi rend="initial">I</hi>st in <name type="character">Faust</name> das h&#246;chste Streben des Menschengeistes dar<pc force="weak">=</pc>
@@ -1168,7 +1171,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>Jene <distinct type="archaic">Naturw&#252;chsigkeit</distinct> des Charakters ist gerade das, was Goethe 
                      <lb/>an ihr mit solcher Meisterschaft schildert und was ihr eine so</p>
                  </div>
-                 <div type="page" n="103v" facs="../img/GG_103_v.jpg">
+                  <div type="page" n="103v" facs="../img/GG_103_v.jpg" ana="Text about Gretchen - page 2 of 4.">
                   <p style="page_header"><name type="character">Gretchen</name>.</p>
                   <p>unvergleichliche Frische gibt. Sie ist so aus <choice><orig>Einem</orig><reg>einemUe</reg></choice> St&#252;ck, so 
                      <lb/>durch und durch wahr und arglos, <choice><orig>da&#223;</orig><reg>dass</reg></choice> sie sich gar nicht vor<pc force="weak">=</pc>
@@ -1210,7 +1213,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <p>Ist eine solche energische Natur an sich schon poetisch, so 
                      <lb/>verst&#228;rkt <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> noch deren Zauber durch die Unschuld, die</p>
                  </div>
-                 <div type="page" n="104r" facs="../img/GG_104_r.jpg">
+                  <div type="page" n="104r" facs="../img/GG_104_r.jpg" ana="Text about Gretchen - page 3 of 4.">
                   <p style="page_header"><name type="character">Gretchen</name>.</p>
                   <p>g&#228;nzliche Unerfahrenheit ihres Wesens. <name type="character">Gretchen</name> z&#228;hlt h&#246;chstens
                      <lb/>sechzehn Jahre, &#228;lter ist ein solches Wesen kaum denkbar. Den 
@@ -1251,7 +1254,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>starken <choice><orig>Triebe</orig><reg>Trieb</reg></choice> gegen&#252;ber, wie sie dies am bezeichnendsten <choice><orig>wol</orig><reg>wohl</reg></choice>
                      <lb/>in den Worten ausspricht:</p>
                  </div>
-                 <div type="page" n="104v" facs="../img/GG_104_v.jpg">
+                  <div type="page" n="104v" facs="../img/GG_104_v.jpg" ana="Text about Gretchen - page 4 of 4.">
                   <p style="page_header"><name type="character">Gretchen</name>.</p>
                   <p><quote type="long">Seh' ich dich, bester Mann, nur an, 
                      <lb/>Wei&#223; nicht, was mich nach deinem Willen treibt — </quote></p>
@@ -1289,7 +1292,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
             </div>
             <div type="chapter" n="35" xml:id="ch35">
                <div type="chapter_image">
-                 <div type="page" n="105r" facs="../img/GG_105_r.jpg">
+                  <div type="page" n="105r" facs="../img/GG_105_r.jpg" ana="Page with steel engraving of Mephistopheles.">
                   <figure>
                      <graphic url="./img_inside-text/GG_105_r.jpg"/>
                      <figDesc>Drawing of Mephistopheles</figDesc>
@@ -1299,9 +1302,9 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                  </div>
                </div>
-              <div type="page" n="105v" facs="../img/GG_105_v.jpg"/>
+              <div type="page" n="105v" facs="../img/GG_105_v.jpg" ana="Empty page."/>
                <div type="chapter_text">
-                 <div type="page" n="106r" facs="../img/GG_106_r.jpg">
+                  <div type="page" n="106r" facs="../img/GG_106_r.jpg" ana="Text about Mephistopheles - page 1 of 4.">
                   <head><name type="character">Mephistopheles</name>.</head>
                   <head type="h2">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.)</head>
                   <p><quote type="short">„<hi rend="initial">Z</hi>wei Seelen wohnen, ach! in meiner Brust"</quote> — ein 
@@ -1332,7 +1335,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>solche <choice><orig>Personification</orig><reg>Personifikation</reg></choice> von Naturkr&#228;ften durch die Dichtung 
                      <lb/><choice><orig>Gerathen</orig><reg>Geraten</reg></choice> ist es ihr freilich nur in dem Falle, wenn aus dem</p>
                  </div>
-                 <div type="page" n="106v" facs="../img/GG_106_v.jpg">
+                  <div type="page" n="106v" facs="../img/GG_106_v.jpg" ana="Text about Mephistopheles - page 2 of 4.">
                   <p style="page_header"><name type="character">Mephistopheles</name>.</p>
                   <p>blassen Schemen — wie bei <name type="character">Mephistopheles</name> — ein wirklich 
                      <lb/>lebendiges Wesen <distinct type="archaic">ward</distinct>, das ein selbst&#228;ndiges Leben gewann, 
@@ -1373,7 +1376,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb break="no"/>treten, der den <choice><orig>Proce&#223;</orig><reg>Prozess</reg></choice>, an welchem <name type="character">Faust</name> <choice><orig>laborirt</orig><reg>laboriert</reg></choice>, schon lange 
                      <lb/>durchgemacht und sich von dessen Fruchtlosigkeit &#252;berzeugt habe:</p>
                  </div>
-                 <div type="page" n="107r" facs="../img/GG_107_r.jpg">
+                  <div type="page" n="107r" facs="../img/GG_107_r.jpg" ana="Text about Mephistopheles - page 3 of 4.">
                   <p style="page_header"><name type="character">Mephistopheles</name>.</p>
                   <p><quote type="long">O glaube mir, der manche tausend Jahre 
                      <lb/>An dieser harten Speise kaut, 
@@ -1415,7 +1418,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>sein, wenigstens nicht mehr, als mit dem &#228;u&#223;erlich vornehmen, 
                      <lb/>innerlich gemeinen Wesen, das ihm geh&#246;rt, vereinbar ist. Alle</p>
                  </div>
-                 <div type="page" n="107v" facs="../img/GG_107_v.jpg">
+                  <div type="page" n="107v" facs="../img/GG_107_v.jpg" ana="Text about Mephistopheles - page 4 of 4.">
                   <p style="page_header"><name type="character">Mephistopheles</name>.</p>
                   <p>sieben Tods&#252;nden k&#246;nnen auch auf einem urspr&#252;nglich sch&#246;nen
                      <lb/>Gesichte geschrieben stehen, und ein gefallener <choice><orig>mu&#223;</orig><reg>muss</reg></choice>  doch ein<pc force="weak">=</pc>
@@ -1449,7 +1452,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
             </div>
             <div type="chapter" n="36" xml:id="ch36">
                <div type="chapter_image">
-                 <div type="page" n="108r" facs="../img/GG_108_r.jpg">
+                  <div type="page" n="108r" facs="../img/GG_108_r.jpg" ana="Page with steel engraving of Wagner.">
                   <figure>
                      <graphic url="./img_inside-text/GG_108_r.jpg"/>
                      <figDesc>Drawing of Wagner</figDesc>
@@ -1459,9 +1462,9 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                  </div>
                </div>
-              <div type="page" n="108v" facs="../img/GG_108_v.jpg"/>
+              <div type="page" n="108v" facs="../img/GG_108_v.jpg" ana="Empty page."/>
                <div type="chapter_text">
-                 <div type="page" n="109r" facs="../img/GG_109_r.jpg">
+                  <div type="page" n="109r" facs="../img/GG_109_r.jpg" ana="Text about Wagner - page 1 of 4.">
                   <head><name type="character">Wagner</name>.</head>
                   <head type="h2">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.) </head>
                   <p><hi rend="initial">S</hi>olch schwere Last sind Wissenschaft und Weisheit,
@@ -1494,7 +1497,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>Mechanismus oder auf <choice><orig>Recepte</orig><reg>Rezept</reg></choice>; besonders f&#252;r die <choice><orig>letztern</orig><reg>letzteren</reg></choice> aber 
                      <lb/>n&#228;hren sie eine wahre <choice><orig>Wuth</orig><reg>Wut</reg></choice>, glauben den Staat wie die</p>
                  </div>
-                 <div type="page" n="109v" facs="../img/GG_109_v.jpg">
+                  <div type="page" n="109v" facs="../img/GG_109_v.jpg" ana="Text about Wagner - page 2 of 4.">
                   <p style="page_header"><name type="character">Wagner</name>.</p>
                   <p>einzelnen Menschen damit <choice><orig>curiren</orig><reg>kurieren</reg></choice> zu k&#246;nnen, und die Un<pc force="weak">=</pc>
                      <lb break="no"/>tr&#252;glichkeit derselben erf&#252;llt sie mit hohem Selbstgef&#252;hl. Dem 
@@ -1537,7 +1540,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>ersten <choice><orig>Theil</orig><reg>Teil</reg></choice> der Trag&#246;die <choice><orig>blos</orig><reg>blo&#223;</reg></choice> leicht <choice><orig>skizzirte</orig><reg>skizzierte</reg></choice> Zug doch erst 
                      <lb/>im zweiten zur vollen Entwickelung, wo er, aus des Meisters</p>
                  </div>
-                 <div type="page" n="110r" facs="../img/GG_110_r.jpg">
+                  <div type="page" n="110r" facs="../img/GG_110_r.jpg" ana="Text about Wagner - page 3 of 4.">
                   <p style="page_header"><name type="character">Wagner</name>.</p>
                   <p>Schatten herausgetreten, in eigenem Lichte strahlt, <choice><orig>soda&#223;</orig><reg></reg></choice> 
                      <lb/><name type="character">Mephistopheles</name> von ihm sagt:</p>
@@ -1584,7 +1587,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>Es wird! Die Masse regt sich klarer! 
                      <lb/>Die <choice><orig>Ueberzeugung</orig><reg>&#220;berzeugung</reg></choice> wahrer, wahrer!</quote></p>
                  </div>
-                 <div type="page" n="110v" facs="../img/GG_110_v.jpg">
+                  <div type="page" n="110v" facs="../img/GG_110_v.jpg" ana="Text about Wagner - page 4 of 4.">
                   <p style="page_header"><name type="character">Wagner</name>.</p>
                   <p><quote type="long">Was man an der Natur <choice><orig>Geheimni&#223;volles</orig><reg>Geheimnisvolles</reg></choice> pries, 
                      <lb/>Das wagen wir verst&#228;ndig zu <choice><orig>probiren</orig><reg>probieren</reg></choice>, 
@@ -1612,7 +1615,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
             </div>
             <div type="chapter" n="37" xml:id="ch37">
                <div type="chapter_image">
-                 <div type="page" n="111r" facs="../img/GG_111_r.jpg">
+                  <div type="page" n="111r" facs="../img/GG_111_r.jpg" ana="Page with steel engraving of Helena.">
                   <figure>
                      <graphic url="./img_inside-text/GG_111_r.jpg"/>
                      <figDesc>Drawing of Helena</figDesc>
@@ -1622,9 +1625,9 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <p style="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                  </div>
                </div>
-              <div type="page" n="111v" facs="../img/GG_111_v.jpg"/>
+              <div type="page" n="111v" facs="../img/GG_111_v.jpg" ana="Empty page."/>
                <div type="chapter_text">
-                 <div type="page" n="112r" facs="../img/GG_112_r.jpg">
+                  <div type="page" n="112r" facs="../img/GG_112_r.jpg" ana="Text about Helena - page 1 of 4.">
                   <head><name type="character">Helena</name>.</head>
                   <head type="h2">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.)</head>
                   <p><hi rend="initial">W</hi>ir gelangen nun zu dem 
@@ -1658,7 +1661,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>K&#246;nigen und Helden und dann so kl&#228;glich zu enden als die 
                      <lb/>gute Beute schw&#228;bischer und s&#228;chsischer <distinct type="archaic">Schulmeister</distinct> und ihrer</p>
                  </div>
-                 <div type="page" n="112v" facs="../img/GG_112_v.jpg">
+                  <div type="page" n="112v" facs="../img/GG_112_v.jpg" ana="Text about Helena - page 2 of 4.">
                   <p style="page_header"><name type="character">Helena</name>.</p>
                   <p>A=b=c=Sch&#252;tzen, ja sich von so ber&#252;hmten <choice><orig>Aesthetikern</orig><reg>&#196;sthetikern</reg></choice> wie 
                      <lb/><name ref="https://lobid.org/gnd/11862721X" type="person">Vischer</name> &#252;berdies noch im Grabe nachsagen lassen zu m&#252;ssen, 
@@ -1708,7 +1711,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/><sp><speaker>Hofmann.</speaker>
                      <lb/><p>Wer w&#252;rde nicht in solchem Netz gefangen?</p></sp></quote></p>
                  </div>
-                 <div type="page" n="113r" facs="../img/GG_113_r.jpg">
+                  <div type="page" n="113r" facs="../img/GG_113_r.jpg" ana="Text about Helena - page 3 of 4.">
                   <p style="page_header"><name type="character">Helena</name>.</p>
                   <p><quote type="long"><sp><speaker>Dame.</speaker>
                      <lb/><p>Das Kleinod ist durch manche Hand gegangen, 
@@ -1750,7 +1753,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/> mystisch=allegorischen Nebel, in welchem man zuletzt 
                      <lb/>nicht mehr wei&#223;, wo einem der Kopf steht.</p>
                  </div>
-                 <div type="page" n="113v" facs="../img/GG_113_v.jpg">
+                  <div type="page" n="113v" facs="../img/GG_113_v.jpg" ana="Text about Helena - page 4 of 4.">
                   <p style="page_header"><name type="character">Helena</name>.</p>
                   <p>Es ist eine der <choice><orig>dem&#252;thigendsten</orig><reg>dem&#252;tigendsten</reg></choice> Bemerkungen, die man im 
                      <lb/>Laufe des Lebens zu machen Gelegenheit hat, <choice><orig>da&#223;</orig><reg>dass</reg></choice> man nichts 
@@ -1786,16 +1789,16 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
       </body>
       <back>
          <div type="endsheet">
-           <div type="page" n="es_b_r" facs="../img/GG_es_b_r.jpg">
+           <div type="page" n="es_b_r" facs="../img/GG_es_b_r.jpg" ana="End sheet with library stamp of the University Library Graz.">
             <head type="library_stamp"> FACHBIBLIOTHEK F&#220;R GERMANISTIK AN 
                <lb/><name ref="https://lobid.org/gnd/36157-4" type="org">DER KARL-FRANZENS-UNIVERSIT&#196;T GRAZ</name> </head>
            </div>
          </div>
          <div type="endsheet">
-           <div type="page" n="es_b_v" facs="../img/GG_es_b_v.jpg"/>
+           <div type="page" n="es_b_v" facs="../img/GG_es_b_v.jpg" ana="Empty page."/>
          </div>
          <div type="book_cover">
-           <div type="page" n="bc_b_i" facs="../img/GG_bc_b_i.jpg">
+           <div type="page" n="bc_b_i" facs="../img/GG_bc_b_i.jpg" ana="Page with Barcode for the LIbrary University Graz.">
             <div type="barcode">
                <p> UB GRAZ 
                   <lb/>+BI227391701 </p>
@@ -1803,7 +1806,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
            </div>
          </div>
          <div type="book_back">
-           <div type="page" n="bb" facs="../img/GG_bb.jpg">
+           <div type="page" n="bb" facs="../img/GG_bb.jpg" ana="Back of the book Goethe-Galerie.">
             <head>Goethe- 
                <lb/>Galerie.</head>
             <div type="library_shelfmark">
