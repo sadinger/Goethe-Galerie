@@ -73,7 +73,7 @@ p.center {
 
 p.folio {
     text-align: right;
-    color: grey;
+    color: #a2acb7;
     font-size: small;
 }
 
@@ -93,13 +93,13 @@ p.byline {
 }
 
 p.library_shelfmark {
-    color: lightgrey;
+    color: #708090;
     text-indent: 0em;
 }
 
 p.handwritten {
    text-indent: 25em;
-   color: lightgrey;
+   color: #708090;
    font-style: italic;
 }
 
@@ -121,7 +121,7 @@ p.without_indent {
 }
 
 span.handwritten {
-    color: lightgrey;
+    color: #708090;
     font-style: italic;
 }
 
@@ -141,6 +141,19 @@ p.speech {
 
 span.quote_short {
     font-style: italic;
+}
+
+strong.original {
+    color: #0d860d;
+}
+
+em.modern {
+    color: #bc2222;
+    font-style: italic;
+}
+
+u.archaic {
+    color: #7d52a8;
 }
 
 .copyright {
@@ -165,6 +178,10 @@ span.quote_short {
     padding: 1vw;
 }
 
+.col_fix {
+    width: 600px; 
+}
+
 #collection {
     display: flex;
 }
@@ -173,6 +190,9 @@ span.quote_short {
     margin: 5px;
     border: 1px solid black;
     width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img-full {
@@ -208,4 +228,30 @@ tr, th {
 th.first {
     width: 60%;
 }
+
+a:link {
+    color: #561010;
+}
+
+a:visited {
+    color: #961d1d;
+}
+
+a:hover {
+    color: #595959;
+}
+
+a.inside_diplomatic:link {
+    color: black;
+}
+
+a.inside_diplomatic:visited {
+    color: black;
+}
+
+a.inside_diplomatic:hover {
+    color: black;
+    font-style: italic;
+}
+
 

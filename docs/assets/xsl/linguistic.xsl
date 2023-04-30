@@ -37,66 +37,43 @@
                     <a href="documents.html">Documents</a> |
                 </nav>
                 <main id="book">
-                    <!-- bootstrap "container" class makes the columns look pretty -->
-                    <div class="container">
-                        <!-- define a row layout with bootstrap's css classes (two columns with content, and an empty column in between) -->
-                        <div class="row">
-                            <div class="col-sm">
-                                <h3>Digitisation</h3>
-                            </div>
-                            <div class="col-sm"> </div>
-                            <div class="col-sm">
-                                <h3>Transcription</h3>
-                            </div>
-                        </div>
-                        <!-- set up an image-text pair for each page in your document, and start a new 'row' for each pair -->
-                        <xsl:for-each select="//tei:div[@type = 'page']">
-                            <!-- save the value of each page's @facs attribute in a variable, so we can use it later -->
-                            <xsl:variable name="facs" select="@facs"/>
-                            <div class="row">
-                                <!-- fill the first column with this page's image -->
-                                <div class="col-sm">
-                                    <article>
-                                        <!-- make an HTML <img> element, with a maximum width of 400 pixels -->
-                                        <img class="img-full">
-                                            <!-- give this HTML <img> attribute three more attributes:
-                                                    @src to locate the image file
-                                                    @title for a mouse-over effect
-                                                    @alt for alternative text (in case the image fails to load, 
-                                                        and so people with a visual impairment can still understant what the image displays 
-                                                  
-                                                  in the XPath expressions below, we use the variable $facs (declared above) 
-                                                        so we can use this page's @facs element with to find the corresponding <surface>
-                                                        (because it matches with the <surface's @xml:id) 
-                                            
-                                                  we use the substring-after() function because when we match our page's @facs with the <surface>'s @xml:id,
-                                                        we want to disregard the hashtag in the @facs attribute-->
-
-                                            <xsl:attribute name="src">
-                                                <xsl:value-of select="@facs"/>
-                                            </xsl:attribute>
-                                            <xsl:attribute name="title">
-                                                <xsl:value-of select="@n"/>
-                                            </xsl:attribute>
-                                            <xsl:attribute name="alt">
-                                                <xsl:value-of select="@ana"/>
-                                            </xsl:attribute>
-                                        </img>
-                                    </article>
-                                </div>
-                                <!-- fill the second column with our transcription -->
-                                <div class="col-sm">
-                                    <article class="transcription">
-                                        <!--showing the folio number-->
-                                        <p class="folio">
-                                            folio <xsl:value-of select="@n"/>
-                                        </p>
-                                        <xsl:apply-templates/>
-                                    </article>
-                                </div>
-                            </div>
-                        </xsl:for-each>
+                   <div class="container">
+                       <div class="row justify-content-md-center">
+                           <div class="col_fix">
+                               <h1>Information about the formatting of the text</h1>
+                           </div>
+                       </div>
+                       <div class="row justify-content-md-center">
+                           <div class="col_fix">
+                             <p class="without_indent">Words in old orthography are marked in <b>bold</b> and the color <strong class="original">green</strong>.</p>
+                             <p class="without_indent">Words in new orthography are marked in <i>italic</i> and the color <em class="modern">red</em>.</p>
+                             <p class="without_indent">Words that are archaic are <u>underlined</u> and in the color <u class="archaic">purple</u>.</p>
+                         </div>
+                     </div>
+                    <!-- define a row layout with bootstrap's css classes (two columns with content, and an empty column in between) -->
+                    <div class="row justify-content-md-center">
+                        <div class="col_fix">
+                             <h1>Transcription</h1>
+                         </div>
                     </div>
+                         <!-- set up an image-text pair for each page in your document, and start a new 'row' for each pair -->
+                         <xsl:for-each select="//tei:div[@type = 'page']">
+                             <!-- save the value of each page's @facs attribute in a variable, so we can use it later -->
+                             <xsl:variable name="facs" select="@facs"/>
+                             <div class="row justify-content-md-center">
+                                <!-- fill the column with our transcription -->
+                                 <div class="col_fix">
+                                     <article class="transcription">
+                                         <!--showing the folio number-->
+                                         <p class="folio">
+                                             folio <xsl:value-of select="@n"/>
+                                         </p>
+                                         <xsl:apply-templates/>
+                                     </article>
+                                 </div>
+                             </div>
+                         </xsl:for-each>
+                   </div>
                 </main>
                 <footer>
                     <div class="row" id="footer">
@@ -125,9 +102,6 @@
     stops the text nodes underneath (=nested in) teiHeader from being printed into our
     html-->
     <xsl:template match="tei:teiHeader"/>
-    
-    <!-- to show just the original text - the tei reg is exluded-->
-    <xsl:template match="tei:reg"/>
     
     <!-- to show just the original text - the tei corr is exluded-->
     <xsl:template match="tei:corr"/>
@@ -328,54 +302,6 @@
         </p>
     </xsl:template>
     
-    <!-- transform tei name with rend 'ref' into html a with class 'inside_diplomatic'-->
-    <xsl:template match="tei:name[@ref]">
-        <a>
-            <xsl:attribute name="href">
-                <xsl:value-of select="@ref"/>
-            </xsl:attribute>
-            <xsl:attribute name="class">
-                <p>inside_diplomatic</p>
-            </xsl:attribute>
-            <xsl:attribute name="target">
-                <p>blank</p>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </a>
-    </xsl:template>
-    
-    <!-- transform tei placeName with rend 'ref' into html a with class 'inside_diplomatic'-->
-    <xsl:template match="tei:placeName[@ref]">
-        <a>
-            <xsl:attribute name="href">
-                <xsl:value-of select="@ref"/>
-            </xsl:attribute>
-            <xsl:attribute name="class">
-                <p>inside_diplomatic</p>
-            </xsl:attribute>
-            <xsl:attribute name="target">
-                <p>blank</p>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </a>
-    </xsl:template>
-    
-    <!-- transform tei persName with rend 'ref' into html a with class 'inside_diplomatic'-->
-    <xsl:template match="tei:persName[@ref]">
-        <a>
-            <xsl:attribute name="href">
-                <xsl:value-of select="@ref"/>
-            </xsl:attribute>
-            <xsl:attribute name="class">
-                <p>inside_diplomatic</p>
-            </xsl:attribute>
-            <xsl:attribute name="target">
-                <p>blank</p>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </a>
-    </xsl:template>
-    
     <!--showing the images on the first pages of the chapters-->
     <xsl:template match="tei:figure">
         <img class="img-in-text">
@@ -405,5 +331,27 @@
             </xsl:attribute>
         </img>
     </xsl:template>
+    
+    <!-- transform tei orig into html strong with class 'original'-->
+    <xsl:template match="tei:orig">
+        <strong class="original">
+            <xsl:apply-templates/>
+        </strong>
+    </xsl:template>
+    
+    <!-- transform tei reg into html strong with class 'modern'-->
+    <xsl:template match="tei:reg">
+        <em class="modern">
+            <xsl:apply-templates/>
+        </em>
+    </xsl:template>
+    
+    <!-- transform tei distinct with type 'archaic' into html u with class 'archaic'-->
+    <xsl:template match="tei:distinct[@type='archaic']">
+        <u class="archaic">
+            <xsl:apply-templates/>
+        </u>
+    </xsl:template>
+    
 </xsl:stylesheet>
 

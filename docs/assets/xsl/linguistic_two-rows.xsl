@@ -31,12 +31,24 @@
                     </h1>
                 </header>
                 <nav id="sitenav">
-                    <a href="index.html">Home</a> |
-                    <a href="diplomatic.html">Diplomatic Transcription</a> |
-                    <a href="linguistic.html">Linguistic Transcription</a> |
-                    <a href="documents.html">Documents</a> |
-                </nav>
+                    <a href="index.html">Home</a> | <a href="diplomatic.html">Diplomatic
+                        Transcription</a> | <a href="reading.html">Reading Text</a> | <a
+                        href="toplayer.html">Top Layer</a> | </nav>
                 <main id="book">
+                   <div class="container">
+                       <div class="row justify-content-md-center">
+                           <div class="col-md-">
+                               <h2>Information about the formatting of the text</h2>
+                           </div>
+                       </div>
+                       <div class="row justify-content-md-center">
+                         <div class="col-md-">
+                             <p class="without_indent">Words in old orthography are marked in <b>bold</b> and the color <strong cass="original">green</strong>.</p>
+                             <p class="without_indent">Words in new orthography are marked in <i>italic</i> and the color <em class="modern">red</em>.</p>
+                             <p class="without_indent">Words that are archaic are <u>underlined</u> and in the color <u class="archaic">purple</u>.</p>
+                         </div>
+                     </div>
+                   </div>
                     <!-- bootstrap "container" class makes the columns look pretty -->
                     <div class="container">
                         <!-- define a row layout with bootstrap's css classes (two columns with content, and an empty column in between) -->
@@ -125,9 +137,6 @@
     stops the text nodes underneath (=nested in) teiHeader from being printed into our
     html-->
     <xsl:template match="tei:teiHeader"/>
-    
-    <!-- to show just the original text - the tei reg is exluded-->
-    <xsl:template match="tei:reg"/>
     
     <!-- to show just the original text - the tei corr is exluded-->
     <xsl:template match="tei:corr"/>
@@ -328,54 +337,6 @@
         </p>
     </xsl:template>
     
-    <!-- transform tei name with rend 'ref' into html a with class 'inside_diplomatic'-->
-    <xsl:template match="tei:name[@ref]">
-        <a>
-            <xsl:attribute name="href">
-                <xsl:value-of select="@ref"/>
-            </xsl:attribute>
-            <xsl:attribute name="class">
-                <p>inside_diplomatic</p>
-            </xsl:attribute>
-            <xsl:attribute name="target">
-                <p>blank</p>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </a>
-    </xsl:template>
-    
-    <!-- transform tei placeName with rend 'ref' into html a with class 'inside_diplomatic'-->
-    <xsl:template match="tei:placeName[@ref]">
-        <a>
-            <xsl:attribute name="href">
-                <xsl:value-of select="@ref"/>
-            </xsl:attribute>
-            <xsl:attribute name="class">
-                <p>inside_diplomatic</p>
-            </xsl:attribute>
-            <xsl:attribute name="target">
-                <p>blank</p>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </a>
-    </xsl:template>
-    
-    <!-- transform tei persName with rend 'ref' into html a with class 'inside_diplomatic'-->
-    <xsl:template match="tei:persName[@ref]">
-        <a>
-            <xsl:attribute name="href">
-                <xsl:value-of select="@ref"/>
-            </xsl:attribute>
-            <xsl:attribute name="class">
-                <p>inside_diplomatic</p>
-            </xsl:attribute>
-            <xsl:attribute name="target">
-                <p>blank</p>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </a>
-    </xsl:template>
-    
     <!--showing the images on the first pages of the chapters-->
     <xsl:template match="tei:figure">
         <img class="img-in-text">
@@ -405,5 +366,27 @@
             </xsl:attribute>
         </img>
     </xsl:template>
+    
+    <!-- transform tei orig into html strong with class 'original'-->
+    <xsl:template match="tei:orig">
+        <strong class="original">
+            <xsl:apply-templates/>
+        </strong>
+    </xsl:template>
+    
+    <!-- transform tei reg into html strong with class 'modern'-->
+    <xsl:template match="tei:reg">
+        <em class="modern">
+            <xsl:apply-templates/>
+        </em>
+    </xsl:template>
+    
+    <!-- transform tei distinct with type 'archaic' into html u with class 'archaic'-->
+    <xsl:template match="tei:distinct[@type='archaic']">
+        <u class="archaic">
+            <xsl:apply-templates/>
+        </u>
+    </xsl:template>
+    
 </xsl:stylesheet>
 
