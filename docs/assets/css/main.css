@@ -225,6 +225,10 @@ tr, th {
     border: 1px;
 }
 
+tr {
+    line-height: 50%;
+}
+
 th.first {
     width: 60%;
 }
@@ -254,4 +258,8 @@ a.inside_diplomatic:hover {
     font-style: italic;
 }
 
-
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
