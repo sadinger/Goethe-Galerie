@@ -37,6 +37,16 @@
                     <a href="documents.html">Documents</a> |
                 </nav>
                 <main id="book">
+                    <!-- Back to top button -->
+                    <button
+                        type="button"
+                        class="btn btn-danger btn-floating btn-lg"
+                        id="btn-back-to-top"
+                        style="background-color:#561010; border:none;"
+                        >
+                        <i class="fas fa-arrow-up">&#8593;</i>
+                    </button>
+                    
                    <div class="container">
                        <div class="row justify-content-md-center">
                            <div class="col_fix">
@@ -93,6 +103,33 @@
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"/>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"/>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"/>
+                <script>
+                    //Get the button
+                    let mybutton = document.getElementById("btn-back-to-top");
+                    
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function () {
+                    scrollFunction();
+                    };
+                    
+                    function scrollFunction() {
+                    if (
+                    document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20
+                    ) {
+                    mybutton.style.display = "block";
+                    } else {
+                    mybutton.style.display = "none";
+                    }
+                    }
+                    // When the user clicks on the button, scroll to the top of the document
+                    mybutton.addEventListener("click", backToTop);
+                    
+                    function backToTop() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                    }
+                </script>
             </body>
         </html>
     </xsl:template>
@@ -302,19 +339,48 @@
         </p>
     </xsl:template>
     
-    <!--showing the images on the first pages of the chapters-->
+    <!-- transform the head in the loose page of Goethe in h1 and make the xml:id into an anchor-->
+    <xsl:template match="tei:head[@xml:id= 'ch1']">
+        <a>
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
+            <h1><xsl:apply-templates/></h1>
+        </a>
+    </xsl:template>
+    
+    <!-- transform the xml:id in figure into an anchor and show the image on the first page of the chapter-->
     <xsl:template match="tei:figure">
-        <img class="img-in-text">
-            <xsl:attribute name="src">
-                <xsl:value-of select="tei:graphic/@url"/>
+        <a>
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>
             </xsl:attribute>
-            <xsl:attribute name="title">
-                <xsl:value-of select="tei:figDesc"/>
+            <xsl:apply-templates/>
+            <img class="img-in-text">
+                <xsl:attribute name="src">
+                    <xsl:value-of select="tei:graphic/@url"/>
+                </xsl:attribute>
+                <xsl:attribute name="title">
+                    <xsl:value-of select="tei:figDesc"/>
+                </xsl:attribute>
+                <xsl:attribute name="alt">
+                    <xsl:value-of select="tei:figDesc"/>
+                </xsl:attribute>
+            </img>
+        </a>
+    </xsl:template>
+    
+    <!-- transform links from table of images-->
+    <xsl:template match="tei:ref">
+        <a>
+            <xsl:attribute name="href">
+                <xsl:value-of select="@target"/>
             </xsl:attribute>
-            <xsl:attribute name="alt">
-                <xsl:value-of select="tei:figDesc"/>
+            <xsl:attribute name="class">
+                <p>inside_diplomatic</p>
             </xsl:attribute>
-        </img>
+            <xsl:apply-templates/>
+        </a>
     </xsl:template>
     
     <!--showing smaller images on the pages-->
