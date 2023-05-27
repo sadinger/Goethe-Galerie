@@ -37,6 +37,36 @@
                     <a href="documents.html">Documents</a> |
                 </nav>
                 <main id="book">
+                    
+                    <!-- Dropdown for chapters -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#561010; border:none;">
+                            Characters
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#ch1">Goethe.</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#ch13">Lotte.</a>
+                            <a class="dropdown-item" href="#ch14">Werther.</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#ch33">Faust.</a>
+                            <a class="dropdown-item" href="#ch34">Gretchen.</a>
+                            <a class="dropdown-item" href="#ch35">Mephistopheles.</a>
+                            <a class="dropdown-item" href="#ch36">Wagner.</a>
+                            <a class="dropdown-item" href="#ch37">Helena.</a>
+                        </div>
+                    </div>
+                   
+                    <!-- Back to top button -->
+                    <button
+                        type="button"
+                        class="btn btn-danger btn-floating btn-lg"
+                        id="btn-back-to-top"
+                        style="background-color:#561010; border:none;"
+                     >
+                        <i class="fas fa-arrow-up">&#8593;</i>
+                    </button>
+                    
                     <!-- bootstrap "container" class makes the columns look pretty -->
                     <div class="container">
                         <!-- define a row layout with bootstrap's css classes (two columns with content, and an empty column in between) -->
@@ -89,7 +119,7 @@
                                     <article class="transcription">
                                         <!--showing the folio number-->
                                         <p class="folio">
-                                            folio <xsl:value-of select="@n"/>
+                                            <xsl:value-of select="@n"/>
                                         </p>
                                         <xsl:apply-templates/>
                                     </article>
@@ -116,6 +146,33 @@
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"/>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"/>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"/>
+                <script>
+                    //Get the button
+                     let mybutton = document.getElementById("btn-back-to-top");
+                     
+                     // When the user scrolls down 20px from the top of the document, show the button
+                     window.onscroll = function () {
+                     scrollFunction();
+                     };
+                     
+                     function scrollFunction() {
+                     if (
+                     document.body.scrollTop > 20 ||
+                     document.documentElement.scrollTop > 20
+                     ) {
+                     mybutton.style.display = "block";
+                     } else {
+                     mybutton.style.display = "none";
+                     }
+                     }
+                     // When the user clicks on the button, scroll to the top of the document
+                     mybutton.addEventListener("click", backToTop);
+                     
+                     function backToTop() {
+                     document.body.scrollTop = 0;
+                     document.documentElement.scrollTop = 0;
+                     }
+                </script>
             </body>
         </html>
     </xsl:template>
@@ -328,6 +385,50 @@
         </p>
     </xsl:template>
     
+    <!-- transform the head in the loose page of Goethe in h1 and make the xml:id into an anchor-->
+    <xsl:template match="tei:head[@xml:id= 'ch1']">
+        <a>
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
+            <h1><xsl:apply-templates/></h1>
+        </a>
+    </xsl:template>
+    
+    <!-- transform the xml:id in figure into an anchor and show the image on the first page of the chapter-->
+    <xsl:template match="tei:figure">
+        <a>
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+            <img class="img-in-text">
+                <xsl:attribute name="src">
+                    <xsl:value-of select="tei:graphic/@url"/>
+                </xsl:attribute>
+                <xsl:attribute name="title">
+                    <xsl:value-of select="tei:figDesc"/>
+                </xsl:attribute>
+                <xsl:attribute name="alt">
+                    <xsl:value-of select="tei:figDesc"/>
+                </xsl:attribute>
+            </img>
+        </a>
+    </xsl:template>
+    
+    <!-- transform links from table of images-->
+    <xsl:template match="tei:ref">
+        <a>
+            <xsl:attribute name="href">
+                <xsl:value-of select="@target"/>
+            </xsl:attribute>
+            <xsl:attribute name="class">
+                <p>inside_diplomatic</p>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </a>
+    </xsl:template>
+    
     <!-- transform tei name with rend 'ref' into html a with class 'inside_diplomatic'-->
     <xsl:template match="tei:name[@ref]">
         <a>
@@ -376,8 +477,8 @@
         </a>
     </xsl:template>
     
-    <!--showing the images on the first pages of the chapters-->
-    <xsl:template match="tei:figure">
+    <!--showing the images on the first pages of the chapters | further up with anchors-->
+    <!--<xsl:template match="tei:figure">
         <img class="img-in-text">
             <xsl:attribute name="src">
                 <xsl:value-of select="tei:graphic/@url"/>
@@ -389,7 +490,7 @@
                 <xsl:value-of select="tei:figDesc"/>
             </xsl:attribute>
         </img>
-    </xsl:template>
+    </xsl:template>-->
     
     <!--showing smaller images on the pages-->
     <xsl:template match="tei:figure[@type= 'small']">
@@ -405,5 +506,7 @@
             </xsl:attribute>
         </img>
     </xsl:template>
+
 </xsl:stylesheet>
+
 
