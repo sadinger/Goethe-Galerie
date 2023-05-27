@@ -260,7 +260,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
             <head type="main"><choice><orig>Verzeichni&#223;</orig>  <reg>Verzeichnis</reg></choice> der Abbildungen.</head>
             <table rows="2" cols="2">
                <row>
-                  <cell rend="first"><p><ref target="#ch1"><name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name>.</ref></p></cell>
+                  <cell rend="first"><p><ref target="#ch1"><name type="person">Goethe</name>.</ref></p></cell>
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
                <row role="illustrator">
@@ -335,7 +335,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
                <row>
-                  <cell rend="first"><name ref="https://lobid.org/gnd/118507850" type="character_inspiration">Beaumarchais</name>.</cell>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118507850" type="character_inspiration">Beaumarchais</name>.</p></cell>
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
                <row>
@@ -422,7 +422,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
             <table rows="2" cols="5">
                <head type="sub"><name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name></head>
                <row>
-                  <cell rend="first"><p><ref target="#ch33"><name ref="https://lobid.org/gnd/118683136" type="character_inspiration">Faust</name>.</ref></p></cell>
+                  <cell rend="first"><p><ref target="#ch33"><name type="character_inspiration">Faust</name>.</ref></p></cell>
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
                <row>
@@ -438,7 +438,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
                <row>
-                  <cell rend="first"><p><ref target="#ch37"><name ref="https://en.wikipedia.org/wiki/Helen_of_Troy" type="character_inspiration">Helena</name>.</ref></p></cell>
+                  <cell rend="first"><p><ref target="#ch37"><name type="character">Helena</name>.</ref></p></cell>
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
@@ -518,10 +518,10 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
             <head>Goethe-Galerie.</head>
            </div>
            <div type="page" n="003v" facs="../img/GG_003_v.jpg" ana="Empty page."/>
-            <div type="chapter" n="1" xml:id="ch1">
+            <div type="chapter" n="1">
                <div type="chapter_text">
                   <div type="page" n="004r" facs="../img/GG_004_r.jpg" ana="Text about Johann Wolfgang von Goethe - page 1 of 4.">
-                  <head><name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name>.</head>
+                  <head xml:id="ch1"><name type="person">Goethe</name>.</head>
                   <p><hi rend="initial">S</hi>ehen wir im jungen <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> den Apoll verk&#246;rpert,
                      wie er 
                      <lb/>mit begeisterten Blicken die goldene Leier r&#252;hrt, so scheint im
@@ -537,7 +537,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>sang, den alle Grazien umschwebten, der in uners&#228;ttlicher
                      <lb/>Schaffenslust zuckte, er ist ernst und schweigsam geworden, es 
                      <lb/>ist eine gehaltene Kraft, eine ungestillte Sehnsucht darin, die 
-                     <lb/>uns sagen, <choice><orig>da&#223;</orig>  <reg>dass</reg></choice> dieser Mann gleich Faust niemals aufh&#246;ren 
+                     <lb/>uns sagen, <choice><orig>da&#223;</orig>  <reg>dass</reg></choice> dieser Mann gleich <name type="character">Faust</name> niemals aufh&#246;ren 
                      <lb/>wird, sich strebend zu bem&#252;hen, <choice><orig>da&#223;</orig>  <reg>dass</reg></choice> er die L&#246;sung der <choice><orig>R&#228;thsel</orig>  <reg>R&#228;tsel</reg></choice> 
                      <lb/>des Daseins unaufh&#246;rlich versucht, <choice><orig>wiewol</orig>  <reg>wiewohl</reg></choice> ihm auch <choice><orig>bewu&#223;t</orig>  <reg>bewusst</reg></choice> 
                      <lb/>ist, <choice><orig>da&#223;</orig>  <reg>dass</reg></choice> er sie nie vollst&#228;ndig erreichen kann, <choice><orig>da&#223;</orig>  <reg>dass</reg></choice> sein letztes 
@@ -666,10 +666,10 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                </div>
             </div>
             <gap quantity="66" unit="pages" reason="editorial"/>
-            <div type="chapter" n="13" xml:id="ch13">
+            <div type="chapter" n="13">
                <div type="chapter_image">
                   <div type="page" n="039r" facs="../img/GG_039_r.jpg" ana="Page with steel engraving of Lotte">
-                  <figure>
+                   <figure xml:id="ch13">
                      <graphic url="../img_inside-text/GG_039_r.jpg"/>
                      <figDesc>Drawing of Lotte</figDesc>
                   </figure>
@@ -825,10 +825,10 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                </div>
             </div>
             </div>
-            <div type="chapter" n="14" xml:id="ch14">
+            <div type="chapter" n="14">
                <div type="chapter_image">
                   <div type="page" n="042r" facs="../img/GG_042_r.jpg" ana="Page with steel engraving of Werther.">
-                  <figure>
+                   <figure xml:id="ch14">
                      <graphic url="../img_inside-text/GG_042_r.jpg"/>
                      <figDesc>Drawing of Werther</figDesc>
                   </figure>
@@ -860,7 +860,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>Das Tragische verlangt einen Helden, ein gro&#223;es, m&#228;chtiges 
                      <lb/>Interesse, um dessen Sieg oder Untergang es sich handle, dessen 
                      <lb/>Tr&#228;ger der Held sei: ein <distinct>Posa</distinct>, der die Welt befreien, ein
-                     <lb/>Faust, der die tiefsten <choice><orig>R&#228;thsel</orig> <reg>R&#228;tsel</reg></choice> des Daseins ergr&#252;nden m&#246;chte,
+                     <lb/><name type="character">Faust</name>, der die tiefsten <choice><orig>R&#228;thsel</orig> <reg>R&#228;tsel</reg></choice> des Daseins ergr&#252;nden m&#246;chte,
                      <lb/>sind tragische Figuren; Gott soll uns aber beh&#252;ten, einen 
                      <lb/>Schw&#228;chling wie <name type="charakter">Werther</name>, der sich eines beliebigen <distinct type="archaic">Unterrocks</distinct> 
                      <lb/>halber eine Kugel durch den Kopf schie&#223;t, jemals f&#252;r einen 
@@ -997,15 +997,15 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                </div>
             </div>
             <gap quantity="108" unit="pages" reason="editorial"/>
-            <div type="chapter" n="33" xml:id="ch33">
+            <div type="chapter" n="33">
                <div type="chapter_image">
                   <div type="page" n="099r" facs="../img/GG_099_r.jpg" ana="Page with steel engraving of Faust">
-                  <figure>
+                   <figure xml:id="ch33">
                      <graphic url="../img_inside-text/GG_099_r.jpg"/>
                      <figDesc>Drawing of Faust</figDesc>
                   </figure>
                   <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
-                  <p rend="heading"><name type="character">Faust</name>.</p>
+                     <p rend="heading"><name ref="https://lobid.org/gnd/118683136"  type="character_inspiration">Faust</name>.</p>
                   <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                </div>
                </div>
@@ -1169,10 +1169,10 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                </div>
             </div>
             </div>
-            <div type="chapter" n="34" xml:id="ch34">
+            <div type="chapter" n="34">
                <div type="chapter_image">
                   <div type="page" n="102r" facs="../img/GG_102_r.jpg" ana="Page with steel engraving of Gretchen">
-                  <figure>
+                  <figure xml:id="ch34">
                      <graphic url="../img_inside-text/GG_102_r.jpg"/>
                      <figDesc>Drawing of Gretchen</figDesc>
                   </figure>
@@ -1334,10 +1334,10 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                </div>
                </div>
             </div>
-            <div type="chapter" n="35" xml:id="ch35">
+            <div type="chapter" n="35">
                <div type="chapter_image">
                   <div type="page" n="105r" facs="../img/GG_105_r.jpg" ana="Page with steel engraving of Mephistopheles.">
-                  <figure>
+                  <figure xml:id="ch35">
                      <graphic url="../img_inside-text/GG_105_r.jpg"/>
                      <figDesc>Drawing of Mephistopheles</figDesc>
                   </figure>
@@ -1494,10 +1494,10 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                  </div>
                </div>
             </div>
-            <div type="chapter" n="36" xml:id="ch36">
+            <div type="chapter" n="36">
                <div type="chapter_image">
                   <div type="page" n="108r" facs="../img/GG_108_r.jpg" ana="Page with steel engraving of Wagner.">
-                  <figure>
+                  <figure xml:id="ch36">
                      <graphic url="../img_inside-text/GG_108_r.jpg"/>
                      <figDesc>Drawing of Wagner</figDesc>
                   </figure>
@@ -1657,15 +1657,15 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                  </div>
                </div>
             </div>
-            <div type="chapter" n="37" xml:id="ch37">
+            <div type="chapter" n="37">
                <div type="chapter_image">
                   <div type="page" n="111r" facs="../img/GG_111_r.jpg" ana="Page with steel engraving of Helena.">
-                  <figure>
+                  <figure  xml:id="ch37">
                      <graphic url="../img_inside-text/GG_111_r.jpg"/>
                      <figDesc>Drawing of Helena</figDesc>
                   </figure>
                   <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
-                  <p rend="heading"><name type="character">Helena</name>.</p>
+                     <p rend="heading"><name ref="https://en.wikipedia.org/wiki/Helen_of_Troy" type="character_inspiration">Helena</name>.</p>
                   <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                  </div>
                </div>
