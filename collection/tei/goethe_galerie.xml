@@ -8,8 +8,8 @@
          <titleStmt>
             <title>Goethe-Galerie: electronic version</title>
             <author>Pecht, Friedrich (1814-1903)</author>
-            <editor role="illustrator">Pecht, Friedrich (1814-1903)</editor>
-            <editor role="illustrator">von Ramberg, Arthur (1819-1875)</editor>
+            <editor role="illustrator" ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</editor>
+            <editor role="illustrator" ref="https://lobid.org/gnd/118787799">von Ramberg, Arthur (1819-1875)</editor>
             <principal>Sabine Weidinger</principal>
             <meeting>TEI encoding of several chapters of 'Goethe-Galerie'.</meeting>
             <respStmt>
@@ -50,7 +50,7 @@
          <sourceDesc>
             <biblStruct xml:lang="ger">
                <analytic>
-                  <author>Pecht, Friedrich (1814-1903)</author>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
                   <title>Goethe.</title>
                </analytic>
                <analytic>
@@ -58,33 +58,33 @@
                   <title>Lotte.</title>
                </analytic>
                <analytic>
-                  <author>Pecht, Friedrich (1814-1903)</author>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
                   <title>Werther.</title>
                </analytic>
                <analytic>
-                  <author>Pecht, Friedrich (1814-1903)</author>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
                   <title>Faust.</title>
                </analytic>
                <analytic>
-                  <author>Pecht, Friedrich (1814-1903)</author>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
                   <title>Gretchen.</title>
                </analytic>
                <analytic>
-                  <author>Pecht, Friedrich (1814-1903)</author>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
                   <title>Mephistopheles.</title>
                </analytic>
                <analytic>
-                  <author>Pecht, Friedrich (1814-1903)</author>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
                   <title>Wagner.</title>
                </analytic>
                <analytic>
-                  <author>Pecht, Friedrich (1814-1903)</author>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
                   <title>Helena.</title>
                </analytic>
                <monogr>
-                  <author>Pecht, Friedrich (1814-1903)</author>
-                  <editor role="illustrator">Pecht, Friedrich (1814-1903)</editor>
-                  <editor role="illustrator">von Ramberg, Arthur (1819-1875)</editor>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
+                  <editor role="illustrator" ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</editor>
+                  <editor role="illustrator" ref="https://lobid.org/gnd/118787799 ">von Ramberg, Arthur (1819-1875)</editor>
                   <title type="main">Goethe-Galerie</title>
                   <title type="sub">Charaktere aus Goethe's Werken</title>
                   <edition>2. Auflage</edition>
@@ -97,7 +97,13 @@
                <relatedItem>
                   <bibl>The <ref target="https://permalink.obvsg.at/UGR/AC08219013">source</ref> of
                      this digitisation is a copy from the <distributor>University Library
-                        Graz</distributor>.</bibl>
+                        Graz</distributor>.
+                     <msIdentifier>
+                        <institution>University Library Graz</institution>
+                        <repository>German Studies Library</repository>
+                        <idno>428:G599:P365</idno>
+                     </msIdentifier>.
+                  </bibl>
                </relatedItem>
             </biblStruct>
          </sourceDesc>
@@ -112,27 +118,27 @@
                'Mephistopheles', 'Wagner' and 'Helena' were TEI encoded, as this would be the
                chapters interesting to the most people. Furhter chapters can be added later.</p>
             <segmentation>
-               <p>The text was divided with several <gi>div</gi> elements, like 'book', 'chapter',
-                  'chapter_image' and 'chapter_text'.</p>
-               <p>The pages were encoded with <gi>pb</gi> and include the number of the sheet and
+               <p>The text was divided with several <gi>div</gi> elements, with the attribute 
+                  <gi>type</gi> and values like 'book', 'chapter', 'chapter_image' and 'chapter_text'.</p>
+               <p>The <gi>div</gi> elements with the attribute value 'page' include the number of the sheet and
                   'r' for 'recto' and 'v' for 'verso'.</p>
                <p>The lines were split with <gi>lb</gi> as I wanted to be able to show the transcriptions 
-                  like the text, so people could easily compare the letters.</p>
+                  as it is in the original text, so people could easily compare the characters.</p>
             </segmentation>
             <punctuation>
                <p>I kept the punctuation as it was, to make it easier to compare the image with the transcription.</p>
             </punctuation>
             <hyphenation>
-               <p>The = for the hyphenations were kept. To make clear that this was not the end of a word, 
-                  I included <gi>pc</gi> with the attribute <gi>force</gi> with the value <gi>weak</gi>
+               <p>The '='' for the hyphenations were kept. To make clear that this was not the end of a word, 
+                  I included <gi>pc</gi> with the attribute <gi>force</gi> and the value <gi>weak</gi>
                   to make clear that this wasn't the end of the word.
                   Further, I included an attribute <gi>break</gi> with the value <gi>no</gi> in the next 
-                  <gi>lb</gi> to further make clear that the line desn't start with a new word.
+                  <gi>lb</gi> to further make clear that the line doesn't start with a new word.
                </p>
             </hyphenation>
             <correction>
                <p>I marked misspelled words with <gi>sic</gi>.</p>
-               <p>I put these words also in a <gi>choice</gi>, in which I included a <gi>corr</gi>
+               <p>I put these words also in a <gi>choice</gi> element, in which I included a <gi>corr</gi> element
                for the corrected version of the word.</p>
             </correction>
             <quotation>
@@ -140,12 +146,12 @@
                <p>I included an attribut <gi>type</gi> with the value <gi>short</gi> for quotes
                that were inside the text.</p>
                <p>I included an attribut <gi>type</gi> with the value <gi>long</gi> for quotes
-                  that were outside the main text, smaller printed and where centered on the page.</p>
+                  that were outside the main text, smaller printed and centered on the page.</p>
             </quotation>
             <normalization>
                <p>Due to orthography changes some of the words are written differently nowadays,
                therefore I marked them with <gi>choice</gi>. Inside of <gi>choice</gi>the original text 
-               was marked with <gi>orig</gi> and the normalized version with <gi>reg</gi>.</p>
+               was marked with the element <gi>orig</gi> and the modern version with <gi>reg</gi>.</p>
             </normalization>
          </editorialDecl>
       </encodingDesc>
@@ -154,11 +160,13 @@
             <language ident="ger">German</language>
          </langUsage>
          <textClass>
-            <classCode scheme="https://www.oclc.org/content/dam/oclc/dewey/ddc23-summaries.pdf"
-               >830</classCode>
+            <classCode scheme="https://www.oclc.org/content/dam/oclc/dewey/ddc23-summaries.pdf">830</classCode>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-05-27">
+            <persName>Sabine Weidinger</persName> made some minor changes to tidy up the TEI like making all GND links from lobid.
+         </change>
          <change when="2023-04-29">
             <persName>Sabine Weidinger</persName> added the attribute <gi>ana</gi> in <gi>div</gi> to include a description of the images, which can be used in XSL transformations for the alternative text.
          </change>
@@ -193,7 +201,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
          <div type="book_cover">
            <div type="page" n="bc_f_i" facs="../img/GG_bc_f_i.jpg" ana="The inside of the front cover with the library stamp of the University Library Graz.">
             <head type="library_stamp"> FACHBIBLIOTHEK F&#220;R GERMANISTIK AN 
-               <lb/>DER <name ref="https://d-nb.info/gnd/36157-4 " type="org">KARL-FRANZENS-UNIVERSIT&#196;T GRAZ</name></head>
+               <lb/>DER <name ref="https://lobid.org/gnd/36157-4" type="org">KARL-FRANZENS-UNIVERSIT&#196;T GRAZ</name></head>
            </div>
          </div>
          <div type="chapter_image">
@@ -213,7 +221,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
              <byline>
                 <lb/>Gezeichnet
                 <lb/>von 
-                <lb/><persName ref="https://lobid.org/gnd/118592343"><forename>Friedrich</forename> <surname>Pecht</surname></persName> und <persName ref="https://d-nb.info/gnd/118787799"><forename>Arthur</forename> <surname>von Ramberg</surname></persName>. 
+                <lb/><persName ref="https://lobid.org/gnd/118592343"><forename>Friedrich</forename> <surname>Pecht</surname></persName> und <persName ref="https://lobid.org/gnd/118787799"><forename>Arthur</forename> <surname>von Ramberg</surname></persName>. 
                 <lb/><distinct type="archaic">Funfzig</distinct> Bl&#228;tter in Stahlstich. 
                 <lb/>Mit erl&#228;uterndem <choice><orig>Texte</orig>  <reg>Text</reg></choice> 
                 <lb/>von
@@ -239,7 +247,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
          <div type="titlePage_back">
            <div type="page" n="001v" facs="../img/GG_001_v.jpg" ana="Page including the library stamp of the University Library Graz and the Inventory number.">
             <head type="library_stamp">
-               <lb/><name ref="https://d-nb.info/gnd/36157-4 " type="org">Karl-Franzens-Universit&#228;t Graz</name>
+               <lb/><name ref="https://lobid.org/gnd/36157-4" type="org">Karl-Franzens-Universit&#228;t Graz</name>
                <lb/>Fachbibliothek f&#252;r Germanistik
                <lb/>Inv.-Nr. <note type="handwritten">29827</note>
             </head>
@@ -297,7 +305,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
                <row>
-                  <cell rend="first"><p><name ref="https://d-nb.info/gnd/118613898" type="character_inspiration">Franz von Sickingen</name>.</p></cell>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118613898" type="character_inspiration">Franz von Sickingen</name>.</p></cell>
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
                <row>
@@ -317,7 +325,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                </row>
             </table>
             <table rows="2" cols="4">
-               <head type="sub"><name ref="https://d-nb.info/gnd/4280631-8" type="play">Clavigo</name></head>
+               <head type="sub"><name ref="https://lobid.org/gnd/4280631-8" type="play">Clavigo</name></head>
                <row>
                   <cell rend="first"><p><name type="character">Clavigo</name>.</p></cell>
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
@@ -327,7 +335,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
                <row>
-                  <cell rend="first"><name ref="https://d-nb.info/gnd/118507850" type="character_inspiration">Beaumarchais</name>.</cell>
+                  <cell rend="first"><name ref="https://lobid.org/gnd/118507850" type="character_inspiration">Beaumarchais</name>.</cell>
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
                <row>
@@ -336,14 +344,14 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                </row>
             </table>
             <table rows="2" cols="1">
-               <head type="sub"><name ref="https://d-nb.info/gnd/1216054312" type="play">Die Geschwister</name>:</head>
+               <head type="sub"><name ref="https://lobid.org/gnd/1216054312" type="play">Die Geschwister</name>:</head>
                <row>
                   <cell rend="first"><p><name type="character">Marianne</name>.</p></cell>
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="2">
-               <head type="sub"><name ref="https://d-nb.info/gnd/4099204-4" type="play">Stella</name>:</head>
+               <head type="sub"><name ref="https://lobid.org/gnd/4099204-4" type="play">Stella</name>:</head>
                <row>
                   <cell rend="first"><p><name type="character">Stella</name>.</p></cell>
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
@@ -359,7 +367,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
            <div type="page" n="002v" facs="../img/GG_002_v.jpg" ana="Table of images - 2 of 2.">
             <head type="sub"><choice><orig>Verzeichni&#223;</orig>  <reg>Verzeichnis</reg></choice> der Abbildungen.</head>
             <table rows="2" cols="5">
-               <head type="sub"><name ref="https://d-nb.info/gnd/4191697-9" type="play">Egmont</name>:</head>
+               <head type="sub"><name ref="https://lobid.org/gnd/4191697-9" type="play">Egmont</name>:</head>
                <row>
                   <cell rend="first"><p><name ref="https://lobid.org/gnd/118529153" type="character_inspiration">Graf Egmont</name>.</p></cell>
                   <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
@@ -389,7 +397,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                </row>
                <row>
                   <cell rend="first"><p><name ref="https://en.wikipedia.org/wiki/Iphigenia" type="character_inspiration">Iphigenie</name>.</p></cell>
-                  <cell><p><name ref="https://d-nb.info/gnd/118787799" type="person">A. v. Ramberg</name> gez.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118787799" type="person">A. v. Ramberg</name> gez.</p></cell>
                </row>
             </table>
             <table rows="2" cols="4">
@@ -596,14 +604,14 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                      <lb/>Es spiegelt dieses Goethe'sche Geistesleben uns gewisserma&#223;en 
                      <lb/>das der ganzen Menschheit in seiner unersch&#246;pflichen <choice><orig>Mannich<pc force="weak">=</pc>
                      <lb break="no"/>faltigkeit</orig> <reg>Mannigfaltigkeit</reg></choice>, wenn wir nach jenen ersten Werken, die uns, wie 
-                     <lb/>„Die <name ref="https://lobid.org/gnd/4439891-8" type="play">Mitschuldigen</name>", „<name ref="https://lobid.org/gnd/4099199-4" type="play">G&#246;tz</name>", „<name ref="https://lobid.org/gnd/4099202-0" type="play">Werther</name>", „<name ref="https://d-nb.info/gnd/4280631-8" type="play">Clavigo</name>", den 
+                     <lb/>„Die <name ref="https://lobid.org/gnd/4439891-8" type="play">Mitschuldigen</name>", „<name ref="https://lobid.org/gnd/4099199-4" type="play">G&#246;tz</name>", „<name ref="https://lobid.org/gnd/4099202-0" type="play">Werther</name>", „<name ref="https://lobid.org/gnd/4280631-8" type="play">Clavigo</name>", den 
                      <lb/>unmittelbarsten Naturlaut, den Schrei und Sturm der Leiden<pc force="weak">=</pc>
                      <lb break="no"/>schaft mit so durchaus realistischer Kraft schildern, also nur den 
                      <lb/>Drang der Natur befriedigen, allm&#228;hlich das <choice><orig>Bed&#252;rfni&#223;</orig> <reg>Bed&#252;rfnis</reg></choice> der er<pc force="weak">=</pc>
                      <lb break="no"/>h&#246;hten Form st&#228;rker werden sehen, demnach die <choice><orig>Cultur</orig> <reg>Kultur</reg></choice>, die 
                      <lb/>Freude an der Kunst an sich auftreten sehen, wenn sie auch 
                      <lb/>noch durchaus auf der Basis der Natur ruht, immer noch 
-                     <lb/>durchaus <choice><orig>individualisirend</orig> <reg>individualisierend</reg></choice> und realistisch verf&#228;hrt wie in "<name ref="https://d-nb.info/gnd/4191697-9" type="play">Eg<pc force="weak">=</pc>
+                     <lb/>durchaus <choice><orig>individualisirend</orig> <reg>individualisierend</reg></choice> und realistisch verf&#228;hrt wie in "<name ref="https://lobid.org/gnd/4191697-9" type="play">Eg<pc force="weak">=</pc>
                      <lb break="no"/>mont</name>", „<name ref="https://lobid.org/gnd/4122459-0" type="play">Tasso</name>", „<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>", bis die k&#252;nstlerische Vollendung 
                      <lb/>der Form mit der h&#246;chsten Naturwahrheit in „<name ref="https://lobid.org/gnd/4099201-9" type="play">Iphigenie</name>" 
                      <lb/>und „<name ref="https://lobid.org/gnd/4123298-7" type="play">Hermann und Dorothea</name>“ ihren Triumph feiern, sich 
@@ -1661,7 +1669,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
                   <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
                  </div>
                </div>
-              <div type="page" n="111v" facs="../img/GG_111_v.jpg" ana="Empty page."/>
+               <div type="page" n="111v" facs="../img/GG_111_v.jpg" ana="Empty page."/>
                <div type="chapter_text">
                   <div type="page" n="112r" facs="../img/GG_112_r.jpg" ana="Text about Helena - page 1 of 4.">
                   <head><name type="character">Helena</name>.</head>
