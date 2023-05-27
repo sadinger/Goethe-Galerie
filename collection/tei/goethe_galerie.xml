@@ -1849,6 +1849,9 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
             </div>
            </div>
          </div>
+         <div type="book_cover">
+            <div type="page" n="bc_b_o" facs="../img/GG_bc_b_o.jpg" ana="Page of the back of the book."/>
+         </div>
          <div type="book_back">
            <div type="page" n="bb" facs="../img/GG_bb.jpg" ana="Back of the book Goethe-Galerie.">
             <head>Goethe- 

@@ -114,6 +114,7 @@ p.page_header {
 p.quote_long {
     font-size: small;
     margin-left: 5em;
+    text-indent: 0em;
 }
 
 p.without_indent {

@@ -41,7 +41,7 @@
                     <!-- Dropdown for chapters -->
                     <div class="btn-group">
                         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#561010; border:none;">
-                            Characters
+                            Chapters
                         </button>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#ch1">Goethe.</a>
@@ -60,7 +60,7 @@
                     <!-- Back to top button -->
                     <button
                         type="button"
-                        class="btn btn-danger btn-floating btn-lg"
+                        class="btn btn-secondary btn-floating btn-lg"
                         id="btn-back-to-top"
                         style="background-color:#561010; border:none;"
                      >
