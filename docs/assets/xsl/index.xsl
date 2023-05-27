@@ -64,18 +64,19 @@
                                 <article id="description">
                                     <p class="without_indent">
                                         <strong>Goethe-Galerie</strong> is a book including 50 steel engravings of characters from the works by Johann Wolfgang von Goethe.
-                                        The designs were made by Friedrich Pecht and Arthur von Ramberg. The accompanying text was written by Friedrich Pecht. 
+                                        The designs are by Friedrich Pecht and Arthur von Ramberg. The accompanying text was written by Friedrich Pecht. 
                                         The book was first published in 1864 - the version digitised for this project is the second edition from 1877.
                                     </p>
                                     <p class="without_indent">
                                         The steel engravings were already digitised <a href="https://goethehaus.museum-digital.de/object/1287?navlang=de" target="_blank">once</a>. 
-                                        As also the text will be of interest, the whole book was digitised at the <a href="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen/digitalisierung/" target="_blank">Digitisation Department of the University Library Graz</a>. Thank you for the possibility and help.
+                                        Since the text also will be of interest, the entire book was digitised at the <a href="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen/digitalisierung/" target="_blank">Digitisation Department of the University Library Graz</a>. Many thanks for the possibility and help.
                                     </p>
                                     <p class="without_indent">
-                                        As a start eight chapters were chosen for OCR scanning, which was conducted with <a href="https://readcoop.eu/transkribus" target="_blank">Transcribus</a>.
+                                        As a start eight chapters were selected for OCR scanning, which was done with <a href="https://readcoop.eu/transkribus" target="_blank">Transcribus</a>.
                                         The chosen chapters included characters from "Faust" and "Die Leiden des jungen Werther" as these books are very well known and frequently read in school.
                                     </p>
                                     <p class="without_indent">All images of the digitisation process as well as the TEI can be found in the <a href="https://github.com/sadinger/Goethe-Galerie" target="_blank">repository</a>.</p>
+                                    <p class="without_indent">Questions about the project? Contact me at <i>s2206800@student.hb.se</i>.</p>
                                 </article>
                             </div>
                         </div>
