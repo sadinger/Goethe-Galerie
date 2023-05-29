@@ -264,3 +264,11 @@ a.inside_diplomatic:hover {
   bottom: 20px;
   right: 20px;
   display: none;
+  }
+  
+ /* change the color of the arrows in the carousel to black */
+.carousel-control-prev,.carousel-control-next  {
+    filter: invert(100%);
+    }
+
+ 
