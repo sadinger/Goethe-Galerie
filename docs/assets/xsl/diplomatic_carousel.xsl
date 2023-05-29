@@ -39,27 +39,27 @@
                 
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl">
+                        <div class="col">
                             <!-- Dropdown for chapters -->
-                            <!--<div class="btn-group">
+                            <div class="btn-group">
                                 <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#561010; border:none;">
                                     Chapters
                                 </button>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#ch1">Goethe.</a>
+                                    <a class="dropdown-item" data-target="#carouselExampleControls" data-slide-to="9" style="color: #561010;">Goethe.</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#ch13">Lotte.</a>
-                                    <a class="dropdown-item" href="#ch14">Werther.</a>
+                                    <a class="dropdown-item" data-target="#carouselExampleControls" data-slide-to="13" style="color: #561010;">Lotte.</a>
+                                    <a class="dropdown-item" data-target="#carouselExampleControls" data-slide-to="19" style="color: #561010;">Werther.</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#ch33">Faust.</a>
-                                    <a class="dropdown-item" href="#ch34">Gretchen.</a>
-                                    <a class="dropdown-item" href="#ch35">Mephistopheles.</a>
-                                    <a class="dropdown-item" href="#ch36">Wagner.</a>
-                                    <a class="dropdown-item" href="#ch37">Helena.</a>
+                                    <a class="dropdown-item" data-target="#carouselExampleControls" data-slide-to="25" style="color: #561010;">Faust.</a>
+                                    <a class="dropdown-item" data-target="#carouselExampleControls" data-slide-to="31" style="color: #561010;">Gretchen.</a>
+                                    <a class="dropdown-item" data-target="#carouselExampleControls" data-slide-to="37" style="color: #561010;">Mephistopheles.</a>
+                                    <a class="dropdown-item" data-target="#carouselExampleControls" data-slide-to="43" style="color: #561010;">Wagner.</a>
+                                    <a class="dropdown-item" data-target="#carouselExampleControls" data-slide-to="49" style="color: #561010;">Helena.</a>
                                 </div>
-                            </div>-->
+                            </div>
                         </div>
-                        <div class="col-xl">
+                        <div class="col">
                             <!-- Button to change the view -->
                             <a href="diplomatic.html" class="btn btn-secondary btn active" role="button" aria-pressed="true" data-toggle="tooltip" data-placement="bottom" title="Change the view to continuing reading." style="background-color:#561010; border:none; float:right;">Change View</a>
                         </div>
