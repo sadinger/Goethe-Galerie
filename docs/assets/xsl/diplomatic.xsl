@@ -38,25 +38,35 @@
                 </nav>
                 <main id="book">
                     
-                    <!-- Dropdown for chapters -->
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#561010; border:none;">
-                            Chapters
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#ch1">Goethe.</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#ch13">Lotte.</a>
-                            <a class="dropdown-item" href="#ch14">Werther.</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#ch33">Faust.</a>
-                            <a class="dropdown-item" href="#ch34">Gretchen.</a>
-                            <a class="dropdown-item" href="#ch35">Mephistopheles.</a>
-                            <a class="dropdown-item" href="#ch36">Wagner.</a>
-                            <a class="dropdown-item" href="#ch37">Helena.</a>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <!-- Dropdown for chapters -->
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#561010; border:none;">
+                                        Chapters
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#ch1">Goethe.</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#ch13">Lotte.</a>
+                                        <a class="dropdown-item" href="#ch14">Werther.</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#ch33">Faust.</a>
+                                        <a class="dropdown-item" href="#ch34">Gretchen.</a>
+                                        <a class="dropdown-item" href="#ch35">Mephistopheles.</a>
+                                        <a class="dropdown-item" href="#ch36">Wagner.</a>
+                                        <a class="dropdown-item" href="#ch37">Helena.</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- Button to change the view -->
+                                <a href="diplomatic_carousel.html" class="btn btn-secondary btn active" role="button" aria-pressed="true" data-toggle="tooltip" data-placement="bottom" title="Change the view to single pages." style="background-color:#561010; border:none; float:right;">Change View</a>
+                            </div>
                         </div>
                     </div>
-                   
+                        
                     <!-- Back to top button -->
                     <button
                         type="button"
@@ -72,11 +82,11 @@
                         <!-- define a row layout with bootstrap's css classes (two columns with content, and an empty column in between) -->
                         <div class="row">
                             <div class="col-sm">
-                                <h3>Digitisation</h3>
+                                <h1>Digitisation</h1>
                             </div>
                             <div class="col-sm"> </div>
                             <div class="col-sm">
-                                <h3>Transcription</h3>
+                                <h1>Transcription</h1>
                             </div>
                         </div>
                         <!-- set up an image-text pair for each page in your document, and start a new 'row' for each pair -->

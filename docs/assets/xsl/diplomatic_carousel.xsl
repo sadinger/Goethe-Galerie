@@ -36,6 +36,36 @@
                     <a href="linguistic.html">Linguistic Transcription</a> |
                     <a href="documents.html">Documents</a> |
                 </nav>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl">
+                            <!-- Dropdown for chapters -->
+                            <!--<div class="btn-group">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#561010; border:none;">
+                                    Chapters
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#ch1">Goethe.</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#ch13">Lotte.</a>
+                                    <a class="dropdown-item" href="#ch14">Werther.</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#ch33">Faust.</a>
+                                    <a class="dropdown-item" href="#ch34">Gretchen.</a>
+                                    <a class="dropdown-item" href="#ch35">Mephistopheles.</a>
+                                    <a class="dropdown-item" href="#ch36">Wagner.</a>
+                                    <a class="dropdown-item" href="#ch37">Helena.</a>
+                                </div>
+                            </div>-->
+                        </div>
+                        <div class="col-xl">
+                            <!-- Button to change the view -->
+                            <a href="diplomatic.html" class="btn btn-secondary btn active" role="button" aria-pressed="true" data-toggle="tooltip" data-placement="bottom" title="Change the view to continuing reading." style="background-color:#561010; border:none; float:right;">Change View</a>
+                        </div>
+                    </div>
+                </div>
+                
                 <main id="book">
                     
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
