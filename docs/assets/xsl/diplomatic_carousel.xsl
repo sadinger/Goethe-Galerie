@@ -2443,20 +2443,7 @@
             </img>
         </a>
     </xsl:template>
-    
-    <!-- transform links from table of images-->
-    <xsl:template match="tei:ref">
-        <a>
-            <xsl:attribute name="href">
-                <xsl:value-of select="@target"/>
-            </xsl:attribute>
-            <xsl:attribute name="class">
-                <p>inside_diplomatic</p>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </a>
-    </xsl:template>
-    
+     
     <!-- transform tei name with rend 'ref' into html a with class 'inside_diplomatic'-->
     <xsl:template match="tei:name[@ref]">
         <a>
