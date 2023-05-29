@@ -32,9 +32,9 @@
                 </header>
                 <nav id="sitenav">
                     <a href="index.html">Home</a> |
-                    <a href="diplomatic.html">Diplomatic Transcription</a> |
+                    <a href="diplomatic_carousel.html">Diplomatic Transcription</a> |
                     <a href="linguistic.html">Linguistic Transcription</a> |
-                    <a href="documents.html">Documents</a> |
+                    <a href="documents.html">Documents</a>
                 </nav>
                 <main id="book">
                     
