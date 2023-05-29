@@ -58,8 +58,19 @@
                              <p class="without_indent">Words in old orthography are marked in <b>bold</b> and the color <strong class="original">green</strong>.</p>
                              <p class="without_indent">Words in new orthography are marked in <i>italic</i> and the color <em class="modern">red</em>.</p>
                              <p class="without_indent">Words that are archaic are <u>underlined</u> and in the color <u class="archaic">purple</u>.</p>
-                         </div>
-                     </div>
+                           </div>
+                       </div>
+                       <div class="row justify-content-md-center">
+                           <div class="col">
+                               <a href="linguistic_table_orthography.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true" style="background-color:#D3D3D3; color:black; border:none; float:right;" target="blank">Table: words with old and new orthography</a>
+                           </div>
+                           <div class="col-smaller">
+                               
+                           </div>
+                           <div class="col">
+                               <a href="linguistic_table_archaic.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true" style="background-color:#D3D3D3; color:black; border:none; float:left;" target="blank">Table: archaic words</a>
+                           </div>
+                       </div>
                     <!-- define a row layout with bootstrap's css classes (two columns with content, and an empty column in between) -->
                     <div class="row justify-content-md-center">
                         <div class="col_fix">
