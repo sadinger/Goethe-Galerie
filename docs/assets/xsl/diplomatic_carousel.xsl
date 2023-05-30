@@ -46,6 +46,8 @@
                                     Chapters
                                 </button>
                                 <div class="dropdown-menu">
+                                    <a class="dropdown-item" data-target="#carouselExampleControls" data-slide-to="0" style="color: #561010;">Start.</a>
+                                    <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" data-target="#carouselExampleControls" data-slide-to="9" style="color: #561010;">Goethe.</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" data-target="#carouselExampleControls" data-slide-to="13" style="color: #561010;">Lotte.</a>
