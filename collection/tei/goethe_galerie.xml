@@ -194,7 +194,7 @@ fa            <persName>Sabine Weidinger</persName> linked the chapter titles in
    <text>
       <front>
          <div type="book_cover">
-           <div type="page" n="bc_f_o" facs="../img/GG_bc_f_o.jpg" ana="Front cover of the book Goethe-Galerie.">
+           <div type="page" n="bc_f_o" facs="./img/GG_bc_f_o.jpg" ana="Front cover of the book Goethe-Galerie.">
             <head type="bind">Goethe-Galerie.</head>
            </div>
          </div>
