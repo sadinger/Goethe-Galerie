@@ -1,0 +1,1871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Goethe-Galerie: electronic version</title>
+            <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
+            <editor role="illustrator" ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</editor>
+            <editor role="illustrator" ref="https://lobid.org/gnd/118787799">von Ramberg, Arthur (1819-1875)</editor>
+            <principal>Sabine Weidinger</principal>
+            <meeting>TEI encoding of several chapters of 'Goethe-Galerie'.</meeting>
+            <respStmt>
+               <resp>Digitisation, OCR scanning and TEI encoding</resp>
+               <name>Sabine Weidinger</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First edition</edition>
+         </editionStmt>
+         <extent>
+            <measure unit="pages" quantity="43">43 transcribed pages</measure>
+         </extent>
+         <publicationStmt>
+            <publisher>Sabine Weidinger</publisher>
+            <pubPlace>
+               <address>
+                  <settlement>Graz</settlement>
+                  <postCode>8010</postCode>
+                  <country>Austria</country>
+               </address>
+            </pubPlace>
+            <authority>Sabine Weidinger</authority>
+            <date when="2023-05-29">29th May 2023</date>
+            <idno>Goethe-Galerie_1</idno>
+            <availability>
+               <p> Licensed with a <ref target="https://creativecommons.org/licenses/by-nc/4.0/"
+                     >Creative Commons Attribution: CC BY-NC 4.0</ref>. </p>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Transcribed for the course 'Digitising Cultural Heritage Material' at the
+               University of Bor&#8491;s</note>
+            <note>Digitized at the University Library Graz.</note>
+            <note>OCR scaning with <ref target="https://readcoop.eu/de/transkribus/"
+                  >Transcribus</ref>.</note>
+         </notesStmt>
+         <sourceDesc>
+            <biblStruct xml:lang="ger">
+               <analytic>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
+                  <title>Goethe.</title>
+               </analytic>
+               <analytic>
+                  <author>Pecht, Friedrich (1814-1903)</author>
+                  <title>Lotte.</title>
+               </analytic>
+               <analytic>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
+                  <title>Werther.</title>
+               </analytic>
+               <analytic>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
+                  <title>Faust.</title>
+               </analytic>
+               <analytic>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
+                  <title>Gretchen.</title>
+               </analytic>
+               <analytic>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
+                  <title>Mephistopheles.</title>
+               </analytic>
+               <analytic>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
+                  <title>Wagner.</title>
+               </analytic>
+               <analytic>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
+                  <title>Helena.</title>
+               </analytic>
+               <monogr>
+                  <author ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</author>
+                  <editor role="illustrator" ref="https://lobid.org/gnd/118592343">Pecht, Friedrich (1814-1903)</editor>
+                  <editor role="illustrator" ref="https://lobid.org/gnd/118787799 ">von Ramberg, Arthur (1819-1875)</editor>
+                  <title type="main">Goethe-Galerie</title>
+                  <title type="sub">Charaktere aus Goethe's Werken</title>
+                  <edition>2. Auflage</edition>
+                  <imprint>
+                     <pubPlace><placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName></pubPlace>
+                     <publisher><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus</name></publisher>
+                     <date when="1877">1877</date>
+                  </imprint>
+               </monogr>
+               <relatedItem>
+                  <bibl>The <ref target="https://permalink.obvsg.at/UGR/AC08219013">source</ref> of
+                     this digitisation is a copy from the <distributor>University Library
+                        Graz</distributor>.
+                     <msIdentifier>
+                        <institution>University Library Graz</institution>
+                        <repository>German Studies Library</repository>
+                        <idno>428:G599:P365</idno>
+                     </msIdentifier>.
+                  </bibl>
+               </relatedItem>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>This project was the final assignment for the course 'Digitising Cultural Heritage
+               Material' at the University of Bor&#8491;s.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>As a starting point the chapters 'Goethe', 'Lotte', 'Werther', 'Faust', 'Gretchen',
+               'Mephistopheles', 'Wagner' and 'Helena' were TEI encoded, as this would be the
+               chapters interesting to the most people. Furhter chapters can be added later.</p>
+            <segmentation>
+               <p>The text was divided with several <gi>div</gi> elements, with the attribute 
+                  <gi>type</gi> and values like 'book', 'chapter', 'chapter_image' and 'chapter_text'.</p>
+               <p>The <gi>div</gi> elements with the attribute value 'page' include the number of the sheet and
+                  'r' for 'recto' and 'v' for 'verso'.</p>
+               <p>The lines were split with <gi>lb</gi> as I wanted to be able to show the transcriptions 
+                  as it is in the original text, so people could easily compare the characters.</p>
+            </segmentation>
+            <punctuation>
+               <p>I kept the punctuation as it was, to make it easier to compare the image with the transcription.</p>
+            </punctuation>
+            <hyphenation>
+               <p>The '='' for the hyphenations were kept. To make clear that this was not the end of a word, 
+                  I included <gi>pc</gi> with the attribute <gi>force</gi> and the value <gi>weak</gi>
+                  to make clear that this wasn't the end of the word.
+                  Further, I included an attribute <gi>break</gi> with the value <gi>no</gi> in the next 
+                  <gi>lb</gi> to further make clear that the line doesn't start with a new word.
+               </p>
+            </hyphenation>
+            <correction>
+               <p>I marked misspelled words with <gi>sic</gi>.</p>
+               <p>I put these words also in a <gi>choice</gi> element, in which I included a <gi>corr</gi> element
+               for the corrected version of the word.</p>
+            </correction>
+            <quotation>
+               <p>As the quotes didn't include references, I marked them only with <gi>quote</gi>.</p>
+               <p>I included an attribut <gi>type</gi> with the value <gi>short</gi> for quotes
+               that were inside the text.</p>
+               <p>I included an attribut <gi>type</gi> with the value <gi>long</gi> for quotes
+                  that were outside the main text, smaller printed and centered on the page.</p>
+            </quotation>
+            <normalization>
+               <p>Due to orthography changes some of the words are written differently nowadays,
+               therefore I marked them with <gi>choice</gi>. Inside of <gi>choice</gi>the original text 
+               was marked with the element <gi>orig</gi> and the modern version with <gi>reg</gi>.</p>
+            </normalization>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="ger">German</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.oclc.org/content/dam/oclc/dewey/ddc23-summaries.pdf">830</classCode>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2023-05-27">
+            <persName>Sabine Weidinger</persName> made some minor changes to tidy up the TEI like making all GND links from lobid.
+         </change>
+         <change when="2023-04-29">
+            <persName>Sabine Weidinger</persName> added the attribute <gi>ana</gi> in <gi>div</gi> to include a description of the images, which can be used in XSL transformations for the alternative text.
+         </change>
+         <change when="2023-04-28">
+            <persName>Sabine Weidinger</persName> added some encoding in the TEI header - <gi>analytic</gi>.
+            <persName>Sabine Weidinger</persName> added <gi>figure</gi> to the first pages of the chapters.
+            <persName>Sabine Weidinger</persName> changed <gi>pb</gi> into <gi>div</gi> with the attribute <gi>type</gi> and value <gi>page</gi>.
+         </change>
+         <change when="2023-04-22">
+            <persName>Sabine Weidinger</persName> extended the TEI encoding in the body.
+            <persName>Sabine Weidinger</persName> extended the information in the <gi>encodingDesc</gi>.
+         </change>
+         <change when="2023-04-21">
+            <persName>Sabine Weidinger</persName> extended the TEI encoding in the body (lb).</change>
+         <change when="2023-04-20">
+fa            <persName>Sabine Weidinger</persName> linked the chapter titles in the table of content
+            with the chapters.</change>
+         <change when="2023-04-16">
+            <persName>Sabine Weidinger</persName> started with the TEI front, body and back - and
+            added some parts in the TEI header.</change>
+         <change when="2023-04-15">
+            <persName>Sabine Weidinger</persName> started with the TEI header. </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <div type="book_cover">
+           <div type="page" n="bc_f_o" facs="./img/GG_bc_f_o.jpg" ana="Front cover of the book Goethe-Galerie.">
+            <head type="bind">Goethe-Galerie.</head>
+           </div>
+         </div>
+         <div type="book_cover">
+           <div type="page" n="bc_f_i" facs="./img/GG_bc_f_i.jpg" ana="The inside of the front cover with the library stamp of the University Library Graz.">
+            <head type="library_stamp"> FACHBIBLIOTHEK F&#220;R GERMANISTIK AN 
+               <lb/>DER <name ref="https://lobid.org/gnd/36157-4" type="org">KARL-FRANZENS-UNIVERSIT&#196;T GRAZ</name></head>
+           </div>
+         </div>
+         <div type="chapter_image">
+           <div type="page" n="000r" facs="./img/GG_000_r.jpg" ana="Page with steel engraving of Johann Wolfgang von Goethe.">
+            <figure>
+               <graphic url="./img_inside-text/GG_000_r.jpg"/>
+               <figDesc>Drawing of Johann Wolfgang von Goethe</figDesc>
+            </figure>
+            <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+            <p rend="heading"><name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name>.</p>
+            <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+           </div>
+          </div>
+         <div type="page" n="001r" facs="./img/GG_001_r.jpg" ana="Title page of Goethe-Galerie.">
+                <head type="main">Goethe-Galerie.</head>
+                <head type="sub">Charaktere aus <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name>'s Werken.</head>
+             <byline>
+                <lb/>Gezeichnet
+                <lb/>von 
+                <lb/><persName ref="https://lobid.org/gnd/118592343"><forename>Friedrich</forename> <surname>Pecht</surname></persName> und <persName ref="https://lobid.org/gnd/118787799"><forename>Arthur</forename> <surname>von Ramberg</surname></persName>. 
+                <lb/><distinct type="archaic">Funfzig</distinct> Bl&#228;tter in Stahlstich. 
+                <lb/>Mit erl&#228;uterndem <choice><orig>Texte</orig>  <reg>Text</reg></choice> 
+                <lb/>von
+                <lb/><docAuthor><persName ref="https://lobid.org/gnd/118592343"><forename>Friedrich</forename> <surname>Pecht</surname></persName></docAuthor>.
+             </byline>
+             <p rend="center">Octav=Ausgabe</p>
+             <p rend="center">Zweite Auflage.</p>
+            <figure type="small">
+                <graphic url="./img_inside-text/GG_001_r.jpg"/>
+                <figDesc>Logo of the publisher.</figDesc>
+             </figure>
+             <p rend="center">
+                <name type="place"><placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName></name>: 
+                <lb/><name ref="https://lobid.org/gnd/1132516293 " type="publisher">F. A. Brockhaus</name>. 
+                <date when="1877">1877</date>. 
+             </p>
+             <note type="library_shelfmark">
+                <lb/>428
+                <lb/>G 599
+                <lb/>P 365
+             </note>
+          </div>
+         <div type="titlePage_back">
+           <div type="page" n="001v" facs="./img/GG_001_v.jpg" ana="Page including the library stamp of the University Library Graz and the Inventory number.">
+            <head type="library_stamp">
+               <lb/><name ref="https://lobid.org/gnd/36157-4" type="org">Karl-Franzens-Universit&#228;t Graz</name>
+               <lb/>Fachbibliothek f&#252;r Germanistik
+               <lb/>Inv.-Nr. <note type="handwritten">29827</note>
+            </head>
+            <p rend="handwritten"><date when="1989-12-02">2.12.89</date></p>
+            <p  rend="center">Druck von <name ref="https://lobid.org/gnd/1132516293 " type="publisher">F. A. Brockhaus</name> in <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName></p>
+          </div>
+         </div>
+          <div type="table_of_images">
+           <div type="page" n="002r" facs="./img/GG_002_r.jpg" ana="Table of images - 1 of 2.">
+            <head type="main"><choice><orig>Verzeichni&#223;</orig>  <reg>Verzeichnis</reg></choice> der Abbildungen.</head>
+            <table rows="2" cols="2">
+               <row>
+                  <cell rend="first"><p><ref target="#ch1"><name type="person">Goethe</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row role="illustrator">
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> in <placeName ref="https://www.geonames.org/3169070/rome.html">Rom</placeName>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="5">
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118540246" type="person">Frau Rath Goehte</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/11871791X" type="person">Cornelie Goethe</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118515500" type="person">Friederike</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118795333" type="person">Lili</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118581015" type="person">Johann Heinrich Merck</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="5">
+               <head type="sub"><name ref="https://lobid.org/gnd/4099199-4" type="play">G&#246;tz von Berlichingen</name>:</head>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118509659" type="character_inspiration">G&#246;tz von Berlichingen.</name></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Elisabeth</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Maria</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118613898" type="character_inspiration">Franz von Sickingen</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Adelheid</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="2">
+               <head type="sub"><name ref="https://lobid.org/gnd/4099202-0" type="play">Leiden des jungen Werther</name>:</head>
+               <row>
+                  <cell rend="first"><p><ref target="#ch13"><name type="character">Lotte</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><ref target="#ch14"><name type="character">Werther</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="4">
+               <head type="sub"><name ref="https://lobid.org/gnd/4280631-8" type="play">Clavigo</name></head>
+               <row>
+                  <cell rend="first"><p><name type="character">Clavigo</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Marie Beaumarchais</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118507850" type="character_inspiration">Beaumarchais</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Carlos</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="1">
+               <head type="sub"><name ref="https://lobid.org/gnd/1216054312" type="play">Die Geschwister</name>:</head>
+               <row>
+                  <cell rend="first"><p><name type="character">Marianne</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="2">
+               <head type="sub"><name ref="https://lobid.org/gnd/4099204-4" type="play">Stella</name>:</head>
+               <row>
+                  <cell rend="first"><p><name type="character">Stella</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Lucie</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+          </div>
+         </div>
+         <div type="table_of_images">
+           <div type="page" n="002v" facs="./img/GG_002_v.jpg" ana="Table of images - 2 of 2.">
+            <head type="sub"><choice><orig>Verzeichni&#223;</orig>  <reg>Verzeichnis</reg></choice> der Abbildungen.</head>
+            <table rows="2" cols="5">
+               <head type="sub"><name ref="https://lobid.org/gnd/4191697-9" type="play">Egmont</name>:</head>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118529153" type="character_inspiration">Graf Egmont</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Cl&#228;rchen</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118738062" type="character_inspiration">Wilhelm von Oranien</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118544225" type="character_inspiration">Margarethe von Parma</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118575775" type="character_inspiration">Machiavell</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="2">
+               <head type="sub"><name ref="https://lobid.org/gnd/4099201-9" type="play">Iphigenie auf Tauris</name>:</head>
+               <row>
+                  <cell rend="first"><p><name ref="https://en.wikipedia.org/wiki/Orestes" type="character_inspiration">Orest</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name ref="https://en.wikipedia.org/wiki/Iphigenia" type="character_inspiration">Iphigenie</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118787799" type="person">A. v. Ramberg</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="4">
+               <head type="sub"><name ref="https://lobid.org/gnd/4122459-0" type="play">Torquato Tass</name>o:</head>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118620916" type="character_inspiration">Torquato Tasso</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Leonore von Este</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Antonio</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Leonore Sanvitale</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="5">
+               <head type="sub"><name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name></head>
+               <row>
+                  <cell rend="first"><p><ref target="#ch33"><name type="character_inspiration">Faust</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><ref target="#ch34"><name type="character">Gretchen</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><ref target="#ch35"><name type="character">Mephistopheles</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><ref target="#ch36"><name type="character">Wagner</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><ref target="#ch37"><name type="character">Helena</name>.</ref></p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="6">
+               <head type="sub"><name ref="https://lobid.org/gnd/4123299-9" type="play">Wilhelm Meister</name>.</head>
+               <row>
+                  <cell rend="first"><p><name type="character">Wilhelm Meister</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Marianne</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Philine</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Die Gr&#228;fin</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Der Hafner</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Mignon</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="2">
+               <head type="sub"><name ref="https://lobid.org/gnd/4123298-7" type="play">Hermann und Dorothea</name>:</head>
+               <row>
+                  <cell rend="first"><p><name type="character">Hermann</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Dorothea</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="1">
+               <head type="sub"><name ref="https://lobid.org/gnd/4193087-3" type="play">Die nat&#252;rliche Tochter</name>:</head>
+               <row>
+                  <cell rend="first"><p><name type="character">Eugenie</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="3">
+               <head type="sub"><name ref="https://lobid.org/gnd/4099205-6" type="play">Die Wahlverwandtschaften</name>:</head>
+               <row>
+                  <cell rend="first"><p><name type="character">Ottilie</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Eduard</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+               <row>
+                  <cell rend="first"><p><name type="character">Charlotte</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+            <table rows="2" cols="1">
+               <head type="sub"><name ref="https://lobid.org/gnd/1088028942" type="autobiography">Benvenuto Cellini</name>:</head>
+               <row>
+                  <cell rend="first"><p><name ref="https://lobid.org/gnd/118519875" type="person">Benvenuto Cellini</name>.</p></cell>
+                  <cell><p><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p></cell>
+               </row>
+            </table>
+           </div>
+         </div>
+      </front>
+      <body>
+         <div type="book">
+           <div type="page" n="003r" facs="./img/GG_003_r.jpg" ana="Page with title of the book.">
+            <head>Goethe-Galerie.</head>
+           </div>
+           <div type="page" n="003v" facs="./img/GG_003_v.jpg" ana="Empty page."/>
+            <div type="chapter" n="1">
+               <div type="chapter_text">
+                  <div type="page" n="004r" facs="./img/GG_004_r.jpg" ana="Text about Johann Wolfgang von Goethe - page 1 of 4.">
+                  <head xml:id="ch1"><name type="person">Goethe</name>.</head>
+                  <p><hi rend="initial">S</hi>ehen wir im jungen <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> den Apoll verk&#246;rpert,
+                     wie er 
+                     <lb/>mit begeisterten Blicken die goldene Leier r&#252;hrt, so scheint im
+                     <lb/>gealterten Zeus Kronios selbst in seiner majest&#228;tischen Ruhe
+                     <lb/>wiedererstanden zu sein. Der <distinct type="archaic">ambrosischen</distinct> Locken <choice><orig>dunkele</orig>  <reg>dunkle</reg></choice> F&#252;lle, 
+                     <lb/>die des jugendlichen Dichters Haupt beschattete, sie ist vor der 
+                     <lb/>machtvollen k&#246;niglichen Stirn zur&#252;ckgewichen; das strahlende 
+                     <lb/>Auge, das alle Sch&#246;nheit der Welt so durstig in sich trank, 
+                     <lb/>dessen verzehrendes Feuer die Herzen aller Frauen h&#246;her schlagen 
+                     <lb/>machte, wenn sein Strahl sie traf, es leuchtet noch in alter 
+                     <lb/>Glut, aber in durchdringender Klarheit, es blitzt auch zuweilen 
+                     <lb/>in vernichtender Sch&#228;rfe; jener Mund, der so s&#252;&#223;e Lieder 
+                     <lb/>sang, den alle Grazien umschwebten, der in uners&#228;ttlicher
+                     <lb/>Schaffenslust zuckte, er ist ernst und schweigsam geworden, es 
+                     <lb/>ist eine gehaltene Kraft, eine ungestillte Sehnsucht darin, die 
+                     <lb/>uns sagen, <choice><orig>da&#223;</orig>  <reg>dass</reg></choice> dieser Mann gleich <name type="character">Faust</name> niemals aufh&#246;ren 
+                     <lb/>wird, sich strebend zu bem&#252;hen, <choice><orig>da&#223;</orig>  <reg>dass</reg></choice> er die L&#246;sung der <choice><orig>R&#228;thsel</orig>  <reg>R&#228;tsel</reg></choice> 
+                     <lb/>des Daseins unaufh&#246;rlich versucht, <choice><orig>wiewol</orig>  <reg>wiewohl</reg></choice> ihm auch <choice><orig>bewu&#223;t</orig>  <reg>bewusst</reg></choice> 
+                     <lb/>ist, <choice><orig>da&#223;</orig>  <reg>dass</reg></choice> er sie nie vollst&#228;ndig erreichen kann, <choice><orig>da&#223;</orig>  <reg>dass</reg></choice> sein letztes 
+                     <lb/>Wort noch ein Ruf nach „mehr Licht" sein wird!</p>
+                  <p>Leben hei&#223;t leiden, auch bei dem Gl&#252;cklichsten, wie <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> 
+                     <lb/>sicherlich deren einer war, da ihn <choice><orig>wol</orig>  <reg>wohl</reg></choice> nicht der Schmerz, aber 
+                     <lb/>doch jene Misère des Lebens verschonte, die <name ref="https://lobid.org/gnd/118607626" type="person">Schiller</name> so fr&#252;h 
+                     <lb/>erdr&#252;ckt hat, und so sehen wir denn auch in seinem Antlitz
+                     <lb/><choice><orig>wol</orig>  <reg>wohl</reg></choice> die Narben ernster Wunden eingegraben, aber wenig<pc force="weak">=</pc>
+                     <lb break="no"/>stens keine des t&#228;glichen kleinen <choice><orig>Aergers</orig>  <reg>&#196;rgers</reg></choice>, wie bei den meisten
+                     <lb/>Menschen. Es hat hier keine S&#228;ure des Gemeinen sich an<pc force="weak">=</pc>
+                     <lb break="no"/>gesetzt, kein fressend Gift hat seine tiefen Spuren durch das 
+                     <lb/>herrliche Antlitz verw&#252;stend gezogen. Jene heitere, pr&#228;chtige, 
+                     <lb/>glatte Stirn, hinter der sich die goldenen Tr&#228;ume des J&#252;nglings 
+                     <lb/>woben, die Zeit hat sie gefurcht, aber sie hat ihr an stolzer</p>
+                 </div>
+                  <div type="page" n="004v" facs="./img/GG_004_v.jpg" ana="Text about Johann Wolfgang von Goethe - page 2 of 4.">
+                  <p rend="page_header"> Goethe. </p>
+                  <p>Majest&#228;t zugelegt, was sie ihr an sonnigem <distinct type="archaic">Sch&#246;nheitsglanze</distinct> 
+                     <lb/>nahm; aus dem begeisterten, vom <distinct type="archaic">Genius</distinct> trunkenen Dichter 
+                     <lb/>ist ein m&#228;chtiger Geisterf&#252;rst geworden; bezauberte uns der eine, 
+                     <lb/>so erf&#252;llt uns der andere mit scheuer Ehrfurcht; das d&#228;monische 
+                     <lb/>Wesen des <distinct type="archaic">Genius</distinct> wirkt noch verst&#228;rkt, aber auch veredelt auf 
+                     <lb/>uns. Schien der J&#252;ngling den Himmel zu st&#252;rmen, so scheint 
+                     <lb/>der alternde Mann ihn bereits erobert zu haben und, im 
+                     <lb/>Besitz desselben gesichert durch seine Blitze, jeden Eindringling 
+                     <lb/>ruhig abzuweisen.</p>
+                  <p>Sehen wir im ersten die poetische Inspiration <choice><orig>personificirt</orig>  <reg>personifiziert</reg></choice>, 
+                     <lb/>so scheint die Weisheit selber auf der Stirn des Mannes zu 
+                     <lb/>thronen, &#252;berall ist das Sinnliche dem Sinn, die Ahnung 
+                     <lb/>der Forschung gewichen, jenes tiefe Naturgef&#252;hl dem Streben, 
+                     <lb/>den Zusammenhang aller Dinge zu ergr&#252;nden; die Philosophie 
+                     <lb/>hat mit der Poesie die Pl&#228;tze getauscht, ohne <choice><orig>da&#223;</orig>  <reg>dass</reg></choice> die eine der 
+                     <lb/>andern vollst&#228;ndig gewichen w&#228;re, denn das Bewunderungs<pc force="weak">=</pc>
+                     <lb break="no"/>w&#252;rdigste an Goethe ist immer die Universalit&#228;t dieses Geistes, 
+                     <lb/>dem nichts fremd zu bleiben scheint, was jemals die Welt be<pc force="weak">=</pc>
+                     <lb break="no"/>wegt, die Menschen durchzuckt hat. Von der Glut des J&#252;ng<pc force="weak">=</pc>
+                     <lb break="no"/>lings ist nur die sch&#246;ne W&#228;rme &#252;brig geblieben, weises Ma&#223; 
+                     <lb/>hat die Frische ersetzt, die h&#246;chste Kunst ist an die Stelle der 
+                     <lb/>unmittelbaren Natur getreten, die st&#252;rmende Leidenschaft mit 
+                     <lb/>ihrer hinrei&#223;enden <distinct type="archaic">Beredsamkeit</distinct>, sie hat den Platz der <choice><orig>geheimni&#223;<pc force="weak">=</pc>
+                     <lb/>vollen</orig>  <reg>geheimnisvollen</reg></choice>, tiefsinnigen Symbolik ger&#228;umt, der frische Naturlaut 
+                     <lb/>weicht der vollendeten Form.</p>
+                  <p>Der Weg, den der Dichter <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> durchmessen hat, ist 
+                     <lb/>ein ungeheuerer, und wenn unsere Sympathie der zauberischen 
+                     <lb/>Gewalt seiner Jugendwerke zugewendet bleiben wird, so folgt 
+                     <lb/>unsere Bewunderung doch immer noch dem Idealismus seines 
+                     <lb/>Alters. Denn das ist das Merkw&#252;rdige dieses Geistes, <choice><orig>da&#223;</orig>  <reg>dass</reg></choice> 
+                     <lb/>er, vom sch&#228;rfsten, schonungslosesten k&#252;nstlerischen Realismus 
+                     <lb/>ausgehend, seine Werke allm&#228;hlich mit immer mehr Idealit&#228;t 
+                     <lb/>durchdringt, bis diese zuletzt eine fast einseitige Herrschaft &#252;ber 
+                     <lb/>seine <choice><orig>Production</orig>  <reg>Produktion</reg></choice> gewinnt, w&#228;hrend umgekehrt der Mensch in 
+                     <lb/>ihm den entgegengesetzten Weg von der schrankenlosesten <choice><orig>Sub<pc force="weak">=</pc>
+                        <lb break="no"/>jectivit&#228;t</orig>  <reg>Subjektivit&#228;t</reg></choice> bis zur klarsten <choice><orig>objectiven</orig>  <reg>objektiven</reg></choice> Ruhe <choice><orig>durchmi&#223;t</orig>  <reg>durchmisst</reg></choice>.</p>
+                  <p>Man lernt nie aus an dieser reichen Natur, und es gew<pc force="weak">=</pc>
+                     <lb break="no"/>&#228;hrt ein unersch&#246;pfliches Vergn&#252;gen, den Wegen nachzusp&#252;ren, 
+                     <lb/>welche die verschiedenen F&#228;higkeiten derselben gingen, und die</p>
+                 </div>
+                  <div type="page" n="005r" facs="./img/GG_005_r.jpg" ana="Text about Johann Wolfgang von Goethe - page 3 of 4.">
+                  <p rend="page_header">Goethe.</p>
+                  <p><choice><orig>eigenth&#252;mlichen</orig>  <reg>eigent&#252;mlichen</reg></choice> Mischungen zu betrachten, die sie miteinander 
+                     <lb/>eingehen, dem <distinct type="archaic">Gesetze</distinct> folgend, das er selber in den „<name ref="https://lobid.org/gnd/4099205-6" type="play">Wahl<pc force="weak">=</pc>
+                     <lb break="no"/>verwandtschaften</name>" mit so un&#252;bertrefflicher Meisterschaft geschildert. 
+                     <lb/>Es spiegelt dieses Goethe'sche Geistesleben uns gewisserma&#223;en 
+                     <lb/>das der ganzen Menschheit in seiner unersch&#246;pflichen <choice><orig>Mannich<pc force="weak">=</pc>
+                     <lb break="no"/>faltigkeit</orig> <reg>Mannigfaltigkeit</reg></choice>, wenn wir nach jenen ersten Werken, die uns, wie 
+                     <lb/>„Die <name ref="https://lobid.org/gnd/4439891-8" type="play">Mitschuldigen</name>", „<name ref="https://lobid.org/gnd/4099199-4" type="play">G&#246;tz</name>", „<name ref="https://lobid.org/gnd/4099202-0" type="play">Werther</name>", „<name ref="https://lobid.org/gnd/4280631-8" type="play">Clavigo</name>", den 
+                     <lb/>unmittelbarsten Naturlaut, den Schrei und Sturm der Leiden<pc force="weak">=</pc>
+                     <lb break="no"/>schaft mit so durchaus realistischer Kraft schildern, also nur den 
+                     <lb/>Drang der Natur befriedigen, allm&#228;hlich das <choice><orig>Bed&#252;rfni&#223;</orig> <reg>Bed&#252;rfnis</reg></choice> der er<pc force="weak">=</pc>
+                     <lb break="no"/>h&#246;hten Form st&#228;rker werden sehen, demnach die <choice><orig>Cultur</orig> <reg>Kultur</reg></choice>, die 
+                     <lb/>Freude an der Kunst an sich auftreten sehen, wenn sie auch 
+                     <lb/>noch durchaus auf der Basis der Natur ruht, immer noch 
+                     <lb/>durchaus <choice><orig>individualisirend</orig> <reg>individualisierend</reg></choice> und realistisch verf&#228;hrt wie in "<name ref="https://lobid.org/gnd/4191697-9" type="play">Eg<pc force="weak">=</pc>
+                     <lb break="no"/>mont</name>", „<name ref="https://lobid.org/gnd/4122459-0" type="play">Tasso</name>", „<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>", bis die k&#252;nstlerische Vollendung 
+                     <lb/>der Form mit der h&#246;chsten Naturwahrheit in „<name ref="https://lobid.org/gnd/4099201-9" type="play">Iphigenie</name>" 
+                     <lb/>und „<name ref="https://lobid.org/gnd/4123298-7" type="play">Hermann und Dorothea</name>“ ihren Triumph feiern, sich 
+                     <lb/>aufs vollst&#228;ndigste durchdringen.</p>
+                  <p>Von da an aber beginnt sich der Realismus bei <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> 
+                     <lb/>ganz in seine wissenschaftlichen Arbeiten zu fl&#252;chten — wie 
+                     <lb/>denn die Wissenschaft auch in der <choice><orig>Culturgeschichte</orig> <reg>Kulturgeschichte</reg></choice> &#252;berall Kunst 
+                     <lb/>und Poesie verdr&#228;ngt, ihnen wenigstens nachfolgt —, die poet<pc force="weak">=</pc>
+                     <lb break="no"/>ischen Arbeiten werden jetzt immer <choice><orig>idealisirender</orig> <reg>idealisierender</reg></choice>, die Form 
+                     <lb/>wird zuletzt alles, wie bei der „<name ref="https://lobid.org/gnd/4193087-3" type="play">Nat&#252;rlichen Tochter</name>“, wo die 
+                     <lb/>Gestalten fast aller Individualit&#228;t entbehren und wenig mehr 
+                     <lb/>als blasse Schemen, <choice><orig>Abstracta</orig> <reg>Abstrakta</reg></choice> &#252;brig bleiben, oder wie im 
+                     <lb/>zweiten <choice><orig>Theil</orig> <reg>Teil</reg></choice> des „<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>“, wo sie in Symbolik aufgel&#246;st wer<pc force="weak">=</pc>
+                     <lb break="no"/>den, w&#228;hrend sie im ersten noch die gr&#246;&#223;te Lebensf&#252;lle zeigen. 
+                     <lb/>Daf&#252;r entsch&#228;digt uns die tiefsinnige Weisheit, die ihnen der 
+                     <lb/>Dichter in den Mund legt und die er der Wissenschaft, der 
+                     <lb/>Philosophie, dem Studium des Lebens verdankt; wir glauben 
+                     <lb/>an ihn, wenn wir l&#228;ngst an seine Figuren zu glauben auf<pc force="weak">=</pc>
+                     <lb break="no"/>geh&#246;rt haben. Daneben aber macht diese F&#228;higkeit der scharfen
+                     <lb/>Beobachtung nun auf einmal die &#252;berraschendsten und folgen<pc force="weak">=</pc>
+                     <lb break="no"/>reichsten Entdeckungen in den Naturwissenschaften; der Reali<pc force="weak">=</pc>
+                     <lb break="no"/>smus, den er der Dichtung entzieht, kommt ihm hier auf das 
+                     <lb/>merkw&#252;rdigste zugute. Das alles aber spielt nicht etwa <choice><orig>blos</orig> <reg>blo&#223;</reg></choice> 
+                     <lb/>hintereinander her in seinem Leben, sondern lange Zeit auch 
+                     <lb/>nebeneinander; denn wie nahe liegen nicht „<name ref="https://lobid.org/gnd/4123298-7" type="play">Hermann und</name></p>
+                 </div>
+                  <div type="page" n="005v" facs="./img/GG_005_v.jpg" ana="Text about Johann Wolfgang von Goethe - page 4 of 4.">
+                  <p rend="page_header"> Goethe. </p>
+                  <p><name ref="https://lobid.org/gnd/4123298-7" type="play">Dorothea</name>" und „<name ref="https://lobid.org/gnd/4193087-3" type="play">Die nat&#252;rliche Tochter</name>“ der Zeit nach bei 
+                     <lb/>ihm zusammen, und wie bald wird nicht diese wieder von den 
+                     <lb/>durch das feinste Naturstudium getragenen „<name ref="https://lobid.org/gnd/4099205-6" type="play">Wahlverwandtschaft<pc force="weak">=</pc>
+                     <lb break="no"/>en</name>" gefolgt, die neben der Formvollendung jener uns wieder 
+                     <lb/>ein sehr loses k&#252;nstlerisches Gef&#252;ge zeigen. So &#252;berrascht er 
+                     <lb/>uns immer wieder durch neue Wendungen. W&#228;hrend andere
+                     <lb/>K&#252;nstler mit fr&#252;h angeeigneter Meisterschaft gleich <name ref="https://lobid.org/gnd/118613723" type="person">Shakspeare</name>,
+                     <lb/><name ref="https://lobid.org/gnd/118612409" type="person">Walter Scott</name> uns eine lange Reihe gleichartiger <choice><orig>Productionen</orig> <reg>Produktionen</reg></choice> 
+                     <lb/>geben, in denen mehr oder weniger immer der ganze Mensch 
+                     <lb/>zu erkennen ist, so wird bei ihm eine jede wieder neugeartet, 
+                     <lb/>bezeichnet eine neue Phase in seinem Leben, spiegelt aber nur 
+                     <lb/>einen einzelnen <choice><orig>Theil</orig> <reg>Teil</reg></choice> seiner k&#252;nstlerischen Pers&#246;nlichkeit wider 
+                     <lb/>und gibt uns so ewig neue <choice><orig>R&#228;thsel</orig> <reg>R&#228;tsel</reg></choice>. Immer werden wir 
+                     <lb/>wieder zu neuer Bewunderung hingerissen durch den <distinct type="archaic">ungeheuern</distinct> 
+                     <lb/><choice><orig>Reichthum</orig> <reg>Reihtum</reg></choice> eines Geistes, der ein gr&#246;&#223;eres Gebiet zu umfassen 
+                     <lb/>und zu durchdringen vermochte, als bisher irgendeinem Sterb=
+                     <lb/>lichen verg&#246;nnt <distinct type="archaic">ward</distinct>. Wir <choice><orig>w&#252;&#223;ten</orig> <reg>wüssten</reg></choice> unter den Alten nur 
+                     <lb/>einen, der ihm an Universalit&#228;t des Geistes und gleichzeitiger
+                     <lb/>Meisterschaft in einzelnen Feldern der <choice><orig>Production</orig> <reg>Produktion</reg></choice> an die Seite 
+                     <lb/>zu stellen sein m&#246;chte: <name ref="https://lobid.org/gnd/118640445" type="person">Leonardo da Vinci</name>, obgleich ihn auch 
+                     <lb/>dieser an <choice><orig>ungeheuerer</orig> <reg>ungeheurer</reg></choice> Wirksamkeit auf die Bildung seiner Na<pc force="weak">=</pc>
+                     <lb break="no"/>tion nicht entfernt erreicht.</p>
+               </div>
+               </div>
+            </div>
+            <gap quantity="66" unit="pages" reason="editorial"/>
+            <div type="chapter" n="13">
+               <div type="chapter_image">
+                  <div type="page" n="039r" facs="./img/GG_039_r.jpg" ana="Page with steel engraving of Lotte">
+                   <figure xml:id="ch13">
+                     <graphic url="./img_inside-text/GG_039_r.jpg"/>
+                     <figDesc>Drawing of Lotte</figDesc>
+                  </figure>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                  <p rend="heading"><name type="charakter">Lotte</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+               </div>
+               </div>
+               <div type="page" n="039v" facs="./img/GG_039_v.jpg" ana="Empty page." />
+               <div type="chapter_text">
+                  <div type="page" n="040r" facs="./img/GG_040_r.jpg" ana="Text about Lotte - page 1 of 4.">
+                  <head><name type="charakter">Lotte</name>.</head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4099202-0" type="play">Leiden des jungen Werther</name>.) </head>
+                  <p><hi rend="initial">H</hi>aben wir im Laufe unserer begleitenden Betrachtungen
+                     <lb/>bei jeder Gelegenheit unsere unbedingte Bewunderung der 
+                     <lb/>k&#252;nstlerischen Meisterschaft auszusprechen, mit der <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> die 
+                     <lb/><choice><orig>mannichfaltigsten</orig> <reg>mannigfaltigsten</reg></choice> Frauencharaktere uns zu schildern wei&#223;, so 
+                     <lb/>gestehen wir aufrichtig, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> bei einem der ber&#252;hmtesten derselben 
+                     <lb/>dies uns lange nie recht hat gelingen wollen, und zwar gerade 
+                     <lb/>bei der weltber&#252;hmten Amtmannstochter, die vom Dichter dazu 
+                     <lb/>bestimmt war, durch ihre Reize so viel Ungl&#252;ck anzurichten.</p>
+                  <p>Auf die Gefahr hin, f&#252;r ziemlich trocken und phantasielos 
+                     <lb/>zu gelten, m&#252;ssen wir bekennen, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> sie uns immer eine Ab<pc force="weak">= </pc>
+                     <lb break="no"/>straction geblieben, <choice><orig>obwol</orig> <reg>obwohl</reg></choice> wir schon vor drei&#223;ig Jahren ihre 
+                     <lb/>Bekanntschaft gemacht. Als wir dieselbe daher bei Gelegenheit 
+                     <lb/>dieses Werks zu erneuern hatten und es uns abermals nicht 
+                     <lb/>gelingen wollte, sie lebendig vor uns zu sehen, so nahmen wir
+                     <lb/>unsere Zuflucht zu dem authentischen Bilde jener <name ref="https://lobid.org/gnd/118638076" type="person">Lotte Kestner</name>, 
+                     <lb/>die Goethe einst zu seiner Sch&#246;pfung begeistert hatte, und wir 
+                     <lb/>begriffen jetzt wenigstens, wie er den Selbstmord <distinct type="archaic">ihrethalben</distinct> 
+                     <lb/>doch lieber seinem Werther &#252;berlassen — und sich <distinct type="archaic">selber</distinct>, wie 
+                     <lb/>er komisch genug erz&#228;hlt, mit dem Ritzen der Haut begn&#252;gen 
+                     <lb/>mochte.</p>
+                  <p><choice><orig>Inde&#223;</orig> <reg>Indess</reg></choice> fanden wir doch nun leichter die Z&#252;ge zusammen, 
+                     <lb/>wie sie Werther allm&#228;hlich schildert; wir sahen zun&#228;chst das 
+                     <lb/><quote type="short">„M&#228;dchen von sch&#246;ner Gestalt, mittlerer Gr&#246;&#223;e, die ein simples 
+                     <lb/>wei&#223;es Kleid mit <choice><orig>bla&#223;rothen</orig> <reg>blassroten</reg></choice> Schleifen an Arm und Brust 
+                     <lb/>hatte"</quote>. Wir begreifen es, wenn er sagt:</p>
+                 </div>
+                  <div type="page" n="040v" facs="./img/GG_040_v.jpg" ana="Text about Lotte - page 2 of 4.">
+                  <p rend="page_header"><name type="charakter">Lotte</name>.</p>
+                  <p><quote type="long">Wie ich mich unter dem <choice><orig>Gespr&#228;che</orig> <reg>Gespr&#228;ch</reg></choice> in den schwarzen Augen 
+                     <lb/>weidete! Wie die lebendigen Lippen und die frischen, muntern 
+                     <lb/>Wangen meine ganze Seele anzogen! Wie ich, in den herrlichen 
+                     <lb/>Sinn ihrer Rede ganz versunken, oft gar die Worte nicht h&#246;rte, 
+                     <lb/>mit denen sie sich ausdr&#252;ckte — </quote></p>
+                  <p>was, beil&#228;ufig bemerkt, den meisten Liebenden bekanntlich so zu 
+                     <lb/>gehen pflegt. Ja, wenn er fortf&#228;hrt:</p>
+                  <p><quote type="long">Tanzen <choice><orig>mu&#223;</orig> <reg>muss</reg></choice> man sie sehen! Siehst du, sie ist so mit ganzem 
+                     <lb/>Herzen und mit ganzer Seele dabei, ihr ganzer K&#246;rper Eine Har<pc force="weak">=</pc>
+                     <lb break="no"/>monie, so sorglos, so unbefangen, als wenn das eigentlich alles 
+                     <lb/>w&#228;re, als wenn sie sonst nichts d&#228;chte, nichts empf&#228;nde, und in 
+                     <lb/>dem Augenblicke <choice><orig>gewi&#223;</orig> <reg>gewiss</reg></choice> schwindet alles andere vor ihr</quote></p>
+                  <p>so ist man sogar geneigt, ihm ein wenig zu sehr aufs Wort zu 
+                     <lb/>glauben. Auch das versteht man recht gut, wenn sie erz&#228;hlt:</p>
+                  <p><quote type="long">Wie ich j&#252;nger war, liebte ich nichts so sehr als Romane. Wei&#223; 
+                     <lb/>Gott, wie wohl mir's war, wenn ich mich Sonntags so in ein 
+                     <lb/>Eckchen setzen und mit ganzem Herzen an dem Gl&#252;ck und Unstern 
+                     <lb/>einer <choice><orig>Mi&#223;</orig> <reg>Miss</reg></choice> Jenny <choice><orig>theilnehmen</orig> <reg>teilnehmen</reg></choice> konnte.</quote></p>
+                  <p><choice><orig>Da&#223;</orig> <reg>Dass</reg></choice> man sich aber bis zum Wahnsinn in dieses gern 
+                     <lb/>tanzende, gern Romane lesende, im &#252;brigen gesund h&#228;usliche, 
+                     <lb/>ja <distinct type="archaic">hausbackene</distinct>, auffallend <distinct type="archaic">landst&#228;dtisch</distinct> aussehende Gesicht ver<pc force="weak">=</pc>
+                     <lb break="no"/>lieben kann, das begreift man noch immer nicht. R&#252;hmt dann 
+                     <lb/><name type="charakter">Werther</name> einmal an ihr:</p>
+                  <p><quote type="long">So viel Einfalt bei so viel Verstand, so viel G&#252;te bei so viel 
+                     <lb/>Festigkeit und die Ruhe der Seele bei dem wahren Leben und der 
+                     <lb/><choice><orig>Th&#228;tigkeit</orig> <reg>T&#228;tigkeit</reg></choice> — </quote></p>
+                  <p>so bekommen wir nach und nach das Bild einer ganz gesunden, 
+                     <lb/><choice><orig>heitern</orig> <reg>heiteren</reg></choice>, bescheidenen, eher etwas einfachen als berauschenden 
+                     <lb/>reichen Natur, und es war daher sehr nat&#252;rlich, wenn sie der 
+                     <lb/>K&#252;nstler als solche in jener <choice><orig>Gewitterscene</orig> <reg>Gewiterszene</reg></choice> nach dem <choice><orig>Balle</orig> <reg>Ball</reg></choice> <choice><orig>auf<pc force="weak">=</pc>
+                     <lb break="no"/>fa&#223;te</orig> <reg>auffasste</reg></choice>, die <name type="charakter">Werther</name> mit den Worten schildert:</p>
+                  <p><quote type="long">Es donnerte abseitw&#228;rts, und der herrliche Regen s&#228;uselte auf 
+                     <lb/>das Land, und der erquickendste Wohlgeruch stieg in aller F&#252;lle 
+                     <lb/>einer warmen Luft zu uns auf. Sie stand auf ihren <choice><orig>Elnbogen</orig> <reg>Ellenbogen</reg></choice> 
+                     <lb/>gest&#252;tzt, ihr Blick durchdrang die Gegend, sie sah gen Himmel und 
+                     <lb/>auf mich, ich sah ihr Auge <choice><orig>thr&#228;nenvoll</orig> <reg>tr&#228;nenvoll</reg></choice>.</quote></p>
+                  <p>Hielten wir nun alle diese einzelnen Z&#252;ge zusammen, so 
+                     <lb/>wurde uns allerdings auch endlich eine <name type="charakter">Lotte</name> lebendig, ja wir 
+                     <lb/>glaubten sogar jetzt den genialen <choice><orig>Instinct</orig> <reg>Instinkt</reg></choice> zu verstehen, welcher 
+                     <lb/>den Dichter lehrte, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> er gerade eben den Gegensatz von</p>
+                 </div>
+                  <div type="page" n="041r" facs="./img/GG_041_r.jpg" ana="Text about Lotte - page 3 of 4.">
+                  <p rend="page_header"><name type="charakter">Lotte</name>.</p>
+                  <p><name type="charakter">Lotte</name>ns <choice><orig>th&#228;tigem</orig> <reg>t&#228;tigem</reg></choice>, h&#228;uslichem, nichts weniger als
+                     <choice><orig>&#252;berschweng<pc force="weak">=</pc>
+                        <lb/>lichem</orig> <reg>&#252;berschw&#228;nglichem</reg></choice>, aber durchaus gesundem Wesen brauche, um durch ihn 
+                     <lb/>das Kranke, <choice><orig>Ueberreizte</orig> <reg>&#220;berreizte</reg></choice>, <distinct type="archaic">Verz&#228;rtelte</distinct>, Sentimentale, Melancho<pc force="weak">=</pc>
+                     <lb break="no"/>lisch=Schw&#228;rmerische in <name type="charakter">Werther</name>'s Natur um so st&#228;rker heraus<pc force="weak">=</pc>
+                     <lb break="no"/>zuheben. Ihre frische Weiblichkeit bildet zu dem Unm&#228;nnlichen 
+                     <lb/>bei ihm einen um so sch&#228;rfern <choice><orig>Contrast</orig> <reg>Kontrast</reg></choice>. Sie erscheint immer 
+                     <lb/><choice><orig>blos</orig> <reg>blo&#223;</reg></choice> verst&#228;ndig neben ihm; ist es doch so viel n&#252;chterner, keine 
+                     <lb/>Pflicht zu vernachl&#228;ssigen, und so viel interessanter, alle mit 
+                     <lb/>geistreichen Sophismen theoretisch wie in der Praxis mit F&#252;&#223;en 
+                     <lb/>zu treten wie <name type="charakter">Werther</name>.</p>
+                  <p>Neben ihm wie ganz anders erscheint uns da die so ge<pc force="weak">=</pc>
+                     <lb break="no"/>w&#246;hnliche <name type="charakter">Lotte</name>, die freilich wenig Schwung, aber um so mehr 
+                     <lb/>Pflichtgef&#252;hl hat, <choice><orig>soda&#223;</orig> <reg>sodass</reg></choice> man von ihr erz&#228;hlen kann,</p>
+                  <p><quote type="long">... wie seit der Zeit ein ganz anderer Geist <name type="charakter">Lotten</name> belebt habe; 
+                     <lb/>wie sie in der Sorge f&#252;r ihre <choice><orig>Wirthschaft</orig> <reg>Wirtschaft</reg></choice> und in dem Ernste eine 
+                     <lb/>wahre Mutter geworden; wie kein Augenblick ihrer Zeit ohne 
+                     <lb/><distinct type="archaic">th&#228;tige</distinct> Liebe, ohne Arbeit verstrichen und dennoch ihre Munter<pc force="weak">=</pc>
+                     <lb break="no"/>keit, ihr leichter Sinn sie nie dabei verlassen habe.</quote></p>
+                  <p>Gerade diese T&#252;chtigkeit des Wesens <choice><orig>mu&#223;</orig> <reg>muss</reg></choice>auf einen Menschen 
+                     <lb/>wie <name type="charakter">Werther</name> den tiefsten Eindruck machen; der Kranke liebt 
+                     <lb/>nicht wieder das Kranke, sondern im <choice><orig>Gegentheil</orig> <reg>Gegenteil</reg></choice> leidenschaftlich 
+                     <lb/>das Gesunde, <choice><orig>obwol</orig> <reg>obwohl</reg></choice> er es nie recht versteht. Ebenso ist es das 
+                     <lb/><choice><orig>Eigenth&#252;mliche</orig> <reg>Eigent&#252;mliche</reg></choice> aller geistigen Krankheiten, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> sie uns die 
+                     <lb/>Empfindung f&#252;r die Realit&#228;t der Dinge verlieren lassen; so 
+                     <lb/>sagt denn auch <name type="charakter">Werther</name> einmal im Verlauf der seinigen:</p>
+                  <p><quote type="long">Ich spiele mit, vielmehr, ich werde gespielt wie eine Marionette, 
+                     <lb/>und fasse manchmal meinen Nachbar an der h&#246;lzernen Hand und 
+                     <lb/><choice><orig>schaudre</orig> <reg>schaudere</reg></choice> zur&#252;ck.</quote></p>
+                  <p>Gerade aber <name type="charakter">Lotte</name> verliert jene Empfindung nie, wie die 
+                     <lb/>meisten Frauen, so gern sie sich auch einmal von der Schw&#228;rmerei 
+                     <lb/>fortrei&#223;en lassen, ja ein wenig <choice><orig>kokettiren</orig> <reg>kokettieren</reg></choice>, wie das auch <name type="charakter">Lotten</name> 
+                     <lb/>gelegentlich widerf&#228;hrt; doch findet sie sich gleich wieder zurecht, 
+                     <lb/>w&#228;hrend <name type="charakter">Werther</name> dann ihr vorwerfen zu d&#252;rfen glaubt:</p>
+                  <p><quote type="long">Sie sieht nicht, sie f&#252;hlt nicht, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> sie ein Gift bereitet, das 
+                     <lb/>mich und sie zu Grunde richten wird.</quote></p>
+                  <p>Das ist der Vorwurf des Kranken; viel wahrer ist, wenn 
+                     <lb/>wir sp&#228;ter von ihr h&#246;ren:</p>
+                 </div>
+                  <div type="page" n="041v" facs="./img/GG_041_v.jpg" ana="Text about Lotte - page 4 of 4.">
+                  <p rend="page_header"><name type="charakter">Lotte</name>.</p>
+                  <p><quote type="long">So viel ist <choice><orig>gewi&#223;</orig> <reg>gewiss</reg></choice>, sie war fest bei sich entschlossen, alles zu 
+                     <lb/><choice><orig><choice><orig>thun</orig> <reg>tun</reg></choice></orig> <reg>tun</reg></choice>, um <name type="charakter">Werther</name> zu entfernen.</quote></p>
+                  <p>Oder wenn sie ihm gar sagt:</p>
+                  <p><quote type="long">Warum denn mich, <name type="charakter">Werther</name>? <distinct type="archaic">just</distinct> mich, das <choice><orig>Eigenthum</orig> <reg>Eigentum</reg></choice> eines 
+                     <lb/>andern? <distinct type="archaic">just</distinct> das? Ich f&#252;rchte, ich f&#252;rchte, es ist nur die Un<pc force="weak">=</pc>
+                     <lb break="no"/>m&#246;glichkeit, mich zu besitzen, die Ihnen diesen Wunsch so reizend 
+                     <lb/>macht —</quote></p>
+                  <p>so haben wir ebenso viel Grund, uns ihres kernhaften Menschen<pc force="weak">=</pc>
+                     <lb break="no"/>verstandes zu freuen, als es begreiflich zu finden, wenn er 
+                     <lb/>&#252;ber der grenzenlosen Leidenschaft eines begabten und von ihr 
+                     <lb/>geachteten Mannes endlich f&#252;r einen Augenblick ins Wanken 
+                     <lb/>kommt, sie sich einen Augenblick <choice><orig>vergi&#223;t</orig> <reg>vergisst</reg></choice>:</p>
+                  <p><quote type="long">Alles, was sie Interessantes f&#252;hlte und dachte, war sie gewohnt 
+                     <lb/>mit ihm zu <choice><orig>theilen</orig> <reg>teilen</reg></choice>, und seine Entfernung drohte in ihr ganzes 
+                     <lb/>Wesen eine L&#252;cke zu rei&#223;en, die nicht wieder ausgef&#252;llt werden 
+                     <lb/>konnte. O, h&#228;tte sie ihn in dem Augenblicke zum Bruder um<pc force="weak">=</pc>
+                     <lb break="no"/>wandeln k&#246;nnen: wie gl&#252;cklich w&#228;re sie gewesen!</quote></p>
+                  <p>Nichts ist so ansteckend als die <choice><orig>Thorheit</orig> <reg>Torheit</reg></choice>; <choice><orig>da&#223;</orig> <reg>dass</reg></choice> sie also einen 
+                     <lb/>Moment schwankt, k&#246;nnen wir ihr um so weniger verdenken, als 
+                     <lb/>sie sofort den <choice><orig>Entschlu&#223;</orig> <reg>Entschluss</reg></choice> findet, der ihrer Pflicht entspricht, und 
+                     <lb/>ihm zuruft:</p>
+                  <p><quote type="long">Das ist das letzte mal, <name type="charakter">Werther</name>! Sie sehen mich nicht wieder.</quote></p>
+                  <p>Gleichg&#252;ltig zu bleiben, h&#228;tte sie gef&#252;hllos erscheinen lassen;
+                     <lb/>ein Sieg, der keinen Kampf kostet, ist keine Tugend: so d&#252;rfen 
+                     <lb/>wir denn <choice><orig>wol</orig> <reg>wohl</reg></choice> den, welchen sie sich abrang, ihr um so h&#246;her 
+                     <lb/>anrechnen, je mehr er
+                     schwer werden <choice><orig>mu&#223;te</orig> <reg>musste</reg></choice>.</p>
+               </div>
+            </div>
+            </div>
+            <div type="chapter" n="14">
+               <div type="chapter_image">
+                  <div type="page" n="042r" facs="./img/GG_042_r.jpg" ana="Page with steel engraving of Werther.">
+                   <figure xml:id="ch14">
+                     <graphic url="./img_inside-text/GG_042_r.jpg"/>
+                     <figDesc>Drawing of Werther</figDesc>
+                  </figure>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                  <p rend="heading"><name type="charakter">Werther</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+               </div>
+              </div>
+               <div type="page" n="042v" facs="./img/GG_042_v.jpg" ana="Empty page."/>
+               <div type="chapter_text">
+                  <div type="page" n="043r" facs="./img/GG_043_r.jpg" ana="Text about Werther - page 1 of 4.">
+                  <head><name type="charakter">Werther</name>.</head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4099202-0" type="play">Leiden des jungen Werther</name>.)</head>
+                  <p><hi rend="initial">I</hi>st es das echte Kennzeichen des <distinct type="archaic">Genius</distinct>, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> er bisweilen 
+                     <lb/>in einem einzigen Werk die ganze geistige Verfassung seiner 
+                     <lb/>Zeit widerzuspiegeln vermag, so geh&#246;rt der „<name ref="https://lobid.org/gnd/4099202-0" type="play">Werther</name>“, wie 
+                     <lb/><name ref="https://lobid.org/gnd/118607626" type="person">Schiller</name>'s „<name ref="https://lobid.org/gnd/4099339-5" type="play">R&#228;uber</name>“, unstreitig zu diesen Kunstwerken, die 
+                     <lb/>f&#246;rmliche Marksteine einer <choice><orig>Culturepoche</orig> <reg>Kulturepoche</reg></choice> genannt werden m&#252;ssen.</p>
+                  <p>Wenige B&#252;cher haben jemals eine so blitzartig z&#252;ndende 
+                     <lb/>Wirkung ausge&#252;bt als das, dessen Helden wir hier schildern 
+                     <lb/>sollen. Auch heute noch h&#228;lt es uns, wirft man es nicht nach 
+                     <lb/>den ersten zehn Seiten schon weg, krampfartig fest, jagt uns 
+                     <lb/>das Fieber ins Blut durch den Schauer &#252;ber die Abgr&#252;nde 
+                     <lb/>des menschlichen Herzens, an denen wir t&#228;glich sorglos vorbei<pc force="weak">=</pc>
+                     <lb break="no"/>schreiten und die es mit wilder Lust aufdeckt. Es hat aber 
+                     <lb/>keine befreiende, erhebende Wirkung, im <choice><orig>Gegentheil</orig> <reg>Gegenteil</reg></choice> eine be<pc force="weak">=</pc>
+                     <lb break="no"/>klemmende, schwindelerregende, krankmachende. <choice><orig>Mu&#223;</orig> <reg>Muss</reg></choice> man es 
+                     <lb/>tief traurig nennen, so ist es doch ganz und gar nicht tragisch. 
+                     <lb/>Das Tragische verlangt einen Helden, ein gro&#223;es, m&#228;chtiges 
+                     <lb/>Interesse, um dessen Sieg oder Untergang es sich handle, dessen 
+                     <lb/>Tr&#228;ger der Held sei: ein <distinct>Posa</distinct>, der die Welt befreien, ein
+                     <lb/><name type="character">Faust</name>, der die tiefsten <choice><orig>R&#228;thsel</orig> <reg>R&#228;tsel</reg></choice> des Daseins ergr&#252;nden m&#246;chte,
+                     <lb/>sind tragische Figuren; Gott soll uns aber beh&#252;ten, einen 
+                     <lb/>Schw&#228;chling wie <name type="charakter">Werther</name>, der sich eines beliebigen <distinct type="archaic">Unterrocks</distinct> 
+                     <lb/>halber eine Kugel durch den Kopf schie&#223;t, jemals f&#252;r einen 
+                     <lb/>tragischen Heros zu halten, wie man es bei seinem Erscheinen 
+                     <lb/><choice><orig>that</orig> <reg>tat</reg></choice>. Das Deutschland oder vielmehr das Europa, das durch
+                     <lb/>den „<name ref="https://lobid.org/gnd/4099202-0" type="play">Werther</name>" in Bewegung gesetzt wurde, war durch und 
+                     <lb/>durch krank — und jene gewaltige Wirkung des Buchs ist nur 
+                     <lb/>ein Beweis weiter f&#252;r die Krankheit.</p>
+                 </div>
+                  <div type="page" n="043v" facs="./img/GG_043_v.jpg" ana="Text about Werther - page 2 of 4.">
+                  <p rend="page_header"><name type="charakter">Werther</name>.</p>
+                  <p>Lange Friedensperioden, wie die war, in welcher der 
+                     <lb/>„Werther“ entstand, haben immer einen verweichlichenden 
+                     <lb/><choice><orig>Einflu&#223;</orig> <reg>Einfluss</reg></choice> auf die Geister; n&#252;tzen sie der Humanit&#228;t, so f&#246;rdern 
+                     <lb/>sie auch den Egoismus, die Verz&#228;rtelung, die <choice><orig>Genu&#223;sucht</orig> <reg>Genusssucht</reg></choice>, die 
+                     <lb/>falsche Empfindsamkeit des einzelnen. Was war da unver<pc force="weak">=</pc>
+                     <lb break="no"/>meidlicher, als <choice><orig>da&#223;</orig> <reg>dass</reg></choice> gerade die hervorragenden Geister die Natur 
+                     <lb/>als Gegensatz dieser <choice><orig>Cultur</orig> <reg>Kultur</reg></choice> <choice><orig>auffa&#223;ten</orig> <reg>auffassten</reg></choice>, <name ref="https://lobid.org/gnd/118607626" type="person" >Schiller</name> seinen <name type="character">Karl 
+                     <lb/>Moor</name> unter die R&#228;uber gehen, <name ref=" https://lobid.org/gnd/118540238" type="person">Goethe</name> seinen <name type="charakter">Werther</name> sich 
+                     <lb/>lediglich mit seinem Herzen besch&#228;ftigen <choice><orig>l&#228;&#223;t</orig> <reg>l&#228;sst</reg></choice>, da es an aller 
+                     <lb/>sonstigen anst&#228;ndigen Besch&#228;ftigung beim Reichskammergericht 
+                     <lb/>in <placeName ref="https://www.geonames.org/2809889/wetzlar.html">Wetzlar</placeName> allerdings fehlte. Da&#223; diese Werke vielfach <choice><orig>mis<pc force="weak">=</pc>
+                        <lb break="no"/>verstanden</orig> <reg>missverstanden</reg></choice> werden <choice><orig>mu&#223;ten</orig> <reg>mussten</reg></choice>, lag auf der Hand. <choice><orig>Ueber</orig> <reg>&#220;ber</reg></choice> der hin<pc force="weak">=</pc>
+                     <lb break="no"/>rei&#223;enden Gewalt der Schilderung verga&#223; man, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> die beiden 
+                     <lb/>gro&#223;en Dichter ganz gerecht ihre Gesch&#246;pfe zu Grunde gehen 
+                     <lb/>lassen; der Zauber der Poesie, der sie umgab, machte sie doch 
+                     <lb/>zu Idealen derjenigen, die noch mitten in der Krankheit staken, 
+                     <lb/>von der sich der geniale Poet durch sein Gem&#228;lde befreite. 
+                     <lb/>Man <choice><orig>geno&#223;</orig> <reg>genoss</reg></choice> den „Werther“ mit unerh&#246;rter Leidenschaft, man 
+                     <lb/>verstand ihn aber nicht — zu niemandes <choice><orig>gr&#246;&#223;erm</orig> <reg>gr&#246;&#223;erem</reg></choice> <choice><orig>Aerger</orig> <reg>&#196;rger</reg></choice> als 
+                     <lb/>des Autors <distinct type="archaic">selber</distinct>.</p>
+                  <p>Heute empfinden wir anders. Wir wissen, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> der einzel<pc force="weak">=</pc>
+                     <lb break="no"/>ne nur ein <choice><orig>Theil</orig> <reg>Teil</reg></choice> des Ganzen ist, sich ihm zu weihen hat 
+                     <lb/>und nur gesund sein kann, wenn er dieser Pflicht gen&#252;gt. 
+                     <lb/><name ref=" https://lobid.org/gnd/118540238" type="person">Goethe</name> empfand das wahrhaftig auch, denn das <choice><orig>erste</orig> <reg>Erste</reg></choice>, was er
+                     <lb/><choice><orig>thut</orig> <reg>tut</reg></choice>, ist, uns sehr deutlich zu zeigen, wie <name type="charakter">Werther</name> diese Pflicht
+                     <lb/>vernachl&#228;ssigt, wie ihm alle gro&#223;en Interessen fehlen, wie er 
+                     <lb/>nie vermag sich unterzuordnen, wie er <distinct type="archaic">selbstisch</distinct> und <distinct type="archaic">verz&#228;rtelt</distinct> 
+                     <lb/>vor jeder Ber&#252;hrung mit der Welt zur&#252;ckschreckt, wie er &#252;ber<pc force="weak">=</pc>
+                     <lb break="no"/>haupt nicht dazu kommt irgendetwas zu <choice><orig>thun</orig> <reg>tun</reg></choice>, als im <choice><orig>Wirths<pc force="weak">=</pc>
+                     <lb break="no"/>garten</orig> <reg>Wirtsgarten</reg></choice> Erbsen auszuh&#252;lsen. Der Mann ist aber nur so viel 
+                     <lb/><choice><orig>werth</orig> <reg>wert</reg></choice>, als er <choice><orig>thut</orig> <reg>tut</reg></choice>. Das sch&#246;ne Sein, welches man damals 
+                     <lb/>so pries, ist Sache der Frauen. W&#228;hrend so unsere erste Auf<pc force="weak">=</pc>
+                     <lb break="no"/>gabe ist, nicht an uns zu denken, uns <choice><orig>blos</orig> <reg>blo&#223;</reg></choice> an andern zu 
+                     <lb/>messen, sagt sein <name type="charakter">Werther</name>:</p>
+                  <p><quote type="long">Die Einsamkeit ist meinem Herzen k&#246;stlicher Balsam.</quote></p>
+                  <p>Er <distinct type="archaic">cajolirt</distinct> sich f&#246;rmlich:</p>
+                  <p><quote type="long">Wie oft lull' ich mein emp&#246;rtes Blut zur Ruhe; denn so un<pc force="weak">=</pc>
+                     <lb break="no"/>gleich, so unstet hast du nichts gesehen, als dieses Herz. Auch 
+                     <lb/>halte ich mein Herzchen wie ein krankes Kind; jeder Wille wird 
+                     <lb/>ihm gestattet.</quote></p>
+                 </div>
+                  <div type="page" n="044r" facs="./img/GG_044_r.jpg" ana="Text about Werther - page 3 of 4.">
+                  <p rend="page_header"><name type="charakter">Werther</name>.</p>
+                  <p>In dieser angenehmen Besch&#228;ftigung mit sich <distinct type="archaic">selber</distinct>, in 
+                     <lb/>dieser zwecklosen Tr&#228;umerei, die einem jungen M&#228;dchen allen<pc force="weak">=</pc>
+                     <lb break="no"/>falls ebenso h&#252;bsch ansteht, als einem Mann schlecht, hat denn 
+                     <lb/>auch der K&#252;nstler ihn dargestellt, wie er den <name ref="https://lobid.org/gnd/11855333X" type="person">Homer</name> am Brunnen 
+                     <lb/>liest:</p>
+                  <p><quote type="long">Da ist gleich vor dem Orte ein Brunnen, ein Brunnen, an 
+                     <lb/>den ich gebannt bin, wie Melusine mit ihren Schwestern. ... 
+                     <lb/>Die hohen B&#228;ume, die den Platz ringsumher bedecken, die K&#252;hle 
+                     <lb/>des Orts: das hat alles so was Anz&#252;gliches, was Schauerliches. 
+                     <lb/>Es vergeht kein Tag, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> ich nicht eine Stunde dasitze.</quote></p>
+                  <p>Nat&#252;rlich suchte der K&#252;nstler das Weichliche, <distinct type="archaic">Gef&#252;hlige</distinct>,
+                     <lb/>Schw&#228;rmerische des Charakters herauszukehren, dachte sich ihn 
+                     <lb/>blond und rosig von Teint, mit H&#228;nden, die die schn&#246;de rauhe 
+                     <lb/>Arbeit immer abschreckt, <choice><orig>obwol</orig> <reg>obwohl</reg></choice> er bisweilen Gewissensbisse 
+                     <lb/>dar&#252;ber empfindet:</p>
+                  <p><quote type="long">Nur <choice><orig>mu&#223;</orig> <reg>muss</reg></choice>  mir nicht einfallen, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> noch so viele andere Kr&#228;fte 
+                     <lb/>in mir ruhen, die alle ungenutzt vermodern, und die ich sorgf&#228;ltig 
+                     <lb/>verbergen <choice><orig>mu&#223;</orig> <reg>muss</reg></choice>. Ach, das engt das ganze Herz so ein. — Und 
+                     <lb/>doch, <choice><orig>misverstanden</orig> <reg>missverstanden</reg></choice> zu werden, ist das Schicksal von <distinct type="archaic">unsereinem</distinct>.</quote></p>
+                  <p>In solchen F&#228;llen pflegt man dann das Leben von gar 
+                     <lb/>erhabenem <choice><orig>Standpunkte</orig> <reg>Standpunkt</reg></choice> zu betrachten:</p>
+                  <p><quote type="long">Es ist ein einf&#246;rmiges Ding um das Menschengeschlecht. Die 
+                     <lb/>meisten verarbeiten den gr&#246;&#223;ten <choice><orig>Theil</orig> <reg>Teil</reg></choice> der Zeit, um zu leben, 
+                     <lb/>und das <choice><orig>bischen</orig> <reg>bisschen</reg></choice>, das ihnen von Freiheit &#252;brig bleibt, &#228;ngstigt 
+                     <lb/>sie so, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> sie alle Mittel aufsuchen, um es los zu werden — </quote></p>
+                  <p>wie man denn &#252;berhaupt nie leichter geneigt ist, die Mensch<pc force="weak">=</pc>
+                     <lb break="no"/>heit mit ihrem Ringen <foreign xml:lang="fra">en bagatelle</foreign> zu betrachten, als wenn 
+                     <lb/>man selbst sehr wenig Lust hat, irgendetwas Gescheites zu 
+                     <lb/>machen, sondern auf eine t&#252;chtige <choice><orig>Thorheit</orig> <reg>Torheit</reg></choice> lossteuert. Einer 
+                     <lb/>der besten <choice><orig>Nothbehelfe</orig> <reg>Notbehelf</reg></choice>, wenn man eigentlich wenig Ursache 
+                     <lb/>hat mit sich selbst zufrieden zu sein, ist ja der, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> man die 
+                     <lb/>Welt zu gering h&#228;lt, um ihr seine <choice><orig>Th&#228;tigkeit</orig> <reg>T&#228;tigkeit</reg></choice> zu weihen, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> 
+                     <lb/>man sich genial <distinct type="archaic">d&#228;ucht</distinct> und unverstanden. Die Ansicht, die 
+                     <lb/>solche Charaktere aber von Genialit&#228;t haben, ist eine gar ab<pc force="weak">=</pc>
+                     <lb break="no"/>sonderliche. <name type="charakter">Werther</name> zeichnet sie trefflich, wenn er sagt:</p>
+                  <p><quote type="long">O meine Freunde! warum der Strom des Genies so selten 
+                     <lb/>ausbricht, so selten in hohen Fluten hereinbraust und eure stau<pc force="weak">=</pc>
+                     <lb break="no"/>nende Seele ersch&#252;ttert? — Liebe Freunde, da wohnen die ge<pc force="weak">=</pc>
+                     <lb break="no"/>lassenen Herren auf beiden Seiten des Ufers, denen ihre Garten<pc force="weak">=</pc>
+                     <lb break="no"/>h&#228;uschen, Tulpenbeete und Krautfelder zu Grunde gehen w&#252;rden, 
+                     <lb break="no"/>die daher in Zeiten mit D&#228;mmen und Ableiten der k&#252;nftig drohen<pc force="weak">=</pc>
+                     <lb/>den Gefahr abzuwehren wissen.</quote></p>
+                 </div>
+                  <div type="page" n="044v" facs="./img/GG_044_v.jpg" ana="Text about Werther - page 4 of 4.">
+                  <p rend="page_header"><name type="charakter">Werther</name>.</p>
+                  <p>Ihm ist sie nur eine zerst&#246;rende Kraft, er h&#228;lt sie f&#252;r
+                     <lb/>Willk&#252;r, w&#228;hrend sie doch gerade das allein Befruchtende, Ge<pc force="weak">=</pc>
+                     <lb break="no"/>setzm&#228;&#223;ige, ja das Gesetz <distinct type="archaic">selber</distinct> ist, welches sich in ihr auspr&#228;gt.</p>
+                  <p>Hat man sich dann erst die <distinct type="archaic">Kl&#228;glichkeit</distinct> und Un<pc force="weak">=</pc>
+                     <lb break="no"/>w&#252;rdigkeit aller irdischen Bestrebungen f&#252;r das erhabene Ich einge<pc force="weak">=</pc>
+                     <lb break="no"/>redet, so ist nichts nat&#252;rlicher, als <choice><orig>da&#223;</orig> <reg>dass</reg></choice> in der Leere dasjenige
+                     <lb/>Gef&#252;hl allein und &#252;berm&#228;&#223;ig Platz nimmt, welches in der 
+                     <lb/>Seele des <choice><orig>th&#228;tigen</orig> <reg>t&#228;tigen</reg></choice> Mannes immer nur die zweite Stelle be<pc force="weak">=</pc>
+                     <lb break="no"/>haupten kann, so sicher es sie auch behaupten soll, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> die 
+                     <lb/>Liebe dann f&#252;r <name type="charakter">Werther</name> ein Fluch wird, wie sie f&#252;r jeden 
+                     <lb/>andern ein Segen ist. Von ihr getroffen, sagt er dann auch
+                     <lb/>gleich:</p>
+                  <p><quote type="long">Und seit der Zeit k&#246;nnen Sonne, Mond und Sterne <distinct type="archaic">geruhig</distinct> 
+                     <lb/>ihre Wirthschaft treiben, ich wei&#223; weder <choice><orig>da&#223;</orig> <reg>dass</reg></choice> Tag, noch <choice><orig>da&#223;</orig> <reg>dass</reg></choice> Nacht 
+                     <lb/>ist, und die ganze Welt verliert sich um mich her.</quote></p>
+                  <p>Es bleibt das auch sein Wahlspruch, an dem er mit der 
+                     <lb/>Hartn&#228;ckigkeit eines schwachen Charakters festh&#228;lt, bis er ihn
+                     <lb/>ins Verderben f&#252;hrt. Die Art aber, wie uns dieser allm&#228;hliche, 
+                     <lb/>unausweichliche Untergang geschildert wird, zeugt von einer 
+                     <lb/>Meisterschaft, die in unserer Prosa nicht wieder erreicht worden 
+                     <lb/>ist. Man f&#252;hlt sich selber von dem Wirbel getrieben, der 
+                     <lb/>den Ungl&#252;cklichen <choice><orig>erfa&#223;t</orig> <reg>erfasst</reg></choice> hat und ihn in immer <choice><orig>engerm</orig> <reg>engerem</reg></choice> Kreise 
+                     <lb/>herumtreibt, bis er vor unsern Augen versinkt; mit athem<pc force="weak">=</pc>
+                     <lb break="no"/>loser Spannung sehen wir, wie er zeitweise noch nach irgend<pc force="weak">=</pc>
+                     <lb break="no"/>einem Gegenstand, nach irgendeiner Hand greift, die ihm die 
+                     <lb/>Welt darbietet, um sich zu halten, sie aber, fortgerissen von 
+                     <lb/>der z&#252;gellos treibenden Gewalt, immer wieder fahren <choice><orig>l&#228;&#223;t</orig> <reg>l&#228;sst</reg></choice>, 
+                     <lb/>bis er zerschmettert zu unsern F&#252;&#223;en liegt. Wir scheiden von 
+                     <lb/>ihm mit jenem Schauer, der uns um so mehr ergreift, je
+                     <lb/>liebensw&#252;rdiger und bedeutender der ist, den wir von einer 
+                     <lb/>unheilbaren Krankheit <choice><orig>erfa&#223;t</orig> <reg>erfasst</reg></choice> sehen, deren erstes unmerkliches 
+                     <lb/>Auftreten wie furchtbares <choice><orig>Ueberhandnehmen</orig> <reg>&#220;berhandenem</reg></choice> der Dichter hier 
+                     <lb/>mit so hinrei&#223;ender Gewalt schildert.</p>
+               </div>
+               </div>
+            </div>
+            <gap quantity="108" unit="pages" reason="editorial"/>
+            <div type="chapter" n="33">
+               <div type="chapter_image">
+                  <div type="page" n="099r" facs="./img/GG_099_r.jpg" ana="Page with steel engraving of Faust">
+                   <figure xml:id="ch33">
+                     <graphic url="./img_inside-text/GG_099_r.jpg"/>
+                     <figDesc>Drawing of Faust</figDesc>
+                  </figure>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                     <p rend="heading"><name ref="https://lobid.org/gnd/118683136"  type="character_inspiration">Faust</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+               </div>
+               </div>
+               <div type="page" n="099v" facs="./img/GG_099_v.jpg" ana="Empty page."/>
+               <div type="chapter_text">
+                  <div type="page" n="100r" facs="./img/GG_100_r.jpg" ana="Text about Faust - page 1 of 4.">
+                  <head><name type="character">Faust</name>.</head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.)</head>
+                  <p><hi rend="initial">E</hi>rscheint uns des Dichters Meisterwerk wie einer unserer 
+                     <lb/>herrlichen <choice><orig>gothischen</orig> <reg>gotischen</reg></choice> Dome, der bei aller Pracht und Gro&#223;<pc force="weak">=</pc>
+                     <lb break="no"/>artigkeit unvollendet geblieben und endlich durch einen moder<pc force="weak">=</pc>
+                     <lb break="no"/>nen Ausbau in akademisch-griechischem Stil — 
+                     <lb/>dem zweiten <choice><orig>Theile</orig> <reg>Teile</reg></choice> — zu <choice><orig>nothd&#252;rftigem</orig> <reg>notd&#252;rftigem</reg></choice>, aber wenig harmonischem <choice><orig>Abschlusse</orig> <reg>Abschluss</reg></choice> 
+                     <lb/>gebracht worden ist, so werden wir uns wohl h&#252;ten, 
+                     <lb/>in die endlos angeschwollene Flut der Faust=Literatur auch unser
+                     <lb/>Br&#252;nnlein noch flie&#223;en zu lassen und uns &#252;ber die Bedeutung 
+                     <lb/>des unsterblichen Werks des <choice><orig>weitern</orig> <reg>Weiteren</reg></choice> zu verbreiten; denn be<pc force="weak">=</pc>
+                     <lb break="no"/>kanntlich ist es ein undankbares Gesch&#228;ft, Wasser ins Meer zu 
+                     <lb/>tragen! Wer Lust hat, sich &#252;ber dieselbe zu belehren, mag sich 
+                     <lb/>an andere halten! Wir beschr&#228;nken uns auf die Rechtfertigung 
+                     <lb/>der Personen, wie sie dem K&#252;nstler als Bilder aufgegangen 
+                     <lb/>sind, und beginnen dieselbe demgem&#228;&#223; mit dem Tr&#228;ger des 
+                     <lb/>St&#252;cks, jedenfalls der bedeutendsten Figur, welche <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> oder
+                     <lb/>vielmehr die deutsche Dichtkunst &#252;berhaupt geschaffen hat.</p>
+                  <p>Wenn <name type="character">Faust</name> dies ohne Zweifel ist, so verdankt er diese 
+                     <lb/>Wichtigkeit <choice><orig>wol</orig> <reg>wohl</reg></choice> dem Umstande, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> in keiner andern der <distinct type="archaic">Ge<pc force="weak">=</pc>
+                     <lb break="no"/>nius</distinct> unserer Nation und seine innersten Neigungen solch 
+                     <lb/>einen pr&#228;gnanten Vertreter gefunden haben. Denn bei keinem an<pc force="weak">=</pc>
+                     <lb break="no"/>dern Volke ist der Hang zur <choice><orig>Speculation</orig> <reg>Spekulation</reg></choice>, die Neigung, &#252;ber
+                     <lb/>sich selbst und seine Bestimmung ins Klare zu kommen, den 
+                     <lb/>Urgrund aller Dinge zu kennen, so charakteristisch als 
+                     <lb/>bei den Deutschen. <name type="character">Faust</name> hat ein durch und durch nationales Gepr&#228;ge, 
+                     <lb/>er ist der Typus unsers eigensten Wesens. <choice><orig>Da&#223;</orig> <reg>Dass</reg></choice> er dazu ge<pc force="weak">=</pc>
+                     <lb break="no"/>worden, ist <choice><orig>wol</orig> <reg>wohl</reg></choice> <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name>'s Verdienst allein und nicht das der
+                     <lb/>Volkssage: nur in der Mythe des <name ref="https://en.wikipedia.org/wiki/Prometheus">Prometheus</name> und der bibli<pc force="weak">=</pc>
+                     <lb break="no"/>schen Erz&#228;hlung von Jakob, der mit Gott ringt, finden wir 
+                     <lb/>ein Gegenst&#252;ck zu dem Kampfe, dessen Held der Goethe'sche 
+                     <lb/><name type="character">Faust</name> geworden, der uns hier als Repr&#228;sentant der ganzen</p>
+                 </div>
+                  <div type="page" n="100v" facs="./img/GG_100_v.jpg" ana="Text about Faust - page 2 of 4.">
+                  <p rend="page_header"><name type="character">Faust</name>.</p>
+                  <p>Menschheit, als der Mensch &#252;berhaupt entgegentritt, um den 
+                     <lb/>sich ja best&#228;ndig die guten und die b&#246;sen M&#228;chte streiten — die 
+                     <lb/>uns im Herrn und <name type="character">Mephistopheles</name> <choice><orig>personificirt</orig> <reg>personifiziert</reg></choice> sind —, und so 
+                     <lb/>der Kampf, der im Innern des Menschen vor sich geht, durch 
+                     <lb/>den Dichter nach au&#223;en verlegt wird.</p>
+                  <p>Als blo&#223;er Normalmensch w&#228;re <name type="character">Faust</name> eine unpoetische 
+                     <lb/><choice><orig>Abstraction</orig> <reg>Abstraktion</reg></choice> gewesen, der Dichter macht ihn daher nicht nur 
+                     vzu einem blo&#223;en Repr&#228;sentanten der Gattung, sondern er 
+                     <lb/>pflanzt ihn auf bestimmten, den deutschen Boden, in eine <choice><orig>spe<pc force="weak">=</pc>
+                     <lb break="no"/>cielle</orig> <reg>spezielle</reg></choice> Zeitperiode, gibt ihm eine reich mit individuellen Z&#252;gen 
+                     <lb/>ausgestattete Figur, an deren leidenschaftlichem hei&#223;en Streben 
+                     <lb/>wir einen pers&#246;nlichen <choice><orig>Antheil</orig> <reg>Anteil</reg></choice> nehmen, deren K&#228;mpfe auch 
+                     <lb/>die Naturen mit dem <choice><orig>Gef&#252;hle</orig> <reg>Gef&#252;hl</reg></choice> mitzuk&#228;mpfen verm&#246;gen, welche 
+                     <lb/>sie nicht mit dem <choice><orig>Verstande</orig> <reg>Verstand</reg></choice> begreifen, weil eben der Mensch 
+                     <lb/>selbst unsern <choice><orig>Antheil</orig> <reg>Anteil</reg></choice> schon vorher erweckt. Es ist die Eigen<pc force="weak">=</pc>
+                     <lb break="no"/>schaft eines echten Kunstwerks, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> es einem jeden etwas 
+                     <lb/>bietet, und von allen Werken der deutschen Poesie erf&#252;llt <choice><orig>wol</orig> <reg>wohl</reg></choice> 
+                     <lb/>„<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>" diese Bedingung am allermeisten: kein Stand und 
+                     <lb/>kein Alter, kein noch so verschiedener Bildungsgrad w&#228;re denk<pc force="weak">=</pc>
+                     <lb break="no"/>bar, der nicht in dieser wunderbaren Sch&#246;pfung Stoff zum 
+                     <lb/><choice><orig>Genu&#223;</orig> <reg>Genuss</reg></choice>, zum Entz&#252;cken f&#228;nde.</p>
+                  <p>Lieben kann man nur, was einem pers&#246;nlich wird, was 
+                     <lb/>man sich zu beseelen vermag; <choice><orig>da&#223;</orig> <reg>dass</reg></choice> <name type="character">Faust</name> uns das werde, daf&#252;r 
+                     <lb/>hat der Dichter also hinl&#228;nglich gesorgt. Wir lernen ihn als 
+                     <lb/>deutschen Gelehrten des Mittelalters — als Universit&#228;tsprof<pc force="weak">=</pc>
+                     <lb break="no"/>essor — kennen:</p>
+                  <p><quote type="long">Hei&#223;e Magister, hei&#223;e <choice><orig>Doctor</orig> <reg>Dokter</reg></choice> gar — </quote></p>
+                  <p>finden ihn in einem engen und beschr&#228;nkten <choice><orig>Kreise</orig> <reg>Kreis</reg></choice>, zu dem 
+                     <lb/>sein grenzenloses Streben den tragischen Gegensatz bildet. 
+                     <lb/>Demgem&#228;&#223; zeigt ihn uns auch der K&#252;nstler eingeschlossen in 
+                     <lb/>seinem „verfluchten dumpfen Mauerloch“,</p>
+                  <p><quote type="long">Wo selbst das liebe Himmelslicht 
+                     <lb/>Tr&#252;b' durch gemalte Scheiben bricht!
+                     <lb/>Beschr&#228;nkt von diesem B&#252;cherhauf, ... 
+                     <lb/>Mit Gl&#228;sern, B&#252;chsen rings umstellt, ... 
+                     <lb/>Das ist deine Welt! das hei&#223;t eine Welt!</quote></p>
+                  <p>Da er <quote type="short">„schon an die <choice><orig>zehen</orig> <reg>zehn</reg></choice> Jahr"</quote> Sch&#252;ler hat, so m&#252;ssen 
+                     <lb/>wir annehmen, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> er etwa in den <choice><orig>Drei&#223;igen</orig> <reg>Drei&#223;igern</reg></choice>, im kr&#228;ftigsten 
+                     <lb/>Mannesalter steht — </p>
+                 </div>
+                  <div type="page" n="101r" facs="./img/GG_101_r.jpg" ana="Text about Faust - page 3 of 4.">
+                  <p rend="page_header"><name type="character">Faust</name>.</p>
+                  <p><quote type="long">Ich bin zu alt, um nur zu spielen, 
+                     <lb/>Zu jung, um ohne Wunsch zu sein.</quote></p>
+                  <p>Als echter Gelehrter ist er arm und hat, wie er selbst klagt, 
+                     <lb/>wenig Geschick, die Welt, bei deren Freuden er sich doch Ver<pc force="weak">=</pc>
+                     <lb break="no"/>gessen seiner Pein holen m&#246;chte, anzufassen.</p>
+                  <p>Ein blasser Schulfuchs oder selbst ein blasser <choice><orig>abstracter</orig> <reg>abstrakter</reg></choice> 
+                     <lb/>Denker w&#252;rde unsern <choice><orig>Antheil</orig> <reg>Anteil</reg></choice> aber noch schwerlich fesseln: dazu 
+                     <lb/>braucht es die hei&#223;e Leidenschaftlichkeit, die &#252;berall bei ihm 
+                     <lb/>herausbricht, das tiefe Gef&#252;hl f&#252;r alles Hohe und Sch&#246;ne, die 
+                     <lb/>nervige <distinct type="archaic">Beredsamkeit</distinct>, in der er seinem Schmerze Luft macht 
+                     <lb/>und uns seine gl&#252;hende Aufregung mittheilt, die wilde Gewalt 
+                     <lb/>des Willens, das unerschrockene Herz, den durchdringenden 
+                     <lb/>Geist, die aus ihm einen durch und durch genialen Menschen
+                     <lb/> machen:</p>
+                  <p><quote type="long">Vom Himmel fordert er die sch&#246;nsten Sterne, 
+                     <lb/>Und von der Erde jede h&#246;chste Lust, 
+                     <lb/>Und alle <choice><orig>N&#228;h'</orig> <reg>Nah'</reg></choice> und alle Ferne, 
+                     <lb/>Befriedigt nicht die tiefbewegte Brust —</quote></p>
+                  <p>es braucht endlich selbst die rastlose Ungeduld, mit der <name type="character">Faust</name> 
+                     <lb/>den langen Weg der Forschung im Eifer verwirft und mit 
+                     <lb/>&#252;bernat&#252;rlichen Mitteln, das
+                     ist vermittelst der Intuition sucht:</p>
+                  <p><quote type="long"><choice><orig>Da&#223;</orig> <reg>Dass</reg></choice> ich erkenne, was die Welt 
+                     <lb/>Im Innersten zusammenh&#228;lt, 
+                     <lb/>Schau' alle <distinct type="archaic">Wirkenskraft</distinct> und Samen, 
+                     <lb/>Und <choice><orig>thu'</orig> <reg>tu'</reg></choice> nicht mehr in Worten kramen.</quote></p>
+                  <p>Seine Verzweiflung, das gesuchte Ziel auf dem nat&#252;r<pc force="weak">=</pc>
+                     <lb break="no"/>lichen Wege der langsamen Forschung zu erreichen, <choice><orig>concentrirt</orig> <reg>konzentriert</reg></choice> 
+                     <lb/>sich in den Worten:</p>
+                  <p><quote type="long"><choice><orig>Geheimni&#223;voll</orig> <reg>Geheimnisvoll</reg></choice> am lichten Tag 
+                     <lb/><choice><orig>L&#228;&#223;t</orig> <reg>L&#228;sst</reg></choice> sich Natur des Schleiers nicht berauben, 
+                     <lb/>Und was sie deinem Geist nicht offenbaren mag, 
+                     <lb/>Das zwingst du ihr nicht ab mit Hebeln und mit Schrauben.</quote></p>
+                  <p>Ebenso spricht er den Zwiespalt in seiner Brust r&#252;hrend aus:</p>
+                  <p><quote type="long">Zwei Seelen wohnen, ach! in meiner Brust, 
+                     <lb/>Die eine will sich von der andern trennen; 
+                     <lb/>Die eine h&#228;lt, in derber Liebeslust, 
+                     <lb/>Sich an die Welt mit klammernden Organen; 
+                     <lb/>Die andre hebt gewaltsam sich vom <distinct type="archaic">Dust</distinct> 
+                     <lb/>Zu den Gefilden hoher Ahnen —</quote></p>
+                  <p>bis er sich endlich nach Offenbarung sehnt, zur Heiligen Schrift 
+                     <lb/>greift, aber auch bei dieser der Zweifel nicht ledig wird. In</p>
+                 </div>
+                  <div type="page" n="101v" facs="./img/GG_101_v.jpg" ana="Text about Faust - page 4 of 4.">
+                  <p rend="page_header"><name type="character">Faust</name>.</p>
+                  <p>dieser <choice><orig>Scene</orig> <reg>Szene</reg></choice> finden wir ihn dargestellt, wie er vor dem hei<pc force="weak">=</pc>
+                     <lb break="no"/>ligen Buche sitzend durch das Ger&#228;usch des Pudels hinterm 
+                     <lb/>Ofen zum Aufblicken <choice><orig>veranla&#223;t</orig> <reg>veranlasst</reg></choice> wird.</p>
+                  <p>Was uns <name type="character">Faust</name> nicht nur lieb macht, sondern ihm selbst 
+                     <lb/>seine Verbrechen, die er im Bunde mit <name type="character">Mephistopheles</name> begeht, 
+                     <lb/>verzeihen <choice><orig>l&#228;&#223;t</orig> <reg>l&#228;sst</reg></choice>, ist die Hoheit seines Geistes, der ehrliche Wille 
+                     <lb/>bei aller siedenden Leidenschaftlichkeit, die W&#228;rme und Liebe, 
+                     <lb/>die er allem zuwendet, und die Furchtlosigkeit, mit der er 
+                     <lb/>jedes Grauen &#252;berwindet, um in die Abgr&#252;nde der Welt wie 
+                     <lb/>des menschlichen Herzens hinabzusteigen.</p>
+                  <p>Es sind das in dieser Mischung echt deutsche Eigenschaften, 
+                     <lb/>und sie retten ihn, da sie ihn mitten im <choice><orig><distinct type="archaic">Sinnentaumel</distinct></orig> <reg>Sinnestaumel</reg></choice>, in den 
+                     <lb/>ihn <name type="character">Mephistopheles</name> gest&#252;rzt, die Sch&#246;nheit der Natur, das Edle 
+                     <lb/>und Liebensw&#252;rdige, wo er es trifft, &#252;berall verehren lassen, 
+                     <lb/>und es ihm in seinem rastlosen Streben endlich durch unaus<pc force="weak">=</pc>
+                     <lb break="no"/>gesetzte Arbeit und n&#252;tzliche <choice><orig>Th&#228;tigkeit</orig> <reg>T&#228;tigkeit</reg></choice> in allen m&#246;glichen 
+                     <lb/>menschlichen Verh&#228;ltnissen gelingt, die Gegens&#228;tze in sich aus<pc force="weak">=</pc>
+                     <lb break="no"/>zus&#246;hnen, Vernunft und Verstand, Geist und Sinnlichkeit,
+                     <lb/>Idealismus und Realismus sich durchdringen zu lassen, und so 
+                     <lb/>selig zu werden, das ist durch Anerkennung der Schranke zur 
+                     <lb/>Freiheit zu kommen, wie er es zu Ende des zweiten <choice><orig>Theils</orig> <reg>Teils</reg></choice>  
+                     <lb/>ausspricht:</p>
+                  <p><quote type="long">Der Erdenkreis ist mir genug bekannt, 
+                     <lb/>Nach <distinct type="archaic">dr&#252;ben</distinct> ist die Aussicht uns verrannt; 
+                     <lb/><choice><orig>Thor</orig> <reg>Tor</reg></choice>! wer dorthin die Augen blinzend richtet, 
+                     <lb/>Sich &#252;ber Wolken seinesgleichen dichtet! Er stehe fest und sehe hier sich um; 
+                     <lb/>Dem T&#252;chtigen ist diese Welt nicht stumm; 
+                     <lb/>Was braucht er in die Ewigkeit zu schweifen! 
+                     <lb/>Was er erkennt, <choice><orig>l&#228;&#223;t</orig> <reg>l&#228;sst</reg></choice> sich ergreifen. ... 
+                     <lb/>Das ist der Weisheit letzter <choice><orig>Schlu&#223;</orig> <reg>Schluss</reg></choice>: 
+                     <lb/>Nur der verdient sich Freiheit wie das Leben, 
+                     <lb/>Der t&#228;glich sie erobern <choice><orig>mu&#223;</orig> <reg>muss</reg></choice> .</quote></p>
+               </div>
+            </div>
+            </div>
+            <div type="chapter" n="34">
+               <div type="chapter_image">
+                  <div type="page" n="102r" facs="./img/GG_102_r.jpg" ana="Page with steel engraving of Gretchen">
+                  <figure xml:id="ch34">
+                     <graphic url="./img_inside-text/GG_102_r.jpg"/>
+                     <figDesc>Drawing of Gretchen</figDesc>
+                  </figure>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                  <p rend="heading"><name type="character">Gretchen</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+                 </div>
+               </div>
+              <div type="page" n="102v" facs="./img/GG_102_v.jpg" ana="Empty page."/>
+               <div type="chapter_text">
+                  <div type="page" n="103r" facs="./img/GG_103_r.jpg" ana="Text about Gretchen - page 1 of 4.">
+                  <head><name type="character">Gretchen</name>.</head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.) </head>
+                  <p><hi rend="initial">I</hi>st in <name type="character">Faust</name> das h&#246;chste Streben des Menschengeistes dar<pc force="weak">=</pc>
+                     <lb break="no"/>gestellt, so in <name type="character">Gretchen</name> die bescheidene Beschr&#228;nkung in ihrer  
+                     <lb/>tiefen Liebensw&#252;rdigkeit. Die Neigung dieser einfachen Natur 
+                     <lb/>zu dem, der so ganz ihr <choice><orig>Gegentheil</orig> <reg>Gegenteil</reg></choice>, f&#252;r dessen W&#252;nsche die 
+                     <lb/>Welt zu <choice><orig>enge</orig> <reg>eng</reg></choice> ist, bildet einen bezaubernden Contrast, so wahr 
+                     <lb/>und tragisch zugleich, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> ihn <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> am allerwenigsten der 
+                     <lb/>Berechnung, sondern <choice><orig>blos</orig> <reg>blo&#223;</reg></choice> dem Leben und der Beobachtung 
+                     <lb/>desselben verdanken konnte; wenn irgendwo, so finden wir
+                     <lb break="no"/>hier Erlebtes dargestellt und zur h&#246;chsten Kunstsch&#246;nheit ge<pc force="weak">=</pc>
+                     <lb/>staltet.</p>
+                  <p>Wollte man der Darstellung unserer meisten Schau<pc force="weak">=</pc> 
+                     <lb break="no"/>spielerinnen glauben, so w&#228;re <name type="character">Gretchen</name> eine &#252;beraus sanfte 
+                     <lb/>und schw&#228;chliche, sentimentale Person, die haupts&#228;chlich sich 
+                     <lb/>mit Reflexionen &#252;ber den Zustand ihres Herzchens besch&#228;ftigt 
+                     <lb/>und <distinct type="archaic">nebenher</distinct> auch w&#228;scht und strickt, wenn ihr die Tr&#228;umerei 
+                     <lb/>oder der Spiegel gerade Zeit dazu lassen. Diese Art von
+                     <lb/>Auffassung ist zwar, wenn man will, sehr modern, etwas 
+                     <lb/>weniger aber dem Charakter entsprechend, wie ihn der Dichter 
+                     <lb/>gezeichnet hat! Bei ihm erscheint uns <name type="character">Gretchen</name> vielmehr als 
+                     <lb/>eine durchaus naive Natur, die an alles eher kommt, als &#252;ber 
+                     <lb/>ihre <choice><orig>eigene</orig> <reg>eogemem</reg></choice> Empfindungen zu <choice><orig>reflectiren</orig> <reg>refletieren</reg></choice>, sondern dieselben
+                     <lb/>sorglos und mit der ganzen Heftigkeit eines ungebrochenen 
+                     <lb/>Naturells ausspricht, wie sie ihr gerade kommen. Die Sicher<pc force="weak">=</pc>
+                     <lb break="no"/>heit des <choice><orig>Instincts</orig> <reg>Instinkts</reg></choice> ist so stark, die Bestimmtheit ihrer Natur 
+                     <lb/>ist so gro&#223;, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> sie immer handelt, ohne lange zu &#252;berlegen, 
+                     <lb/>und h&#246;chstens sich besinnt, wenn sie — bereits gehandelt hat. 
+                     <lb/>Jene <distinct type="archaic">Naturw&#252;chsigkeit</distinct> des Charakters ist gerade das, was Goethe 
+                     <lb/>an ihr mit solcher Meisterschaft schildert und was ihr eine so</p>
+                 </div>
+                  <div type="page" n="103v" facs="./img/GG_103_v.jpg" ana="Text about Gretchen - page 2 of 4.">
+                  <p rend="page_header"><name type="character">Gretchen</name>.</p>
+                  <p>unvergleichliche Frische gibt. Sie ist so aus <choice><orig>Einem</orig> <reg>einemUe</reg></choice> St&#252;ck, so 
+                     <lb/>durch und durch wahr und arglos, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> sie sich gar nicht vor<pc force="weak">=</pc>
+                     <lb break="no"/>stellen kann, wie jemand anders sei; oder wenn sie sich's 
+                     <lb/>dennoch endlich zugeben <choice><orig>mu&#223;</orig> <reg>muss</reg></choice> , so hat sie auch sofort den 
+                     <lb/>&#228;u&#223;ersten Abscheu vor einer solchen Person, einen Abscheu, der 
+                     <lb/>im Grunde auf die Furcht vor der <choice><orig>Ueberlegenheit</orig> <reg>&#220;berlegenheit</reg></choice> eines weniger
+                     <lb/>offenen Charakters <choice><orig>basirt</orig> <reg>basiert</reg></choice> ist und auf die richtige Ahnung, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> 
+                     <lb/>man mit viel Reflexion am Ende zu gar keiner starken Empfin<pc force="weak">=</pc>
+                     <lb break="no"/>dung mehr, am allerwenigsten zu der des Wohlwollens kommen k&#246;nne, 
+                     <lb/>wie sie dies <name type="character">Mephistopheles</name> gegen&#252;ber sofort herausf&#252;hlt.</p>
+                  <p>Die Bestimmtheit und Einfachheit des Charakters malen 
+                     <lb/>sich &#252;berhaupt am besten in ihrem <choice><orig>Verh&#228;ltni&#223;</orig> <reg>Verh&#228;ltnis</reg></choice> zu den Personen. 
+                     <lb break="no"/>Sie mag entweder diese ganz oder gar nicht. Zwischen Nei<pc force="weak">=</pc>
+                     <lb/>gung und Abneigung ist bei ihr kein Zwischenraum, weil sie 
+                     <lb/>eben nie mit dem erw&#228;genden <choice><orig>Verstande</orig> <reg>Verstan</reg></choice>, sondern durchaus 
+                     <lb/>nur mit der Empfindung an die Dinge herangeht. Wo letztere 
+                     <lb/>nicht mit ins Spiel kommt, sondern nur der Verstand, da 
+                     <lb/>wird sie eher hart wie da, wo sie &#252;ber andere <choice><orig>urtheilt</orig> <reg>urteilt</reg></choice>.</p>
+                  <p>In dieser Schrankenlosigkeit des Gef&#252;hls liegt aber die 
+                     <lb/>Gefahr ihres Falles; weil sie immer ganz bei dem ist, was 
+                     <lb/>sie gerade <choice><orig>thut</orig> <reg>tut</reg></choice> oder denkt, so kennt sie auch gar keine andere 
+                     <lb/>Pflicht mehr, da ihr die Liebe, dieses m&#228;chtigste aller Gef&#252;hle, 
+                     <lb/>entgegentritt, als — diesem sch&#246;nen <choice><orig>Triebe</orig> <reg>Trieb</reg></choice> unbedingt zu ge<pc force="weak">=</pc>
+                     <lb break="no"/>horchen. Neben ihm verschwindet ihr jede andere R&#252;cksicht in 
+                     <lb/>nichts. Die Art aber, wie sie dies &#228;u&#223;ert, ist von einer so 
+                     <lb/>hinrei&#223;enden Liebensw&#252;rdigkeit, es offenbart sich ein solcher  
+                     <lb/><choice><orig>Reichthum</orig> <reg>Reichtum</reg></choice> des Herzens darin, eine solche Abwesenheit jedweden 
+                     <lb/>Egoismus, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> man davon bezaubert wird. Sie gibt dem 
+                     <lb/>Geliebten alles, was sie kann, das Beste, was sie hat: sich 
+                     <lb/>selbst! Wie sie f&#252;r ihn lebt, so w&#252;rde sie auch f&#252;r ihn sterben. 
+                     <lb/>Es liegt in dieser Wonne des Opferns etwas <choice><orig>unsaglich</orig> <reg>uns&#228;glich</reg></choice> R&#252;hrendes, 
+                     <lb/>wie es sich am liebensw&#252;rdigsten vielleicht in ihrer Sorge um 
+                     <lb/><name type="character">Faust</name>'s Seele zeigt. Der Glaube an Gott und der an den 
+                     <lb/>Geliebten schmilzt bei ihr zun&#228;chst fast in eins zusammen; da 
+                     <lb/>sie die Kluft zwischen beiden nicht mehr auszuf&#252;llen vermag, 
+                     <lb/>so vergeht sie <choice><orig>nothwendig</orig> <reg>notwendig</reg></choice> in dieser <choice><orig>Theilung</orig> <reg>Teilung</reg></choice>, diesem Zwiespalt 
+                     <lb/>ihrer Empfindung.</p>
+                  <p>Ist eine solche energische Natur an sich schon poetisch, so 
+                     <lb/>verst&#228;rkt <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> noch deren Zauber durch die Unschuld, die</p>
+                 </div>
+                  <div type="page" n="104r" facs="./img/GG_104_r.jpg" ana="Text about Gretchen - page 3 of 4.">
+                  <p rend="page_header"><name type="character">Gretchen</name>.</p>
+                  <p>g&#228;nzliche Unerfahrenheit ihres Wesens. <name type="character">Gretchen</name> z&#228;hlt h&#246;chstens
+                     <lb/>sechzehn Jahre, &#228;lter ist ein solches Wesen kaum denkbar. Den 
+                     <lb/>Mangel an Geist, Witz oder Humor ersetzt sie durch die k&#246;st<pc force="weak">=</pc>
+                     <lb break="no"/>lichste aller weiblichen Gaben: die <choice><orig>Anmuth</orig> <reg>Anmut</reg></choice> und das Wohlwollen 
+                     <lb/>eines warmen Herzens, die alles versch&#246;nern, was sie sagt 
+                     <lb/>und <choice><orig>thut</orig> <reg>tut</reg></choice>.</p>
+                  <p>Eng mit ihrer Unschuld verkn&#252;pft ist auch die Reinlichkeit, 
+                     <lb/>Zierlichkeit und Sauberkeit des ganzen Wesens; sie gefallen 
+                     <lb/>uns doppelt, weil sie eben der Spiegel einer reinen Seele, 
+                     <lb/>von dieser nur die <choice><orig>Aeu&#223;erung</orig> <reg>&#196;u&#223;erung</reg></choice> sind. Und doch haftet sich an 
+                     <lb/>diese Sauberkeit bereits eine leise Spur von — Gefallsucht; 
+                     <lb/>wie k&#228;me sie sonst beim Empfang des Schmucks zu dem 
+                     <lb/>Bedauern:</p>
+                  <p><quote type="long">Darf mich, leider, nicht auf der Gassen, 
+                     <lb/>Noch in der Kirche mit sehen lassen.</quote></p>
+                  <p>Gef&#252;hlsmenschen werden vorzugsweise <distinct type="archaic">captivirt</distinct> durch das, 
+                     <lb/>was ihre Phantasie besch&#228;ftigt. So ist es denn auch das Fremd<pc force="weak">=</pc>
+                     <lb break="no"/>artige, Vornehme, Dreiste, was <name type="character">Gretchen</name> zuerst an <name type="character">Faust</name> 
+                     <lb/>auff&#228;llt:</p>
+                  <p><quote type="long">Ich g&#228;b' was drum, wenn ich nur <choice><orig>w&#252;&#223;t</orig> <reg>w&#252;sst</reg></choice>' 
+                     <lb/>Wer heut der Herr gewesen ist, 
+                     <lb/>Er sah <choice><orig>gewi&#223;</orig> <reg>gewiss</reg></choice> recht <distinct type="archaic">wacker</distinct> aus 
+                     <lb/>Und ist aus einem <choice><orig>edeln</orig> <reg>edlen</reg></choice> Haus; 
+                     <lb/>Das konnt' ich ihm an der Stirne lesen — 
+                     <lb/>Er w&#228;r' auch sonst nicht so <distinct type="archaic">keck</distinct> gewesen.</quote></p>
+                  <p>Die Neugierde fesselt sie also zun&#228;chst an ihn, die besch&#228;ftigte
+                     <lb/>Phantasie <choice><orig>l&#228;&#223;t</orig> <reg>l&#228;sst</reg></choice> sie nicht mehr von ihm wegkommen, wie sie 
+                     <lb/>dies so naiv in den Worten ausdr&#252;ckt:</p>
+                  <p><quote type="long">Gesteh' ich's doch, ich <choice><orig>wu&#223;te</orig> <reg>wusste</reg></choice> nicht was sich 
+                     <lb/>Zu Euerm <choice><orig>Vortheil</orig> <reg>Vorteil</reg></choice> hier zu regen gleich begonnte; 
+                     <lb/>Allein <choice><orig>gewi&#223;</orig> <reg>gewiss</reg></choice>, ich war recht b&#246;s' auf mich,
+                     <lb/><choice><orig>Da&#223;</orig> <reg>Dass</reg></choice> ich auf Euch nicht b&#246;ser werden konnte.</quote></p>
+                  <p>Ein starkes Naturell bedingt eine gewisse Sinnlichkeit; 
+                     <lb/>dies ist auch bei <name type="character">Gretchen</name> der Fall, so kindlich rein wir sie 
+                     <lb/>auch finden und so g&#228;nzlich<choice><orig> unbewu&#223;t</orig> <reg>unbewusst</reg></choice> sie sich derselben auch 
+                     <lb/>ist; dies macht sie im <choice><orig>Gegentheil</orig> <reg>Gegenteil</reg></choice> nur um so wehrloser diesem 
+                     <lb/>starken <choice><orig>Triebe</orig> <reg>Trieb</reg></choice> gegen&#252;ber, wie sie dies am bezeichnendsten <choice><orig>wol</orig> <reg>wohl</reg></choice>
+                     <lb/>in den Worten ausspricht:</p>
+                 </div>
+                  <div type="page" n="104v" facs="./img/GG_104_v.jpg" ana="Text about Gretchen - page 4 of 4.">
+                  <p rend="page_header"><name type="character">Gretchen</name>.</p>
+                  <p><quote type="long">Seh' ich dich, bester Mann, nur an, 
+                     <lb/>Wei&#223; nicht, was mich nach deinem Willen treibt — </quote></p>
+                  <p>ihr Blut <choice><orig>l&#228;&#223;t</orig> <reg>l&#228;sst</reg></choice> sie in seiner N&#228;he zu gar keiner Besinnung 
+                     <lb/>mehr kommen, sie hat keinen Willen mehr als den seinen!</p>
+                  <p>Der K&#252;nstler hat sie uns dargestellt in der <choice><orig>Scene</orig> <reg>Szene</reg></choice>, da sie 
+                     <lb/>aus der Kirche kommt und, wahrscheinlich eben von <name type="character">Faust</name> 
+                     <lb/>angeredet, ihn so bezaubernd schnippisch hat abfahren lassen, 
+                     <lb/>ohne es <choice><orig>gleichwol</orig> <reg>gleichwohl</reg></choice> &#252;ber sich zu verm&#246;gen, im Abgehen nicht — 
+                     <lb/>noch ein wenig zur&#252;ckzublicken, wenn auch noch so <choice><orig>indignirt</orig> <reg>indigniert</reg></choice>. 
+                     <lb/>Da sie in der Vorstadt wohnt, so war es <choice><orig>wol</orig> <reg>wohl</reg></choice> erlaubt, sie 
+                     <lb/>das Kirchlein auf der H&#246;he besuchen zu lassen, von wo man 
+                     <lb/>den <choice><orig>Ueberblick</orig> <reg>&#220;berblick</reg></choice> &#252;ber die alte Reichsstadt hat, die diesen strahlen<pc force="weak">=</pc>
+                     <lb break="no"/>den Juwel <choice><sic>beherbe.gt</sic><corr>beherbergt</corr></choice>.</p>
+                  <p>Wir sehen diesen aber nicht nur in <choice><orig>thaufrischem</orig> <reg>taufrischem</reg></choice> Glanze, 
+                     <lb/>wir sehen ihn auch in der Nacht des Ungl&#252;cks, die &#252;ber ihn 
+                     <lb/>hereingebrochen. Eine so einfache Natur wie <name type="character">Gretchen</name> <choice><orig>mu&#223;</orig> <reg>muss</reg></choice>  
+                        neben einem <name type="character">Faust</name> zu Grunde gehen, es ist das ihr <choice><orig>noth<pc force="weak">=</pc>
+                     <lb break="no"/>wendiges</orig> <reg>notwendiges</reg></choice> Los. Sie kann ihm ebenso wenig widerstehen, als 
+                     <lb/>ihn festhalten — sie kann ihn auch nicht verlieren, ohne vom 
+                     <lb/>Gewicht dieses Verlustes vernichtet zu werden. Der Dichter 
+                     <lb/>entwickelt diese <choice><orig>Nothwendigkeit</orig> <reg>Notwendigkeit</reg></choice> mit einer <choice><orig>Consequenz</orig> <reg>Konseqzenz</reg></choice>, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> es 
+                     <lb/>unser Herz ersch&#252;ttert, wenn wir nacheinander sehen, wie 
+                     <lb/>Mutter, Bruder, Kind in den Abgrund gezogen werden, bis
+                     <lb/>f&#252;r die <choice><orig>Aermste</orig> <reg>&#196;rmste</reg></choice> selbst die Nacht des Wahnsinns eine <choice><orig>Wohlthat</orig> <reg>Wohltat</reg></choice> 
+                     <lb/>und Linderung ist. Da&#223; sie auch hier noch ahnt, wie sie f&#252;r 
+                     <lb/>ihren <distinct type="archaic">Fehl</distinct> b&#252;&#223;en <choice><orig>mu&#223;</orig> <reg>muss</reg></choice> , und trotz aller Liebe <name type="character">Faust</name> <choice><orig>l&#228;&#223;t</orig> <reg>l&#228;sst</reg></choice>, um 
+                     <lb/>das Gericht zu erleiden, ist in der <distinct type="archaic">Geradheit</distinct> und Wahrheit 
+                     <lb/>ihrer Natur ebenso tief begr&#252;ndet, als es nur poetisch gerecht 
+                     <lb/>ist, wenn ihr die Verbrechen, welche die grenzenloseste Liebe 
+                     <lb/>sie begehen lie&#223;, durch die ewige Barmherzigkeit eben dieser 
+                     <lb/>Liebe und ihrer freiwilligen Bu&#223;e halber verziehen werden.</p>
+               </div>
+               </div>
+            </div>
+            <div type="chapter" n="35">
+               <div type="chapter_image">
+                  <div type="page" n="105r" facs="./img/GG_105_r.jpg" ana="Page with steel engraving of Mephistopheles.">
+                  <figure xml:id="ch35">
+                     <graphic url="./img_inside-text/GG_105_r.jpg"/>
+                     <figDesc>Drawing of Mephistopheles</figDesc>
+                  </figure>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                  <p rend="heading"><name type="character">Mephistopheles</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+                 </div>
+               </div>
+              <div type="page" n="105v" facs="./img/GG_105_v.jpg" ana="Empty page."/>
+               <div type="chapter_text">
+                  <div type="page" n="106r" facs="./img/GG_106_r.jpg" ana="Text about Mephistopheles - page 1 of 4.">
+                  <head><name type="character">Mephistopheles</name>.</head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.)</head>
+                  <p><quote type="short">„<hi rend="initial">Z</hi>wei Seelen wohnen, ach! in meiner Brust"</quote> — ein 
+                     <lb/>jeder Mensch hat in sich zwei Stimmen, die sich best&#228;ndig 
+                     <lb/>widersprechen: Verstand und Phantasie, Sinnlichkeit und Ver<pc force="weak">=</pc>
+                     <lb break="no"/>nunft liegen in ewigem <choice><orig>Streite</orig> <reg>STreit</reg></choice> in uns. Wie die eine H&#228;lfte 
+                     <lb/>unsers Wesens glaubt, liebt, hofft, schafft, so gef&#228;llt sich die 
+                     <lb/>andere darin, von alledem das <choice><orig>Gegentheil</orig> <reg>Gegenteil</reg></choice> zu <choice><orig>thun</orig> <reg>tun</reg></choice>; sie spottet, 
+                     <lb/><choice><orig>kritisirt</orig> <reg>kritisiert</reg></choice>, verneint und zerst&#246;rt, ist keines Aufschwungs f&#228;hig, 
+                     <lb/>und es existirt f&#252;r sie <choice><orig>blos</orig> <reg>blo&#223;</reg></choice> das sinnlich Wahrnehmbare. Es 
+                     <lb/>ist mit Einem Worte der Realismus in seinem <choice><orig>Gegensatze</orig> <reg>Gegensatz</reg></choice> zum 
+                     <lb/>Idealismus, die beide wir als unaufh&#246;rliche Gegner in uns 
+                     <lb/>hegen, ohne sie jemals ganz vers&#246;hnen zu k&#246;nnen, w&#228;hrend 
+                     <lb/>doch das vollst&#228;ndige <choice><orig>Ueberwiegen</orig> <reg>&#220;berwiegen</reg></choice> des <choice><orig>einen</orig> <reg>Einen</reg></choice> wie des <choice><orig>andern</orig> <reg>anderen</reg></choice> 
+                     <lb/>ins Verderben f&#252;hrt. Denn auch der Realismus, <choice><orig>obwol</orig> <reg>Obwohl</reg></choice> er 
+                     <lb/>den irdischen <choice><orig>Theil</orig> <reg>Teil</reg></choice>, die Materie, die Schranke, das Endliche 
+                     <lb/>und Verg&#228;ngliche unserer Natur, also nach Umst&#228;nden die
+                     <lb/>S&#252;nde <choice><orig>repr&#228;sentirt</orig> <reg>repr&#228;sentiert</reg></choice>, ist doch eben das <choice><orig>nothwendige</orig> <reg>notwendige</reg></choice> Gegen<pc force="weak">=</pc>
+                     <lb break="no"/>gewicht, die Bedingung unserer Existenz, und unsere Aufgabe 
+                     <lb/>ist es gerade, diese Gegens&#228;tze in uns aufzul&#246;sen.</p>
+                  <p><choice><orig>Da&#223;</orig> <reg>Dass</reg></choice> <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> diesen <choice><orig>innern</orig> <reg>inneren</reg></choice> Antagonisten dem <name type="character">Faust</name> in 
+                     <lb/><name type="character">Mephistopheles</name> gegen&#252;bergestellt hat, war unter allen Umst&#228;nden 
+                     <lb/>ein gro&#223;es <choice><orig>Wagni&#223;</orig> <reg>Wagnis</reg></choice>, wenn es auch zufolge seiner k&#252;nstlerischen 
+                     <lb/>Sch&#246;pferkraft auf die au&#223;erordentlichste Weise gelungen und zu 
+                     <lb/>einem gl&#228;nzenden Beweise seiner Meisterschaft geworden ist.</p>
+                  <p>Die Kunst hat sich zu allen Zeiten damit abgegeben, Be<pc force="weak">=</pc>
+                     <lb break="no"/>griffe zu <choice><orig>personificiren</orig> <reg>personifizieren</reg></choice>; ist doch der Olymp aller V&#246;lker eine 
+                     <lb/>solche <choice><orig>Personification</orig> <reg>Personifikation</reg></choice> von Naturkr&#228;ften durch die Dichtung 
+                     <lb/><choice><orig>Gerathen</orig> <reg>Geraten</reg></choice> ist es ihr freilich nur in dem Falle, wenn aus dem</p>
+                 </div>
+                  <div type="page" n="106v" facs="./img/GG_106_v.jpg" ana="Text about Mephistopheles - page 2 of 4.">
+                  <p rend="page_header"><name type="character">Mephistopheles</name>.</p>
+                  <p>blassen Schemen — wie bei <name type="character">Mephistopheles</name> — ein wirklich 
+                     <lb/>lebendiges Wesen <distinct type="archaic">ward</distinct>, das ein selbst&#228;ndiges Leben gewann, 
+                     <lb/><choice><orig>soda&#223;</orig> <reg>sodass</reg></choice> es uns &#252;berall und durchaus als eine Person erscheint 
+                     <lb/>und wir erst eine Anstrengung des Verstandes <choice><orig>n&#246;thig</orig> <reg>n&#246;tig</reg></choice> haben, 
+                     <lb/>um es uns wieder in seinen Gedanken aufzul&#246;sen.</p>
+                  <p>Ist Mephisto also keine blo&#223;e <choice><orig>Abstraction</orig> <reg>Abstraktion</reg></choice>, hat er durchaus 
+                     <lb/>individuelle Z&#252;ge, <choice><orig>pulsirt</orig> <reg>pulsiert</reg></choice> warmes, scharfes Lebensblut durch 
+                     <lb/>seine Adern, so scheint eben in ihm nichts anderes — als der 
+                     <lb/>absoluteste Egoismus pers&#246;nlich geworden zu sein. Wer h&#228;tte 
+                     <lb/>nicht gelegentlich einen wenn auch nicht ganz so <choice><orig>consequenten</orig> <reg>konsequenten</reg></choice> 
+                     <lb/>Freund gehabt? Er verdankt seine Lebenskraft aber vorz&#252;glich 
+                     <lb/>der Beigabe von Humor, die ihm der Dichter mit auf den 
+                     <lb/>Weg gegeben; vertritt er eben die Beschr&#228;nkung des Verstandes 
+                     <lb/>und der Sinnlichkeit, ist die K&#246;rperwelt, der Materialismus 
+                     <lb/>gerade sein Lieblingsfach:</p>
+                  <p><quote type="long">Am meisten lieb' ich mir die vollen, frischen Wangen, 
+                     <lb/>F&#252;r einen Leichnam bin ich nicht zu Haus; 
+                     <lb/>Mir geht es wie der Katze mit der Maus — </quote></p>
+                  <p><choice><orig>ha&#223;t</orig> <reg>hasst</reg></choice> er alles Streben nach <choice><orig>Erkenntni&#223;</orig> <reg>Erkenntnis</reg></choice> des <choice><orig>Uebersinnlichen</orig> <reg>&#220;bersinnlichen</reg></choice>, so
+                     <lb/>verneint er es doch mit Behagen; sein Witz befreit uns sogar, 
+                     <lb/>weil er niemals einfach verh&#246;hnt, l&#252;gt und t&#228;uscht, sondern 
+                     <lb/>weil wir immer eine wenn auch einseitige Wahrheit in ihm 
+                     <lb/>finden, die mit ihren Sarkasmen wie ein Blitz allemal ein 
+                     <lb/>ganzes weites Gebiet in uns aufhellt, nach welchem wir freilich 
+                     <lb/>im n&#228;chsten Augenblick nur um so geblendeter in der <choice><orig>Finster<pc force="weak">=</pc>
+                     <lb break="no"/>ni&#223;</orig> <reg>Finsternis</reg></choice> stehen, uns aber doch die Empfindung bleibt, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> diese
+                     <lb/>Art, die Dinge zu sehen, eben auch ihre gewisse Berechtigung habe.</p>
+                  <p>Nat&#252;rlich tritt dieser vernichtende Witz fast immer in der 
+                     <lb/>Form des gemeinen Weltverstandes auf, wie die Stelle <choice><sic>anf<pc force="weak">=</pc>
+                     <lb break="no"/>zeigt</sic><corr>anzeigt</corr></choice>, in der wir ihn vom K&#252;nstler dargestellt finden:</p>
+                  <p><quote type="long">Ich sag' es dir: ein Kerl, der <choice><orig>speculirt</orig> <reg>spekuliert</reg></choice> ... </quote></p>
+                  <p>Junker Voland ist hier eben beim <choice><orig>Cardinal</orig> <reg>Kardinal</reg></choice>= und Wende<pc force="weak">=</pc>
+                     <lb break="no"/>punkt angelangt, wo die frivole Lebensphilosophie allemal die 
+                     <lb/>Ungeduld verf&#252;hrt, die den langsamen und m&#252;hseligen Weg 
+                     <lb/>der <choice><orig>Erkenntni&#223;</orig> <reg>Erkenntnis</reg></choice> nicht durchlaufen mag. Nat&#252;rlich <choice><orig>mu&#223;</orig> <reg>muss</reg></choice>  <name type="character">Me<pc force="weak">=</pc>
+                     <lb break="no"/>phistopheles</name> in der Form &#252;berlegener Bildung, wie einer auf<pc force="weak">=</pc>
+                     <lb break="no"/>treten, der den <choice><orig>Proce&#223;</orig> <reg>Prozess</reg></choice>, an welchem <name type="character">Faust</name> <choice><orig>laborirt</orig> <reg>laboriert</reg></choice>, schon lange 
+                     <lb/>durchgemacht und sich von dessen Fruchtlosigkeit &#252;berzeugt habe:</p>
+                 </div>
+                  <div type="page" n="107r" facs="./img/GG_107_r.jpg" ana="Text about Mephistopheles - page 3 of 4.">
+                  <p rend="page_header"><name type="character">Mephistopheles</name>.</p>
+                  <p><quote type="long">O glaube mir, der manche tausend Jahre 
+                     <lb/>An dieser harten Speise kaut, 
+                     <lb/><choice><orig>Da&#223;</orig> <reg>Dass</reg></choice> von der Wiege bis zur Bahre 
+                     <lb/>Kein Mensch den alten Sauerteig verdaut!</quote></p>
+                  <p>Vornehme Nonchalance, elegante Manieren und &#252;berlegene 
+                     <lb/>Weltgewandtheit <choice><orig>imponiren</orig> <reg>imponieren</reg></choice> dem verlegenen deutschen Gelehrten 
+                     <lb/>immer ein wenig, mag er's gleich nicht eingestehen; es ist 
+                     <lb/>daher ganz richtig, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> <name type="character">Mephistopheles</name> bei seinem zweiten ent<pc force="weak">=</pc>
+                     <lb break="no"/>scheidenden Besuch beim <choice><orig>Doctor</orig> <reg>Doktor</reg></choice> nicht als <quote type="short">„fahrender Scholast“</quote>
+                     <lb/>wie das erste mal auftritt, wo er in diesem <choice><orig>Cost&#252;m</orig> <reg>Kost&#252;m</reg></choice> <name type="character">Faust</name>'s 
+                     <lb/>Lachen erregte, sondern <quote type="short">„als edler Junker, in <choice><orig>rothem</orig> <reg>rotem</reg></choice>, gold<pc force="weak">=</pc>
+                     <lb break="no"/><distinct type="arachaic">verbr&#228;mtem</distinct> <distinct type="achaic">Kleide</distinct>, das M&#228;ntelchen von starrer Seide, die 
+                     <lb/>Hahnenfeder auf dem Hut, mit einem langen, spitzen Degen“</quote>. 
+                     <lb/>Witzig hat ihn der Dichter aber schon deshalb gemacht, weil 
+                     <lb/>der Witz &#252;berhaupt viel drastischer wirkt, leichter verf&#252;hrt als
+                     <lb/>die trockene, kalte Sophistik, weil er sich dem <choice><orig>Ged&#228;chtni&#223;</orig> <reg>Ged&#228;chtnis</reg></choice> um 
+                     <lb/>so unwiderstehlicher einpr&#228;gt, je sch&#228;rfer er ist — und der 
+                     <lb/>Witzige uns &#252;berhaupt immer als der <choice><orig>Ueberlegene</orig> <reg>&#220;berlegene</reg></choice> vorkommt, 
+                     <lb/>da er der Freiere und Ungebundenere scheint. Was man ver<pc force="weak">=</pc>
+                     <lb break="no"/>lacht, hat man ja in gewissem Sinne &#252;berwunden!</p>
+                  <p>Gewandtheit und Freiheit der <choice><orig>&#228;u&#223;ern</orig> <reg>&#228;u&#223;eren</reg></choice> Erscheinung, kaltes
+                     <lb/>weltm&#228;nnisches und leicht bewegliches Wesen, der lauernde, 
+                     <lb/>stechende, durchdringende Blick sind also <choice><orig>wol</orig> <reg>wohl</reg></choice> <choice><orig>unerla&#223;liche</orig> <reg>unerl&#228;ssliche</reg></choice> Eigen<pc force="weak">=</pc>
+                     <lb break="no"/>schaften des „Junkers“. Ebenso werden wir ihn uns dabei 
+                     <lb/>lang und hager, nervig und <distinct type="archaic">schnellkr&#228;ftig</distinct> — er ist ja ein vor<pc force="weak">=</pc>
+                     <lb break="no"/>trefflicher Fechter — vorzustellen haben. Fett ist ein Zeichen 
+                     <lb/>des Behagens und der <choice><orig>Gem&#252;thlichkeit</orig> <reg>Gem&#252;tlichkeit</reg></choice>, das f&#252;r <name type="character">Mephistopheles</name>, 
+                     <lb/>den<quote type="short"> „ausgepichten Teufel“</quote>, wenig <choice><orig>pa&#223;t</orig> <reg>passt</reg></choice>; er, der einseitige Ver<pc force="weak">=</pc>
+                     <lb break="no"/>stand, ist ja das gerade <choice><orig>Gegentheil</orig> <reg>Gegenteil</reg></choice> der <choice><orig>Gem&#252;thlichkeit</orig> <reg>Gem&#252;tlichkeit</reg></choice>. Der
+                     <lb/><quote type="short">„Geist, der stets verneint“</quote>, wird <choice><orig>wol</orig> <reg>wohl</reg></choice> auch ein krauses, dichtes 
+                     <lb/>Haar haben m&#252;ssen, und das <quote type="short">„Widerhaarige“</quote> hat sich auch 
+                     <lb/>wol in Bart und Augenbrauen auszusprechen. <name type="character">Gretchen</name> sagt 
+                     <lb/>von ihm:</p>
+                  <p><quote type="long">Es hat mir in meinem Leben 
+                     <lb/>So nichts einen Stich ins Herz gegeben 
+                     <lb/>Als des Menschen widrig Gesicht.</quote></p>
+                  <p>Deshalb braucht er aber nicht gerade absto&#223;end <choice><orig>h&#228;&#223;lich</orig> <reg>h&#228;sslich</reg></choice> zu 
+                     <lb/>sein, wenigstens nicht mehr, als mit dem &#228;u&#223;erlich vornehmen, 
+                     <lb/>innerlich gemeinen Wesen, das ihm geh&#246;rt, vereinbar ist. Alle</p>
+                 </div>
+                  <div type="page" n="107v" facs="./img/GG_107_v.jpg" ana="Text about Mephistopheles - page 4 of 4.">
+                  <p rend="page_header"><name type="character">Mephistopheles</name>.</p>
+                  <p>sieben Tods&#252;nden k&#246;nnen auch auf einem urspr&#252;nglich sch&#246;nen
+                     <lb/>Gesichte geschrieben stehen, und ein gefallener <choice><orig>mu&#223;</orig> <reg>muss</reg></choice>  doch ein<pc force="weak">=</pc>
+                     <lb break="no"/>mal ein wirklicher Engel gewesen sein k&#246;nnen, ein m&#228;chtiges, 
+                     <lb/>hochbegabtes Wesen also, dessen herrliche Eigenschaften sich nur 
+                     <lb/>ins <choice><orig>Gegentheil</orig> <reg>Gegenteil</reg></choice> verkehrt haben, wie aus Liebe <choice><orig>Ha&#223;</orig> <reg>Hass</reg></choice>, aus Wein 
+                     <lb/>Essig wird.</p>
+                  <p><name type="character">Faust</name> nennt ihn in einer weniger verbindlichen Stimmung 
+                     <lb/>einmal eine <quote type="short">„<distinct type="archaic">Spottgeburt</distinct> von Dreck und Feuer“</quote>, und er hat 
+                     <lb/>ja Lust, sich selbst f&#252;r ein Genie auszugeben, was denn wohl 
+                     <lb/><choice><orig>harmonirte</orig> <reg>harmonierte</reg></choice> mit dem Begriffe kalten Feuers, das ist der Ver<pc force="weak">=</pc>
+                     <lb break="no"/>einigung von innerer K&#228;lte mit der Glut eines positiven Hasses
+                     <lb/>gegen alles Edlere, von dem er ja nur abgefallen ist, dessen 
+                     <lb/><choice><orig>Werth</orig> <reg>Wert</reg></choice> er wohl kennt.</p>
+                  <p>Die grobe Arbeit <choice><orig>l&#228;&#223;t</orig> <reg>l&#228;sst</reg></choice> <name type="character">Mephistopheles</name> bekanntlich von 
+                     <lb/>seinen Unterbeamten <choice><orig>thun</orig> <reg>tun</reg></choice>, er hat also schon darum Anspruch 
+                     <lb/>auf eine feine, <choice><orig>wol</orig> <reg>wohl</reg></choice> ein wenig klauenartig zugespitzte, magere 
+                     <lb/>Hand. Alle Machtf&#252;lle aber gibt ihrem Besitzer einen <choice><orig>besondern</orig> <reg>besonderen</reg></choice> 
+                     <lb/>Ausdruck des Aplomb, der sich unter keinen Umst&#228;nden ver<pc force="weak">=</pc>
+                     <lb break="no"/>leugnet und hier wie so oft nur mit der Verbissenheit ver<pc force="weak">=</pc>
+                     <lb break="no"/>kn&#252;pft ist, die es erregt, wenn man einen noch <choice><orig>M&#228;chtigern</orig> <reg>M&#228;chtigeren</reg></choice> 
+                     <lb/>sich best&#228;ndig auf dem Genick wei&#223;, den man h&#246;chstens ein 
+                     <lb/>wenig verleumden oder vor andern wegspotten kann, wie denn 
+                     <lb/><name type="character">Mephistopheles</name> <choice><orig>thut</orig> <reg>tut</reg></choice>, da er vornehm=leichtsinnig vom Herrn sagt:</p>
+                  <p><quote type="long">Von Zeit zu Zeit seh' ich den Alten gern 
+                     <lb/>Und h&#252;te mich, mit ihm zu brechen. 
+                     <lb/>Es ist gar h&#252;bsch von einem gro&#223;en Herrn, 
+                     <lb/>So menschlich mit dem Teufel selbst zu sprechen.</quote></p>
+                 </div>
+               </div>
+            </div>
+            <div type="chapter" n="36">
+               <div type="chapter_image">
+                  <div type="page" n="108r" facs="./img/GG_108_r.jpg" ana="Page with steel engraving of Wagner.">
+                  <figure xml:id="ch36">
+                     <graphic url="./img_inside-text/GG_108_r.jpg"/>
+                     <figDesc>Drawing of Wagner</figDesc>
+                  </figure>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                  <p rend="heading"><name type="character">Wagner</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+                 </div>
+               </div>
+              <div type="page" n="108v" facs="./img/GG_108_v.jpg" ana="Empty page."/>
+               <div type="chapter_text">
+                  <div type="page" n="109r" facs="./img/GG_109_r.jpg" ana="Text about Wagner - page 1 of 4.">
+                  <head><name type="character">Wagner</name>.</head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.) </head>
+                  <p><hi rend="initial">S</hi>olch schwere Last sind Wissenschaft und Weisheit,
+                     <choice><orig>da&#223;</orig> <reg>dass</reg></choice> 
+                     <lb/>sie sich h&#228;ufig der Esel bedienen m&#252;ssen, um sie zu tragen;
+                     <lb/>auch <choice><orig>Kameele</orig> <reg>Kamele</reg></choice> sollen bisweilen zu diesem <choice><orig>Dienste</orig> <reg>Dienst</reg></choice> verwendet 
+                     <lb/>werden. Man braucht nur in die erste beste deutsche Universit&#228;ts<pc force="weak">=</pc>
+                     <lb break="no"/>stadt zu gehen, um sich von der schlagenden Wahrheit <choice><orig>unsers</orig> <reg>unseres</reg></choice> 
+                     <lb/>Satzes auf jeder Stra&#223;e &#252;berzeugen zu k&#246;nnen. Wie sie <distinct type="archaic">daher<pc force="weak">=</pc>
+                     <lb break="no"/>keuchen</distinct>, wie sie blasen und pusten und jeden darauf ansehen, 
+                     <lb/>ob er auch wisse, welch einen unbezahlbaren Schatz sie zu tragen
+                     <lb/>haben! Welch Gef&#252;hl des <choice><orig>unerme&#223;lichen</orig> <reg>unerm&#228;sslichen</reg></choice> Abstandes zwischen 
+                     <lb/>ihnen und gew&#246;hnlichem Vieh spricht aus der stolzen, m&#252;rrischen 
+                     <lb/>W&#252;rde, mit der sie einherschreiten!</p>
+                  <p>Es ist bekanntlich ein merklicher Unterschied zwischen denen, 
+                     <lb/>welche die Sch&#228;tze der Weisheit und des Wissens zu Tage 
+                     <lb/>f&#246;rdern, und denen, welche sie herumtragen und der Jugend 
+                     <lb/>loth= und scheffelweise verkaufen. Zu <choice><orig>letztern</orig> <reg>letzteren</reg></choice> Tr&#228;gern der 
+                     <lb/>Wissenschaft geh&#246;rt nun der treffliche Mann, der als vollkommener 
+                     <lb/>Widerpart des K&#246;nigs Midas alles Gold zu <choice><orig>todtem</orig> <reg>totem</reg></choice> Papier
+                     <lb/>und abgedroschenem Stroh verwandelt, was er <choice><orig>anfa&#223;t</orig> <reg>anasst</reg></choice>. <name type="character">Faust</name> 
+                     <lb/>nennt den gelehrten Herrn ein wenig grob einen „trockenen 
+                     <lb/>Schleicher“ und behauptet von ihm:</p>
+                  <p><quote type="long">Wie nur dem Kopf nicht alle Hoffnung schwindet, 
+                     <lb/>Der immerfort an schalem Zeuge klebt, 
+                     <lb/>Mit <choice><orig>gier'ger</orig> <reg>gieriger</reg></choice> Hand nach Sch&#228;tzen gr&#228;bt, 
+                     <lb/>Und froh ist, wenn er Regenw&#252;rmer findet!</quote></p>
+                  <p>Sie haben eine eigene Art, aus allem das Leben auszu<pc force="weak">=</pc>
+                     <lb break="no"/>treiben, womit sie sich befassen. Sie <choice><orig>reduciren</orig> <reg>reduzieren</reg></choice> alles auf einen 
+                     <lb/>Mechanismus oder auf <choice><orig>Recepte</orig> <reg>Rezept</reg></choice>; besonders f&#252;r die <choice><orig>letztern</orig> <reg>letzteren</reg></choice> aber 
+                     <lb/>n&#228;hren sie eine wahre <choice><orig>Wuth</orig> <reg>Wut</reg></choice>, glauben den Staat wie die</p>
+                 </div>
+                  <div type="page" n="109v" facs="./img/GG_109_v.jpg" ana="Text about Wagner - page 2 of 4.">
+                  <p rend="page_header"><name type="character">Wagner</name>.</p>
+                  <p>einzelnen Menschen damit <choice><orig>curiren</orig> <reg>kurieren</reg></choice> zu k&#246;nnen, und die Un<pc force="weak">=</pc>
+                     <lb break="no"/>tr&#252;glichkeit derselben erf&#252;llt sie mit hohem Selbstgef&#252;hl. Dem 
+                     <lb/>Meister gegen&#252;ber ist aber der <distinct type="archaic">Famulus</distinct> noch ganz bescheiden, 
+                     <lb/>hat noch kaum eine <distinct type="archaic">Pr&#228;tension</distinct>, die Welt zu regieren:</p> 
+                  <p><quote type="long">Ach! wenn man so in sein Museum gebannt ist, 
+                     <lb/>Und sieht die Welt kaum einen Feiertag, 
+                     <lb/>Kaum durch ein Fernglas, nur von weiten, 
+                     <lb/>Wie soll man sie durch <choice><orig>Ueberredung</orig> <reg>&#220;berredung</reg></choice> leiten?... 
+                     <lb/>Mir wird, bei meinem kritischen Bestreben, 
+                     <lb/>Doch oft um Kopf und Busen bang' — </quote></p>
+                  <p>wenn er sich auch gleich der Welt gegen&#252;ber als etwas Aus<pc force="weak">=</pc>
+                     <lb break="no"/>erw&#228;hltes f&#252;hlt:</p>
+                  <p><quote type="long">Verzeiht! Es ist ein gro&#223; Erg&#246;tzen 
+                     <lb/>Sich in den Geist der Zeiten zu versetzen, 
+                     <lb/>Zu schauen wie vor uns ein weiser Mann gedacht, 
+                     <lb/>Und wie wir's dann zuletzt so herrlich weit gebracht.</quote></p>
+                  <p>Alle gelehrten Pedanten sind eitel, und so jagt auch er 
+                     <lb/>nach jeder Auszeichnung, w&#228;r's auch nur der, neben einem 
+                     <lb/>ber&#252;hmten Manne zu gehen:</p>
+                  <p><quote type="long">Mit Euch, Herr <choice><orig>Doctor</orig> <reg>Doktor</reg></choice>, zu spazieren, 
+                     <lb/>Ist ehrenvoll und ist Gewinn. ... 
+                     <lb/>Welch ein Gef&#252;hl <choice><orig>mu&#223;t</orig> <reg>musst</reg></choice> du, o gro&#223;er Mann! 
+                     <lb/>Bei der Verehrung dieser Menge haben! 
+                     <lb/>O gl&#252;cklich! wer von seinen Gaben 
+                     <lb/>Solch einen <choice><orig>Vortheil</orig> <reg>Vorteil</reg></choice> ziehen kann.</quote></p>
+                  <p>Sagt ihm der Meister dann:</p>
+                  <p><quote type="long">Doch ist es jedem eingeboren, 
+                     <lb/><choice><orig>Da&#223;</orig> <reg>Dass</reg></choice> sein Gef&#252;hl hinauf und vorw&#228;rts dringt — </quote></p>
+                  <p>so zeichnet wieder er sein ganzes Wesen, den totalen Mangel 
+                     <lb/>an Phantasie, den er hat, da er <name type="character">Faust</name> <choice><orig>misverstehend</orig> <reg>missverstehend</reg></choice> antwortet:</p>
+                  <p><quote type="long">Ich hatte selbst oft grillenhafte Stunden, 
+                     <lb/>Doch solchen Trieb hab' ich noch nie empfunden. 
+                     <lb/>Des Vogels Fittich werd' ich nie beneiden. 
+                     <lb/>Wie anders tragen uns die Geistesfreuden, 
+                     <lb/>Von Buch zu Buch, von Blatt zu Blatt!</quote></p>
+                  <p>So meisterhaft nun auch der beschr&#228;nkte Kopf gezeichnet 
+                     <lb/>ist, dem eigentlich alles frische organische Leben ein <choice><orig>Greuel</orig> <reg>Gr&#228;uel</reg></choice> ist, 
+                     <lb/>alles Wissen ein <choice><orig>Ged&#228;chtni&#223;kram</orig> <reg>Ged&#228;chtniskram</reg></choice> wird, so kommt dieser im 
+                     <lb/>ersten <choice><orig>Theil</orig> <reg>Teil</reg></choice> der Trag&#246;die <choice><orig>blos</orig> <reg>blo&#223;</reg></choice> leicht <choice><orig>skizzirte</orig> <reg>skizzierte</reg></choice> Zug doch erst 
+                     <lb/>im zweiten zur vollen Entwickelung, wo er, aus des Meisters</p>
+                 </div>
+                  <div type="page" n="110r" facs="./img/GG_110_r.jpg" ana="Text about Wagner - page 3 of 4.">
+                  <p rend="page_header"><name type="character">Wagner</name>.</p>
+                  <p>Schatten herausgetreten, in eigenem Lichte strahlt, <choice><orig>soda&#223;</orig> <reg>sodass</reg></choice> 
+                     <lb/><name type="character">Mephistopheles</name> von ihm sagt:</p>
+                  <p><quote type="long">Wer kennt ihn nicht, den <choice><sic>edeln</sic><corr>edlen</corr></choice> <choice><orig>Doctor</orig> <reg>Doktor</reg></choice> <name type="character">Wagner</name>, 
+                     <lb/>Den ersten jetzt in der gelehrten Welt! 
+                     <lb/>Er ist's allein, der sie zusammenh&#228;lt, 
+                     <lb/>Der Weisheit t&#228;glicher Vermehrer. 
+                     <lb/><choice><orig>Allwi&#223;begierige</orig> <reg>Allwissbegierige</reg></choice> Horcher, H&#246;rer 
+                     <lb/>Versammeln sich um ihn zu Hauf. 
+                     <lb/>Er leuchtet einzig vom Katheder; 
+                     <lb/>Die Schl&#252;ssel &#252;bt er wie <choice><orig>Sanct</orig> <reg>Sankt</reg></choice>=Peter, 
+                     <lb/>Das <choice><orig>Untre</orig> <reg>Untre</reg></choice> so das <choice><orig>Obre</orig> <reg>Obre</reg></choice> schlie&#223;t er auf. 
+                     <lb/>Wie er vor allen gl&#252;ht und funkelt, 
+                     <lb/>Kein Ruf, kein Ruhm h&#228;lt weiter Stand; 
+                     <lb/>Selbst <name type="character">Faustus</name> Name wird verdunkelt, 
+                     <lb/>Er ist es, der allein erfand.</quote></p>
+                  <p>Hier erst macht er sich daran, nach Herzenslust dem Leben 
+                     <lb/>den Krieg zu erkl&#228;ren, organische Gestaltung durch mechanische 
+                     <lb/>Fabrikation zu ersetzen, wie uns der <distinct type="archaic">Famulus</distinct> erz&#228;hlt:</p>
+                  <p><quote type="long">Monatelang, des gro&#223;en Werkes willen 
+                     <lb/>Lebt' er im allerstillsten Stillen.
+                     <lb/>Der zarteste gelehrter M&#228;nner 
+                     <lb/>Er sieht aus wie ein Kohlenbrenner,
+                     <lb/>Geschw&#228;rzt vom Ohre bis zur Nasen 
+                     <lb/>Die Augen <choice><orig>roth</orig> <reg>rot</reg></choice> vom Feuerblasen —</quote></p>
+                  <p>wie ihn denn auch der K&#252;nstler so darstellt, da er den Deckel 
+                     <lb/>von der Phiole hebt, in der er eben den <distinct type="archaic">Homunculus</distinct> braut. 
+                     <lb/>Freilich nicht ohne die <distinct type="archaic">H&#252;lfe</distinct> des Teufels gelingt die Sache, 
+                     <lb/>und dem Aermsten bleibt immer noch die <distinct type="archaic">Retorte</distinct> ankleben; 
+                     <lb/>aber es ist doch der Triumph der Wissenschaft, wie er be<pc force="weak">=</pc>
+                     <lb break="no"/>hauptet:</p>
+                  <p><quote type="long">Der zarte Punkt, aus dem das Leben sprang, 
+                     <lb/>Die <distinct type="archaic">holde</distinct> Kraft, die aus dem Innern drang 
+                     <lb/>Und nahm und gab, bestimmt sich selbst zu zeichnen, 
+                     <lb/>Erst N&#228;chstes, dann sich Fremdes anzueignen, 
+                     <lb/>Die ist von ihrer W&#252;rde nun entsetzt. ...
+                     <lb/>Nun <choice><orig>l&#228;&#223;t</orig> <reg>l&#228;sst</reg></choice> sich wirklich hoffen, 
+                     <lb/><choice><orig>Da&#223;</orig> <reg>Dass</reg></choice>, wenn wir aus viel hundert Stoffen 
+                     <lb/>Durch Mischung — denn auf Mischung kommt es an — 
+                     <lb/>Den Menschenstoff gem&#228;chlich <choice><orig>componiren</orig> <reg>komponieren</reg></choice>, 
+                     <lb/>In einen Kolben <distinct type="archaic">verlutiren</distinct> 
+                     <lb/>Und ihn geh&#246;rig <distinct type="archaic">cohobiren</distinct>, 
+                     <lb/>So ist das Werk im stillen <choice><orig>abgethan</orig> <reg>abgetan</reg></choice>. 
+                     <lb/>Es wird! Die Masse regt sich klarer! 
+                     <lb/>Die <choice><orig>Ueberzeugung</orig> <reg>&#220;berzeugung</reg></choice> wahrer, wahrer!</quote></p>
+                 </div>
+                  <div type="page" n="110v" facs="./img/GG_110_v.jpg" ana="Text about Wagner - page 4 of 4.">
+                  <p rend="page_header"><name type="character">Wagner</name>.</p>
+                  <p><quote type="long">Was man an der Natur <choice><orig>Geheimni&#223;volles</orig> <reg>Geheimnisvolles</reg></choice> pries, 
+                     <lb/>Das wagen wir verst&#228;ndig zu <choice><orig>probiren</orig> <reg>probieren</reg></choice>, 
+                     <lb/>Und was sie sonst <choice><orig>organisiren</orig> <reg>organisieren</reg></choice> lie&#223;, 
+                     <lb/>Das lassen wir <choice><orig>krystallisiren</orig> <reg>kristallisieren</reg></choice>.</quote></p>
+                  <p><choice><orig>Da&#223;</orig> <reg>Dass</reg></choice> <name type="character">Wagner</name> sich an diese Unternehmung macht, ist viel<pc force="weak">=</pc>
+                     <lb break="no"/>leicht der gl&#252;cklichste Einfall des ganzen zweiten <choice><orig>Theils</orig> <reg>Teils</reg></choice>, und 
+                     <lb/>obige Rechtfertigung seines Strebens spricht ganz jene unm&#228;&#223;ige 
+                     <lb/><choice><orig>Ueberhebung</orig> <reg>&#220;berhebung</reg></choice> der Wissenschaft aus, die sich gerade in <choice><orig>unsern</orig> <reg>unseren</reg></choice> 
+                     <lb/>Tagen oft so breit macht, so grenzenlos d&#252;nkelhaft auftritt. 
+                     <lb/><distinct type="archaic">Homunculus</distinct> selbst gibt ihren Vertretern schlie&#223;lich den besten <choice><orig>Rath</orig> <reg>Rat</reg></choice>:</p>
+                  <p><quote type="long">Du bleibst zu Hause Wichtigstes zu <choice><orig>thun</orig> <reg>tun</reg></choice>. 
+                     <lb/>Entfalte du die alten Pergamente, 
+                     <lb/>Nach Vorschrift sammle Lebenselemente 
+                     <lb/>Und f&#252;ge sie mit Vorsicht eins ans andre.
+                     <lb/>Das Was bedenke, mehr bedenke Wie? 
+                     <lb/>Indessen ich ein St&#252;ckchen Welt durchwandre 
+                     <lb/>Entdeck' ich <choice><orig>wol</orig> <reg>wohl</reg></choice> das T&#252;pfchen auf das I. 
+                     <lb/>Dann ist der gro&#223;e Zweck erreicht; 
+                     <lb/>Solch einen Lohn verdient ein solches Streben: 
+                     <lb/>Gold, Ehre, Ruhm, gesundes langes Leben, 
+                     <lb/>Und Wissenschaft und Tugend — auch vielleicht. Leb' wohl</quote>!</p>
+                 </div>
+               </div>
+            </div>
+            <div type="chapter" n="37">
+               <div type="chapter_image">
+                  <div type="page" n="111r" facs="./img/GG_111_r.jpg" ana="Page with steel engraving of Helena.">
+                  <figure  xml:id="ch37">
+                     <graphic url="./img_inside-text/GG_111_r.jpg"/>
+                     <figDesc>Drawing of Helena</figDesc>
+                  </figure>
+                  <p rend="caption"><name ref="https://lobid.org/gnd/118592343" type="person">Fr. Pecht</name> gez.</p>
+                     <p rend="heading"><name ref="https://en.wikipedia.org/wiki/Helen_of_Troy" type="character_inspiration">Helena</name>.</p>
+                  <p rend="publishing_info"><name ref="https://lobid.org/gnd/1132516293" type="org">F. A. Brockhaus' Geogr.-artist. Anstalt</name>, <placeName ref="https://www.geonames.org/2879139/leipzig.html">Leipzig</placeName>. </p>
+                 </div>
+               </div>
+               <div type="page" n="111v" facs="./img/GG_111_v.jpg" ana="Empty page."/>
+               <div type="chapter_text">
+                  <div type="page" n="112r" facs="./img/GG_112_r.jpg" ana="Text about Helena - page 1 of 4.">
+                  <head><name type="character">Helena</name>.</head>
+                  <head type="sub">(<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>.)</head>
+                  <p><hi rend="initial">W</hi>ir gelangen nun zu dem 
+                     <lb/>Haupt= und Prachtst&#252;ck,
+                     dem geschn&#246;rkelten Irrgarten f&#252;r den Scharfsinn aller Glossatoren,
+                     <lb/>Kritiker, <distinct type="archaic">Silbenstecher</distinct> und gelehrten Pedanten, welche den 
+                     <lb/>Eintritt ins <choice><orig>geheimni&#223;volle</orig> <reg>geheimnisvolle</reg></choice> <choice><orig>Heiligthum</orig> <reg>Heiligtum</reg></choice> des zweiten <choice><orig>Theils</orig> <reg>Teils</reg></choice> des 
+                     <lb/>„<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>", wie der Engel mit dem Flammenschwert den ins 
+                     <lb/>Paradies, allen denjenigen verwehren, deren Locken weniger 
+                     <lb/>dick mit Schulstaub gepudert sind als ihre eigenen <choice><orig>Perr&#252;ken</orig> <reg>Per&#252;cken</reg></choice>.</p>
+                  <p>Es soll ihnen wenigstens bei uns auch gelingen, denn die 
+                     <lb/>Gesellschaft der Seligen, die sich in diesem symbolischen Elysium 
+                     <lb/>herumtreibt, hat doch etwas gar zu gespenstisch Schemenhaftes, 
+                     <lb/>als <choice><orig>da&#223;</orig> <reg>dass</reg></choice> uns nicht vor ihr bange werden sollte, besonders wenn 
+                     <lb/>solche Sphinxe an der <choice><orig>Th&#252;re</orig> <reg>T&#252;re</reg></choice> jeden zu verschlingen drohen, der 
+                     <lb/>kein <name ref="https://en.wikipedia.org/wiki/Oedipus">Oedipus</name> ist. Da wir nun keinerlei <choice><orig>Creatur</orig> <reg>Kreatur</reg></choice>, am wenig<pc force="weak">=</pc>
+                     <lb break="no"/>sten aber durch gl&#252;ckliches <choice><orig>Errathen</orig> <reg>Erraten</reg></choice> solcher Sphinx das traurige 
+                     <lb/>Schicksal bereiten m&#246;chten, sich selber in den Abgrund von 
+                     <lb/>Langeweile st&#252;rzen zu m&#252;ssen, den sie vor andern klaffend 
+                     <lb/>ge&#246;ffnet, so beschr&#228;nken wir uns billig darauf, nur ab und 
+                     <lb/>zu einen Blick durchs Gitter zu <choice><orig>thun</orig> <reg>tun</reg></choice>, ohne das Paradies selbst 
+                     <lb/>zu betreten. Er gen&#252;gt ja auch, um uns die hohe Gestalt der 
+                     <lb/>ber&#252;hmten Frau zu zeigen, die nun einmal dazu bestimmt 
+                     <lb/>scheint, durch ihre Sch&#246;nheit fortw&#228;hrend Unheil anzurichten, 
+                     <lb/>da sie nicht nur den Griechen so viel Blut, sondern auch seit 
+                     <lb/>Jahrhunderten den Scharen deutscher Magister und den Armeen 
+                     <lb/>ihrer <distinct type="archaic">Quartaner</distinct> so viel Schwei&#223; gekostet hat, wenn sie ihr 
+                     <lb/>tragisches Los aus dem <name ref="https://lobid.org/gnd/11855333X " type="person">Homer</name> in unser vielgeliebtes Deutsch
+                     <lb/>m&#246;glichst holperig zu &#252;bertragen suchten. O trauriges Schicksal 
+                     <lb/>der sch&#246;nsten Frau der Welt, erst umworben zu sein von 
+                     <lb/>K&#246;nigen und Helden und dann so kl&#228;glich zu enden als die 
+                     <lb/>gute Beute schw&#228;bischer und s&#228;chsischer <distinct type="archaic">Schulmeister</distinct> und ihrer</p>
+                 </div>
+                  <div type="page" n="112v" facs="./img/GG_112_v.jpg" ana="Text about Helena - page 2 of 4.">
+                  <p rend="page_header"><name type="character">Helena</name>.</p>
+                  <p>A=b=c=Sch&#252;tzen, ja sich von so ber&#252;hmten <choice><orig>Aesthetikern</orig> <reg>&#196;sthetikern</reg></choice> wie 
+                     <lb/><name ref="https://lobid.org/gnd/11862721X" type="person">Vischer</name> &#252;berdies noch im Grabe nachsagen lassen zu m&#252;ssen, 
+                     <lb/>man sei nur aus Pappendeckel gewesen.</p>
+                  <p>Leider sind auch wir <choice><orig>gen&#246;thigt</orig> <reg>gen&#246;tigt</reg></choice>, jene freche Ansicht <choice><orig>unsers</orig> <reg>unseres</reg></choice> 
+                     <lb/>ber&#252;hmten Landsmanns nicht f&#252;r ganz unbegr&#252;ndete Verleum<pc force="weak">=</pc>
+                     <lb break="no"/>sten aber durch gl&#252;ckliches Errathen solcher Sphinx das traurige 
+                     <lb/>dung zu halten, da der leichtsinnige Lebenswandel, dessen sich 
+                     <lb/>die F&#252;rstin in ihrem Verh&#228;ltni&#223; zu <name type="character">Faust</name> beflei&#223;t, offenbar 
+                     <lb/>nicht gen&#252;gt, die Identit&#228;t ihrer Person mit der der trojanischen 
+                     <lb/>Prinzessin so ganz au&#223;er Zweifel zu stellen, indem sie in diesem 
+                     <lb/>St&#252;ck doch gar zu viel <choice><orig>Concurrentinnen</orig> <reg>Konkurrentinnen</reg></choice> h&#228;tte, die mit Grund 
+                     <lb/> denselben Titel f&#252;r sich geltend machen k&#246;nnten.</p>
+                  <p>Halten wir uns daher an das <choice><orig>Zeugni&#223;</orig> <reg>Zeugnis</reg></choice> derjenigen, die sie 
+                     <lb/>offenbar viel genauer gesehen haben als wir durchs symbolische 
+                     <lb/>Gittergeflecht, an das des kaiserlichen Hofstaats, dem sie zuerst 
+                     <lb/>erscheint und der ihr in seiner Art am charakteristischsten 
+                     <lb/>huldigt, wenn er bei ihrer Erscheinung &#228;u&#223;ert:</p>
+                  <p><quote type="long"><sp><speaker>Aeltere Dame. </speaker>
+                     <lb/><p rend="speech">Gro&#223;, wohlgestaltet, nur der Kopf zu klein.</p></sp> 
+                     <lb/><sp><speaker>J&#252;ngere.</speaker>
+                     <lb/><p rend="speech">Seht nur den Fu&#223;! Wie k&#246;nnt' er <distinct type="archaic">plumper</distinct> sein?</p> </sp>
+                     <lb/><sp><speaker>Diplomat.</speaker>
+                     <lb/><p rend="speech">F&#252;rstinnen hab' ich dieser Art gesehn, 
+                     <lb/>Mich <distinct type="archaic">d&#228;ucht</distinct> sie ist vom Kopf zum Fu&#223;e sch&#246;n.</p></sp>
+                     <lb/><sp><speaker>Hofmann.</speaker>
+                     <lb/><p rend="speech">Sie n&#228;hert sich dem Schl&#228;fer listig mild. ... 
+                     <lb/>Sie schleicht sich weg, leichtf&#252;&#223;ig; er erwacht.</p></sp>
+                     <lb/><sp><speaker>Dame.</speaker>
+                     <lb/><p rend="speech">Sie sieht sich um! Das hab' ich <choice><orig>wol</orig> <reg>wohl</reg></choice> gedacht.</p></sp> 
+                     <lb/><sp><speaker>Hofmann.</speaker>
+                     <lb/><p rend="speech">Er staunt! Ein Wunder ist's, was ihm geschieht.</p> </sp>
+                     <lb/><sp><speaker>Dame.</speaker> 
+                     <lb/><p rend="speech">Ihr ist kein Wunder, was sie vor sich sieht.</p> </sp>
+                     <lb/><sp><speaker>Hofmann.</speaker>
+                     <lb/><p rend="speech">Mit Anstand kehrt sie sich zu ihm herum.</p></sp>
+                     <lb/><sp><speaker>Dame.</speaker>
+                     <lb/><p rend="speech">Ich merke schon, sie nimmt ihn in die Lehre; 
+                     <lb/>In solchem Fall sind alle M&#228;nner dumm, 
+                     <lb/>Er glaubt <choice><orig>wol</orig> <reg>wohl</reg></choice> auch, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> er der erste w&#228;re.</p> </sp>
+                     <lb/><sp><speaker>Ritter.</speaker>
+                     <lb/><p  rend="speech"><choice><orig>La&#223;t</orig> <reg>Lasst</reg></choice> sie mir gelten! Majest&#228;tisch fein!</p> </sp>
+                     <lb/><sp><speaker>Dame.</speaker>
+                     <lb/><p rend="speech">Die Buhlerin! Das nenn' ich doch gemein.</p></sp>
+                     <lb/><sp><speaker>Page.</speaker>
+                     <lb/><p  rend="speech">Ich m&#246;chte <choice><orig>wol</orig> <reg>wohl</reg></choice> an seiner Stelle sein!</p> </sp>
+                     <lb/><sp><speaker>Hofmann.</speaker>
+                     <lb/><p rend="speech">Wer w&#252;rde nicht in solchem Netz gefangen?</p></sp></quote></p>
+                 </div>
+                  <div type="page" n="113r" facs="./img/GG_113_r.jpg" ana="Text about Helena - page 3 of 4.">
+                  <p rend="page_header"><name type="character">Helena</name>.</p>
+                  <p><quote type="long"><sp><speaker>Dame.</speaker>
+                     <lb/><p rend="speech">Das Kleinod ist durch manche Hand gegangen, 
+                     <lb/>Auch die <distinct type="archaic">Verguldung</distinct> ziemlich abgebraucht.</p></sp> 
+                     <lb/><sp><speaker>Andere.</speaker> 
+                     <lb/><p rend="speech">Vom zehnten Jahr an hat sie nichts getaugt.</p></sp> 
+                     <lb/><sp><speaker>Ritter.</speaker>
+                     <lb/><p rend="speech">Gelegentlich nimmt jeder sich das Beste; 
+                     <lb/>Ich hielte mich an diese sch&#246;nen Reste.</p></sp></quote></p>
+                  <p>Sie selber nennt sich sp&#228;ter, ins Vaterhaus zur&#252;ckkehrend, 
+                     <lb/><quote type="short">„bewundert viel und viel gescholten"</quote> und f&#228;hrt fort:</p>
+                  <p><quote type="long">Denn seit ich diese Stelle sorgenlos verlie&#223;, ... 
+                     <lb/>Ist viel geschehen, was die Menschen weit und breit 
+                     <lb/>So gern erz&#228;hlen, aber der nicht gerne h&#246;rt, 
+                     <lb/>Von dem die Sage wachsend sich zum M&#228;rchen spann.</quote></p>
+                  <p>Sie geht also &#252;ber die dunkeln Punkte in ihrer Geschichte 
+                     <lb/>allerdings gern rasch weg, doch zeigt sie nicht nur hierin k&#246;nig<pc force="weak">=</pc>
+                     <lb break="no"/>lichen, sondern auch gro&#223;en Sinn, wenn sie weiter spricht:</p>
+                  <p><quote type="long">Der Tochter Zeus' <distinct type="archaic">geziemet</distinct> nicht gemeine Furcht, 
+                     <lb/>Und fl&#252;chtig=leise Schreckenshand ber&#252;hrt sie nicht.</quote></p>
+                  <p>Ebenso wei&#223; sie alles mit gemessenem Anstande zu voll<pc force="weak">=</pc>
+                     <lb break="no"/>bringen, <choice><orig>obwol</orig> <reg>obwohl</reg></choice> ihr Phorkyas giftig nachsagt:</p>
+                  <p><quote type="long">Alt ist das Wort, doch bleibet hoch und wahr der Sinn: 
+                     <lb/><choice><orig>Da&#223;</orig> <reg>Dass</reg></choice> Scham und Sch&#246;nheit nie zusammen, Hand in Hand, 
+                     <lb/>Den Weg verfolgen &#252;ber der Erde gr&#252;nen Pfad.</quote></p>
+                  <p>Alte Weiber haben immer mehr Zungenfreiheit als andere, 
+                     <lb/>und so m&#252;ssen wir ihr derlei Betrachtungen schon verzeihen. 
+                     <lb/>Aufrichtig gestanden, hat uns das Gefolge der K&#246;nigin immer 
+                     <lb/>viel lebendiger geschienen als sie <distinct type="archaic">selber</distinct>. <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> gelang, diese 
+                     <lb/>L&#228;mmerschar mit einem Humor zu schildern, der seiner besten 
+                     <lb/>Zeit w&#252;rdig w&#228;re:</p>
+                  <p><quote type="long">Vorschnell und <choice><orig>th&#246;richt</orig> <reg>t&#246;richt</reg></choice>, echt wahrhaftes Weibsgebild! 
+                     <lb/>Vom Augenblick abh&#228;ngig, Spiel der Witterung 
+                     <lb/>Des Gl&#252;cks und Ungl&#252;cks, keins von beiden <choice><orig>wi&#223;t</orig> <reg>wisst</reg></choice> ihr je 
+                     <lb/>Zu bestehn mit <choice><orig>Gleichmuth</orig> <reg>Gleichmut</reg></choice>. Eine widerspricht ja stets
+                     <lb/>Der andern heftig, &#252;berquer die andern ihr; 
+                     <lb/>In Freud' und Schmerz nur heult und lacht ihr gleichen Tons.</quote></p>
+                  <p>Damit verliert sich denn aber auch die Geschichte in einen
+                     <lb/> mystisch=allegorischen Nebel, in welchem man zuletzt 
+                     <lb/>nicht mehr wei&#223;, wo einem der Kopf steht.</p>
+                 </div>
+                  <div type="page" n="113v" facs="./img/GG_113_v.jpg" ana="Text about Helena - page 4 of 4.">
+                  <p rend="page_header"><name type="character">Helena</name>.</p>
+                  <p>Es ist eine der <choice><orig>dem&#252;thigendsten</orig> <reg>dem&#252;tigendsten</reg></choice> Bemerkungen, die man im 
+                     <lb/>Laufe des Lebens zu machen Gelegenheit hat, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> man nichts 
+                     <lb/>wirklich dauernd besitzt, nicht einmal das Eigenste, was einem 
+                     <lb/>anzugeh&#246;ren scheint, die Schaffenskraft. Was wir gestern 
+                     <lb/>gekonnt, wir k&#246;nnen es heute durchaus nicht mehr, sind wenig<pc force="weak">=</pc>
+                     <lb break="no"/>stens niemals sicher, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> wir es morgen noch k&#246;nnen, und 
+                     <lb/>jener griechische Weltweise, der so sicher behauptete, er trage 
+                     <lb/>all das Seine bei sich, log aufs frechste, denn er hatte vielleicht 
+                     <lb/>die H&#228;lfte desselben unterwegs verloren. So hat auch <name ref="https://lobid.org/gnd/118540238" type="person">Goethe</name> 
+                     <lb/>in den zweiten <choice><orig>Theil</orig> <reg>Teil</reg></choice> des „<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>" sicherlich nur wenig von 
+                     <lb/>jener herrlichen F&#228;higkeit des Erschaffens unsterblicher Gestalten 
+                     <lb/>von <choice><orig>unsaglichem</orig> <reg>uns&#228;glichem</reg></choice> Reiz, unersch&#246;pflicher Lebenskraft hin&#252;ber<pc force="weak">=</pc>
+                     <lb break="no"/>gerettet, der den ersten zum Lieblingsbuch der Nation f&#252;r alle 
+                     <lb/>Zeiten gemacht hat.</p>
+                  <p>Fehlt sie aber, so ist daf&#252;r immer noch eine solche F&#252;lle
+                     <lb/>tiefsinniger Weisheit, scharfer Weltbeobachtung, heitern Humors 
+                     <lb/>geblieben, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> man zehn gew&#246;hnliche Dichter sehr prachtvoll 
+                     <lb/>damit ausstatten k&#246;nnte; die reichste Lebenserfahrung <choice><orig>theilt</orig> <reg>teilt</reg></choice> uns 
+                     <lb/>ihre Sch&#228;tze mit, die iebensw&#252;rdigste Bosheit zeigt &#252;berall ihr 
+                     <lb/>schalkhaftes Gesicht und wechselt mit dem tiefsten Ernst, der 
+                     <lb/>Denker fesselt uns wenigstens aufs angenehmste und geistreichste, 
+                     <lb/>wenn der Dichter auch nicht mehr wie ehemals zu r&#252;hren und 
+                     <lb/>zu ersch&#252;ttern vermag. Deshalb wird <choice><orig>wol</orig> <reg>wohl</reg></choice> auch die Zeit all<pc force="weak">=</pc>
+                     <lb break="no"/>m&#228;hlich feststellen, <choice><orig>da&#223;</orig> <reg>dass</reg></choice> der zweite <choice><orig>Theil</orig> <reg>Teil</reg></choice> des „<name ref="https://lobid.org/gnd/4128140-8" type="play">Faust</name>“ zwar 
+                     <lb/>kein St&#252;ck Leben wie der erste, aber ein Schatzk&#228;stlein voll der
+                     <lb/>kostbarsten Lebensresultate sei.</p>
+                 </div>
+               </div>
+            </div>
+            <gap quantity="78" unit="pages" reason="editorial"/>
+         </div>
+      </body>
+      <back>
+         <div type="endsheet">
+           <div type="page" n="es_b_r" facs="./img/GG_es_b_r.jpg" ana="End sheet with library stamp of the University Library Graz.">
+            <head type="library_stamp"> FACHBIBLIOTHEK F&#220;R GERMANISTIK AN 
+               <lb/><name ref="https://lobid.org/gnd/36157-4" type="org">DER KARL-FRANZENS-UNIVERSIT&#196;T GRAZ</name> </head>
+           </div>
+         </div>
+         <div type="endsheet">
+           <div type="page" n="es_b_v" facs="./img/GG_es_b_v.jpg" ana="Empty page."/>
+         </div>
+         <div type="book_cover">
+           <div type="page" n="bc_b_i" facs="./img/GG_bc_b_i.jpg" ana="Page with Barcode for the LIbrary University Graz.">
+            <div type="barcode">
+               <p rend="barcode"> UB GRAZ 
+                  <lb/>+BI227391701 </p>
+            </div>
+           </div>
+         </div>
+         <div type="book_cover">
+            <div type="page" n="bc_b_o" facs="./img/GG_bc_b_o.jpg" ana="Page of the back of the book."/>
+         </div>
+         <div type="book_back">
+           <div type="page" n="bb" facs="./img/GG_bb.jpg" ana="Back of the book Goethe-Galerie.">
+            <head>Goethe- 
+               <lb/>Galerie.</head>
+            <div type="library_shelfmark">
+               <p rend="center">
+                  <lb/>GG 
+                  <lb/>428 
+                  <lb/>G 599 
+                  <lb/>P 365 
+               </p>
+            </div>
+           </div>
+         </div>
+      </back>
+   </text>
+</TEI>
